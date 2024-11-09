@@ -1,0 +1,140 @@
+* {
+    transition: all 0.3s ease;
+    font-family: Arial;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 300px;
+    padding: 50px 0;
+    position: sticky;
+    top: 0;
+}
+
+.header.scrolled {
+    padding: 20px 0;
+    gap: 150px;
+}
+
+.header img {
+    width: 50px;
+    height: auto;
+    background-color: transparent;
+}
+
+.header .search-bar {
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.header .search-section {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 20px 0px 20px 50px;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.header .search-section:hover {
+    background-color: #eee;
+}
+
+.header .search-section label {
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+.header .search-section input {
+    border: none;
+    color: #333;
+    text-align: left;
+    font-weight: bold;
+    outline: none;
+    padding: 5px 0;
+    background-color: transparent;
+}
+
+.header .search-section input::placeholder {
+    color: #999;
+}
+
+.header .search-button {
+    position: relative;
+    background-color: #34a853;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    margin-right: 20px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .search-button:hover {
+    background-color: #148632;
+}
+
+.header .search-button i {
+    font-size: 18px;
+    background-color: transparent;
+}
+
+.header.scrolled .search-section {
+    padding-left: 0;
+}
+
+.header.scrolled .search-section label {
+    background-color: transparent;
+    color: transparent;
+    position: absolute;
+}
+
+.header.scrolled .search-section input::placeholder {
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+}
+
+.header.scrolled .search-section input {
+    text-align: center;
+}
+
+
+.datepicker .react-datepicker__day,
+.datepicker .react-datepicker__day-name,
+.datepicker .react-datepicker__current-month {
+    color: #333;
+}
+
+.datepicker .react-datepicker__month-container {
+    border-radius: 10px;
+}
+
+.datepicker .react-datepicker.datepicker {
+    background: transparent;
+}
+
+.datepicker .react-datepicker__day--selected,
+.datepicker .react-datepicker__day--keyboard-selected {
+    background-color: #34A853;
+    color: #fff;
+}
+
+.datepicker .react-datepicker__input-container {
+    background-color: #148632;
+}
+
+.header .search-section:hover .react-datepicker__input-container {
+    position: relative;
+    display: inline-block;
+    background-color: #eee;
+}
