@@ -9,13 +9,13 @@
     justify-content: center;
     gap: 300px;
     padding: 50px 0;
+    background-color: #fff;
     position: sticky;
     top: 0;
 }
 
 .header.scrolled {
     padding: 20px 0;
-    gap: 150px;
 }
 
 .header img {
@@ -38,6 +38,7 @@
     padding: 20px 0px 20px 50px;
     border-radius: 20px;
     background-color: #fff;
+    transition: all 0.3s ease, padding 0.5s cubic-bezier(0.95, 0.22, 0.01, 0.83);
 }
 
 .header .search-section:hover {
@@ -90,6 +91,7 @@
 
 .header.scrolled .search-section {
     padding-left: 0;
+    transition: all 0.3s ease, padding 0.5s cubic-bezier(0.95, 0.22, 0.01, 0.83);
 }
 
 .header.scrolled .search-section label {
@@ -107,6 +109,80 @@
 .header.scrolled .search-section input {
     text-align: center;
 }
+
+.dropdown {
+    position: absolute;
+    top: 40px;
+    right: 185px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 120px;
+    z-index: 10;
+    text-align: left;
+    transition: top 1s cubic-bezier(0.95, 0.22, 0.01, 0.83);
+}
+
+.header.scrolled .dropdown {
+    top: 90px;
+}
+
+.dropdown p {
+    margin: 0;
+    padding: 10px;
+    cursor: pointer;
+    color: #333;
+    font-size: 14px;
+}
+
+.dropdown p:hover {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
+
+
+.counter-popup {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 5px 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.counter-arrow {
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.close-counter {
+    background-color: transparent;
+    border: none;
+    color: red;
+    font-size: 12px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .datepicker .react-datepicker__day,

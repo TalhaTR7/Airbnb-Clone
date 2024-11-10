@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'Kaneda';
+    src: url('./assets/Kaneda.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: 'Kaneda i';
+    src: url('./assets/Kaneda-i.TTF');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::selection {
+    background-color: #00d19a;
+    color: #FFF;
+}
+
+
+.section {
+    background-image: url('./src/assets/section.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 3383px;
+}
+
+.section h1 {
+    padding: 200px;
+    text-align: center;
+    font-weight: bolder;
+    font-family: 'Kaneda';
+    font-size: 50pt;
+    color: #ffffff;
+}

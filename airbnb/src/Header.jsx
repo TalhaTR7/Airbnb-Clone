@@ -6,11 +6,31 @@ import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
+function Counter({ onClose, initialCount = 1 }) {
+    const [count, setCount] = useState(initialCount);
+
+    const increment = () => setCount(count + 1);
+    const decrement = () => setCount(count > 0 ? count - 1 : 0);
+
+    return (
+        <div className="counter-popup">
+            <button onClick={decrement} className="counter-arrow">{"<"}</button>
+            <input type="text" value={count} readOnly />
+            <button onClick={increment} className="counter-arrow">{">"}</button>
+            <button onClick={onClose} className="close-counter">Close</button>
+        </div>
+    );
+}
 
 export default function Header() {
     const [scrollPosition, setScrollPosition] = useState(0);
     const [checkIn, setCheckIn] = useState(null);
     const [checkOut, setCheckOut] = useState(null);
+    const [dropdown, setDropdown] = useState(false);
+    const [counter, setCounter] = useState(false);
+
+    const handleCounter = () => setCounter(!counter);
+    const handleDropdown = () => setDropdown(!dropdown);
 
     useEffect(() => {
 
@@ -84,13 +104,21 @@ export default function Header() {
                 </div>
                 <div className="search-section">
                     <label for="guests">Who</label>
-                    <input type="text" placeholder={getPlaceholder("Who")} />
+                    <input type="text" placeholder={getPlaceholder("Who")} onClick={handleCounter} readOnly />
+                        {counter && <Counter onClose={handleCounter} />}
                 </div>
                 <button className="search-button">
                     <i className="fa fa-search"></i>
                 </button>
             </div>
-            <img src={profile_img} />
+            <img src={profile_img} onClick={handleDropdown} style={{cursor:'pointer'}} />
+                {dropdown && (
+                    <div className="dropdown">
+                        <p>Sign In</p>
+                        <p>Login</p>
+                        <p>Help Center</p>
+                    </div>
+                )}
         </div>
     );
 }

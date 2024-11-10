@@ -1,9 +1,9 @@
-
+import './index.css'
 
 export default function Section({ heading }) {
     return (
-        <div className='section'>
+        <div className="section">
             <h1>{heading}</h1>
         </div>
-    )
+    );
 }
