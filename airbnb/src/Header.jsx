@@ -87,13 +87,13 @@ export default function Header() {
             <img src={logo_img} />
             <div className="search-bar">
                 <div className="search-section">
-                    <label for="where">Where</label>
+                    <label htmlFor="where">Where</label>
                     <input
                         type="text"
                         placeholder={getPlaceholder("Where")} />
                 </div>
                 <div className="search-section">
-                    <label for="check-in">Check in</label>
+                    <label htmlFor="check-in">Check in</label>
                     <DatePicker
                         selected={checkIn}
                         onChange={(date) => setCheckIn(date)}
@@ -102,7 +102,7 @@ export default function Header() {
                         placeholderText={getPlaceholder("Check in")} />
                 </div>
                 <div className="search-section">
-                    <label for="check-out">Check out</label>
+                    <label htmlFor="check-out">Check out</label>
                     <DatePicker
                         selected={checkOut}
                         onChange={(date) => setCheckOut(date)}
@@ -111,7 +111,7 @@ export default function Header() {
                         placeholderText={getPlaceholder("Check out")} />
                 </div>
                 <div className="search-section">
-                    <label for="guests">Who</label>
+                    <label htmlFor="guests">Who</label>
                     <input 
                         type="text"
                         value={guestCount === 0 ? '' : `${guestCount} guests`}
@@ -136,7 +136,10 @@ export default function Header() {
                             setLoginwindow(2);
                             setDropdown(false);
                         }}>Sign In</p>
-                        <p>Help Center</p>
+                        <p onClick={() => {
+                            alert("On the way...");
+                            setDropdown(false);
+                        }}>Help Center</p>
                     </div>
                 )}
                 { loginwindow !== 0 && (

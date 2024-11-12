@@ -46,9 +46,9 @@ export default function Footer() {
                 <p>No Terms & Conditions</p>
                 <div className='socials'>
                     <h4 style={{margin:'0 20px'}}>English (US)</h4>
-                    <i class="fa-brands fa-square-facebook"></i>
-                    <i class="fa-brands fa-square-x-twitter"></i>
-                    <i class="fa-brands fa-square-instagram"></i>
+                    <i className="fa-brands fa-square-facebook"></i>
+                    <i className="fa-brands fa-square-x-twitter"></i>
+                    <i className="fa-brands fa-square-instagram"></i>
                 </div>
             </div>
         </div>
