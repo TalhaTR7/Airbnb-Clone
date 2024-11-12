@@ -6,6 +6,7 @@ import DatePicker from 'react-datepicker';
 import Userlogin from './UserLogin';
 import 'react-datepicker/dist/react-datepicker.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import Categories from './Categories';
 
 export default function Header() {
     const [scrollPosition, setScrollPosition] = useState(0),

@@ -1,0 +1,57 @@
+.container {
+    border-top: 1px #eee solid;
+    background-color: #fff;
+    transition: all 0.5s cubic-bezier(1, 0, 0, 1);
+    width: 100%;
+}
+
+.container.scrolled {
+    position: sticky;
+    top: 105px;
+    z-index: 999;
+}
+
+.list-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.list {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.list::-webkit-scrollbar {
+    display: none;
+}
+
+.list a {
+    padding: 25px 0px;
+    font-size: 12px;
+    text-align: center;
+    min-width: 80px;
+    cursor: pointer;
+}
+
+.fade-left,
+.fade-right {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 300px;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.fade-left {
+    left: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.8), transparent);
+}
+
+.fade-right {
+    right: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.8), transparent);
+}
