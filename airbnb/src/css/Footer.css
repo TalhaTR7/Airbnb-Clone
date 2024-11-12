@@ -50,3 +50,21 @@
     font-size: 28px;
     margin: 0 7px;
 }
+
+@media (max-width: 1200px) {
+    .footer {
+        margin: 50px;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer .upper-part,
+    .footer .lower-part {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .footer span {
+        position: absolute;
+        color: transparent;
+    }
+}

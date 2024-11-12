@@ -1,6 +1,6 @@
 * {
-    transition: all 0.3s ease;
-    font-family: Arial;
+    transition: all 0.5s cubic-bezier(1, 0, 0, 1);
+    font-family: Helvetica;
 }
 
 .header {
@@ -39,7 +39,7 @@
     padding: 20px 0px 20px 50px;
     border-radius: 20px;
     background-color: #fff;
-    transition: all 0.5s ease, padding 0.5s cubic-bezier(1, 0, 0, 1);
+    transition: padding 0.5s cubic-bezier(1, 0, 0, 1);
 }
 
 .header .search-section:hover {
@@ -57,7 +57,6 @@
     border: none;
     color: #333;
     text-align: left;
-    font-weight: bold;
     outline: none;
     padding: 5px 0;
     background-color: transparent;
@@ -92,7 +91,7 @@
 
 .header.scrolled .search-section {
     padding-left: 0;
-    transition: all 0.5s ease, padding 0.5s cubic-bezier(1, 0, 0, 1);
+    transition: padding 0.5s cubic-bezier(1, 0, 0, 1);
 }
 
 .header.scrolled .search-section label {
@@ -142,11 +141,6 @@
     border-radius: 10px;
 }
 
-
-
-
-
-
 .counter-popup {
     position: absolute;
     display: flex;
@@ -171,7 +165,7 @@
 
 .counter-arrow {
     color: #fff;
-    font-family: Sonsolas, monospace;
+    font-family: Consolas, monospace;
     background-color: #4b67d2;
     padding: 7px 11px;
     border: none;
@@ -179,17 +173,6 @@
     font-size: 20px;
     cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 .datepicker .react-datepicker__day,
 .datepicker .react-datepicker__day-name,
@@ -214,17 +197,3 @@
 .datepicker .react-datepicker__input-container {
     background-color: #4b67d2;
 }
-
-.header .search-section:hover .react-datepicker__input-container {
-    position: relative;
-    display: inline-block;
-    background-color: #eee;
-}
-
-
-
-
-
-
-
-

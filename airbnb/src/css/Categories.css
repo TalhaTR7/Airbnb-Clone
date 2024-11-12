@@ -1,7 +1,6 @@
 .container {
     border-top: 1px #eee solid;
     background-color: #fff;
-    transition: all 0.5s cubic-bezier(1, 0, 0, 1);
     width: 100%;
 }
 
@@ -14,6 +13,7 @@
 .list-wrapper {
     position: relative;
     overflow: hidden;
+    margin: auto 120px;
 }
 
 .list {
@@ -30,10 +30,17 @@
 
 .list a {
     padding: 25px 0px;
-    font-size: 12px;
+    font-size: 14px;
     text-align: center;
-    min-width: 80px;
+    min-width: 90px;
+    font-family: Helvetica;
     cursor: pointer;
+    color: #bbb;
+    transition: color 0.3s ease;
+}
+
+.list a:hover {
+    color: #000;
 }
 
 .fade-left,

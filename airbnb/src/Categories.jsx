@@ -19,29 +19,23 @@ export default function Categories() {
         <div className="container">
             <div className="list-wrapper">
                 <nav className="list">
-                    <a>Beach</a>
-                    <a>Countryside</a>
+                    <a>Luxury</a>
                     <a>Trending</a>
                     <a>Camping</a>
-                    <a>Tropical</a>
-                    <a>Pool</a>
-                    <a>Single</a>
-                    <a>Mansion</a>
-                    <a>Cabin</a>
-                    <a>Barns</a>
-                    <a>Luxury</a>
                     <a>Urban</a>
-                    <a>Lake</a>
-                    <a>Farms</a>
-                    <a>View</a>
                     <a>Mountain</a>
-                    <a>Cabin</a>
-                    <a>Barns</a>
-                    <a>Luxury</a>
-                    <a>Urban</a>
+                    <a>Hanoks</a>
+                    <a>Beach</a>
+                    <a>Single</a>
+                    <a>Barn</a>
+                    <a>Countryside</a>
+                    <a>Tropical</a>
                     <a>Lake</a>
-                    <a>Farms</a>
                     <a>View</a>
+                    <a>Pool</a>
+                    <a>Mansion</a>
+                    <a>Farm</a>
+                    <a>Cabin</a>
                 </nav>
                 <div className="fade-left"></div>
                 <div className="fade-right"></div>
