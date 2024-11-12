@@ -20,20 +20,3 @@
 }
 
 
-
-
-.section {
-    background-image: url('./src/assets/section.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 3383px;
-}
-
-.section h1 {
-    padding: 200px;
-    text-align: center;
-    font-weight: bolder;
-    font-family: 'Kaneda';
-    font-size: 250pt;
-}

@@ -1,9 +1,9 @@
 import './css/Card.css'
 
-export default function Section() {
+export default function Section({ property }) {
     return (
-        <div className="section">
-            
+        <div>
+            <img src={property.image} />
         </div>
     );
 }

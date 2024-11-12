@@ -1,5 +1,5 @@
 import Header from "./Header.jsx";
-import Section from "./Section.jsx";
+import Card from "./Card.jsx";
 import Footer from "./Footer.jsx";
 import Categories from "./Categories.jsx";
 
@@ -8,10 +8,10 @@ export default function App() {
     
     return (
         <div>
-            <Header />
+            <Card />
+            {/* <Header />
             <Categories />
-            <Section heading="Home" />
-            <Footer />
+            <Footer /> */}
         </div>
     );
 }
