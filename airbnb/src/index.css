@@ -9,8 +9,8 @@
 }
 
 @font-face {
-    font-family: 'Kaneda b';
-    src: url('./assets/Kaneda-b.TTF');
+    font-family: 'Built Titling';
+    src: url('./assets/Built Titling.TTF');
 }
 
 * {
@@ -23,6 +23,13 @@
     background-color: #00d19a;
     color: #FFF;
 }
+
+.no-scroll {
+    overflow: hidden;
+    padding-right: 15px;
+}
+
+
 
 
 .section {

@@ -1,0 +1,114 @@
+.overlay-dark {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.login-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    background: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+.login-popup img {
+    width: 150px;
+    margin: 20px auto;
+}
+
+.login-tabs {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 20px;
+    background-color: #bbb;
+    border-radius: 15px;
+    gap: 5px;
+    width: 300px;
+    overflow: hidden;
+}
+
+.login-tabs button {
+    position: relative;
+    padding: 10px 50px;
+    width: 150px;
+    font-family: 'Built Titling';
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    z-index: 1;
+    transition: color 0.3s ease;
+}
+
+.login-tabs .active {
+    background-color: #4b67d2;
+    border-radius: 15px;
+}
+
+.login-form form,
+.signup-form form {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+}
+
+.login-form input,
+.signup-form input {
+    flex: 1;
+    width: 100%;
+    padding: 12px;
+    background-color: #ccc;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.login-form input:focus-visible,
+.signup-form input:focus-visible {
+    background-color: #fff;
+}
+
+.login-form button,
+.signup-form button {
+    flex: 1;
+    margin-top: 5px;
+    width: 30%;
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4b67d2;
+    color: #fff;
+    font-family: 'Kaneda';
+    font-size: 20px;
+    cursor: pointer;
+    transition: none;
+}
+
+.login-form button:hover,
+.signup-form button:hover {
+    background-color: #233FB0;
+}
+
+
