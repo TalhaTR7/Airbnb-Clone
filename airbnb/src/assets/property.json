@@ -2,7 +2,7 @@
     {
         "address": "10 Pine St",
         "city": "Santa Cruz",
-        "rate_per_night": 150,
+        "rate": 150,
         "description": "Modern beach retreat with breathtaking views.",
         "rating": 4.7,
         "tags": [
@@ -10,7 +10,7 @@
             "view",
             "trending"
         ],
-        "vacant_dates": [
+        "vacancy": [
             "Nov 16-18",
             "Dec 1-3",
             "Dec 10-12"
@@ -19,7 +19,7 @@
     {
         "address": "25 Maple Ln",
         "city": "Aspen",
-        "rate_per_night": 300,
+        "rate": 300,
         "description": "Secluded mountain cabin surrounded by pine trees.",
         "rating": 4.9,
         "tags": [
@@ -27,7 +27,7 @@
             "mountain",
             "luxury"
         ],
-        "vacant_dates": [
+        "vacancy": [
             "Nov 18-20",
             "Dec 5-7",
             "Dec 12-14"
@@ -36,7 +36,7 @@
     {
         "address": "78 Lakeview Dr",
         "city": "Lake Tahoe",
-        "rate_per_night": 200,
+        "rate": 200,
         "description": "Spacious lakeside house with a private dock.",
         "rating": "new",
         "tags": [
@@ -44,7 +44,7 @@
             "view",
             "countryside"
         ],
-        "vacant_dates": [
+        "vacancy": [
             "Nov 20-22",
             "Dec 6-8",
             "Dec 18-20"
@@ -53,7 +53,7 @@
     {
         "address": "50 Sunset Blvd",
         "city": "Los Angeles",
-        "rate_per_night": 400,
+        "rate": 400,
         "description": "Luxurious mansion in the heart of LA.",
         "rating": 4.8,
         "tags": [
@@ -61,7 +61,7 @@
             "urban",
             "luxury"
         ],
-        "vacant_dates": [
+        "vacancy": [
             "Nov 25-27",
             "Dec 3-5",
             "Dec 20-22"
@@ -70,7 +70,7 @@
     {
         "address": "32 Ocean Ave",
         "city": "Miami",
-        "rate_per_night": 275,
+        "rate": 275,
         "description": "Tropical beachside villa with pool access.",
         "rating": 4.6,
         "tags": [
@@ -78,7 +78,7 @@
             "pool",
             "tropical"
         ],
-        "vacant_dates": [
+        "vacancy": [
             "Nov 22-24",
             "Dec 8-10",
             "Dec 23-25"
@@ -87,7 +87,7 @@
     {
         "address": "112 Farmhouse Rd",
         "city": "Nashville",
-        "rate_per_night": 130,
+        "rate": 130,
         "description": "Charming farmhouse with a spacious barn.",
         "rating": 4.5,
         "tags": [
@@ -95,7 +95,7 @@
             "barn",
             "countryside"
         ],
-        "vacant_dates": [
+        "vacancy": [
             "Nov 26-28",
             "Dec 15-17",
             "Dec 25-27"
@@ -104,7 +104,7 @@
     {
         "address": "55 Cliff Rd",
         "city": "Big Sur",
-        "rate_per_night": 500,
+        "rate": 500,
         "description": "Exclusive cliffside villa overlooking the ocean.",
         "rating": 4.9,
         "tags": [
@@ -112,7 +112,7 @@
             "luxury",
             "trending"
         ],
-        "vacant_dates": [
+        "vacancy": [
             "Nov 28-30",
             "Dec 2-4",
             "Dec 26-28"
@@ -121,7 +121,7 @@
     {
         "address": "85 Oak St",
         "city": "Bend",
-        "rate_per_night": 170,
+        "rate": 170,
         "description": "Cozy cabin near the lake with mountain views.",
         "rating": 4.3,
         "tags": [
@@ -129,7 +129,7 @@
             "lake",
             "mountain"
         ],
-        "vacant_dates": [
+        "vacancy": [
             "Dec 1-3",
             "Dec 20-22",
             "Jan 5-7"
@@ -138,7 +138,7 @@
     {
         "address": "21 Seaside Ln",
         "city": "San Diego",
-        "rate_per_night": 290,
+        "rate": 290,
         "description": "Beachfront property with a pool and ocean view.",
         "rating": 4.8,
         "tags": [
@@ -146,7 +146,7 @@
             "pool",
             "trending"
         ],
-        "vacant_dates": [
+        "vacancy": [
             "Nov 30-Dec 2",
             "Dec 10-12",
             "Dec 29-31"
@@ -155,7 +155,7 @@
     {
         "address": "90 Summit Dr",
         "city": "Boulder",
-        "rate_per_night": 220,
+        "rate": 220,
         "description": "Mountain retreat with panoramic views.",
         "rating": "new",
         "tags": [
@@ -163,7 +163,7 @@
             "countryside",
             "luxury"
         ],
-        "vacant_dates": [
+        "vacancy": [
             "Dec 5-7",
             "Dec 24-26",
             "Jan 10-12"
@@ -172,7 +172,7 @@
     {
         "address": "75 Forest Way",
         "city": "Sedona",
-        "rate_per_night": 190,
+        "rate": 190,
         "description": "Rustic cabin in the heart of the forest.",
         "rating": 4.4,
         "tags": [
@@ -180,7 +180,7 @@
             "countryside",
             "trending"
         ],
-        "vacant_dates": [
+        "vacancy": [
             "Dec 6-8",
             "Dec 16-18",
             "Jan 2-4"
@@ -189,7 +189,7 @@
     {
         "address": "33 Bayside Dr",
         "city": "Clearwater",
-        "rate_per_night": 240,
+        "rate": 240,
         "description": "Luxury home with private beach access.",
         "rating": 4.9,
         "tags": [
@@ -197,7 +197,7 @@
             "luxury",
             "view"
         ],
-        "vacant_dates": [
+        "vacancy": [
             "Nov 29-Dec 1",
             "Dec 14-16",
             "Dec 28-30"
@@ -206,7 +206,7 @@
     {
         "address": "14 Desert Rd",
         "city": "Phoenix",
-        "rate_per_night": 120,
+        "rate": 120,
         "description": "Desert getaway with stunning views and trails.",
         "rating": 4.6,
         "tags": [
@@ -214,7 +214,7 @@
             "view",
             "trending"
         ],
-        "vacant_dates": [
+        "vacancy": [
             "Dec 9-11",
             "Dec 18-20",
             "Jan 8-10"
@@ -223,7 +223,7 @@
     {
         "address": "88 Creekside Ln",
         "city": "Asheville",
-        "rate_per_night": 150,
+        "rate": 150,
         "description": "Tranquil creekside cabin near hiking trails.",
         "rating": "new",
         "tags": [
@@ -231,7 +231,7 @@
             "countryside",
             "trending"
         ],
-        "vacant_dates": [
+        "vacancy": [
             "Dec 12-14",
             "Dec 21-23",
             "Jan 15-17"
@@ -240,7 +240,7 @@
     {
         "address": "92 Coastal Rd",
         "city": "Maui",
-        "rate_per_night": 350,
+        "rate": 350,
         "description": "Beachfront villa with a private pool.",
         "rating": 4.8,
         "tags": [
@@ -248,7 +248,7 @@
             "tropical",
             "pool"
         ],
-        "vacant_dates": [
+        "vacancy": [
             "Nov 17-19",
             "Dec 13-15",
             "Dec 27-29"
@@ -257,7 +257,7 @@
     {
         "address": "50 City Ave",
         "city": "New York",
-        "rate_per_night": 450,
+        "rate": 450,
         "description": "Luxurious urban penthouse with skyline views.",
         "rating": 5.0,
         "tags": [
@@ -265,7 +265,7 @@
             "luxury",
             "trending"
         ],
-        "vacant_dates": [
+        "vacancy": [
             "Dec 3-5",
             "Dec 11-13",
             "Jan 1-3"
@@ -274,7 +274,7 @@
     {
         "address": "60 Vine St",
         "city": "Charleston",
-        "rate_per_night": 210,
+        "rate": 210,
         "description": "Quaint Southern home with a wraparound porch.",
         "rating": 4.5,
         "tags": [
@@ -282,7 +282,7 @@
             "countryside",
             "trending"
         ],
-        "vacant_dates": [
+        "vacancy": [
             "Dec 7-9",
             "Dec 19-21",
             "Jan 5-7"
@@ -291,7 +291,7 @@
     {
         "address": "11 Hilltop Ln",
         "city": "Denver",
-        "rate_per_night": 160,
+        "rate": 160,
         "description": "Mountain lodge with cozy interiors.",
         "rating": 4.6,
         "tags": [
@@ -299,7 +299,7 @@
             "countryside",
             "view"
         ],
-        "vacant_dates": [
+        "vacancy": [
             "Dec 10-12",
             "Dec 17-19",
             "Jan 3-5"
@@ -308,7 +308,7 @@
     {
         "address": "55 Sand Dune Way",
         "city": "Cannon Beach",
-        "rate_per_night": 280,
+        "rate": 280,
         "description": "Seaside retreat steps away from the beach.",
         "rating": 4.9,
         "tags": [
@@ -316,7 +316,7 @@
             "view",
             "luxury"
         ],
-        "vacant_dates": [
+        "vacancy": [
             "Dec 4-6",
             "Dec 15-17",
             "Jan 8-10"
@@ -325,7 +325,7 @@
     {
         "address": "66 Forest Edge",
         "city": "Yosemite",
-        "rate_per_night": 190,
+        "rate": 190,
         "description": "Cabin with scenic views in a forested setting.",
         "rating": 4.4,
         "tags": [
@@ -333,7 +333,7 @@
             "mountain",
             "view"
         ],
-        "vacant_dates": [
+        "vacancy": [
             "Dec 18-20",
             "Dec 27-29",
             "Jan 12-14"
@@ -342,7 +342,7 @@
     {
         "address": "18 Creek Rd",
         "city": "Mendocino",
-        "rate_per_night": 160,
+        "rate": 160,
         "description": "Peaceful creekside cottage in the redwoods.",
         "rating": 4.7,
         "tags": [
@@ -350,7 +350,7 @@
             "countryside",
             "trending"
         ],
-        "vacant_dates": [
+        "vacancy": [
             "Dec 12-14",
             "Dec 22-24",
             "Jan 18-20"
@@ -359,7 +359,7 @@
     {
         "address": "94 Sunset Ave",
         "city": "Malibu",
-        "rate_per_night": 410,
+        "rate": 410,
         "description": "Luxurious oceanfront property with stunning sunsets.",
         "rating": 5.0,
         "tags": [
@@ -367,7 +367,7 @@
             "luxury",
             "view"
         ],
-        "vacant_dates": [
+        "vacancy": [
             "Dec 1-3",
             "Dec 11-13",
             "Dec 30-Jan 1"
@@ -376,7 +376,7 @@
     {
         "address": "47 Willow Ln",
         "city": "Portland",
-        "rate_per_night": 140,
+        "rate": 140,
         "description": "Charming bungalow in a quiet, green neighborhood.",
         "rating": 4.4,
         "tags": [
@@ -384,7 +384,7 @@
             "urban",
             "trending"
         ],
-        "vacant_dates": [
+        "vacancy": [
             "Nov 29-Dec 1",
             "Dec 8-10",
             "Dec 24-26"
@@ -393,7 +393,7 @@
     {
         "address": "63 Prairie Rd",
         "city": "Omaha",
-        "rate_per_night": 120,
+        "rate": 120,
         "description": "Countryside retreat with open fields and privacy.",
         "rating": "new",
         "tags": [
@@ -401,7 +401,7 @@
             "countryside",
             "single"
         ],
-        "vacant_dates": [
+        "vacancy": [
             "Dec 5-7",
             "Dec 13-15",
             "Jan 6-8"
@@ -410,7 +410,7 @@
     {
         "address": "23 Rocky Point",
         "city": "Monterey",
-        "rate_per_night": 210,
+        "rate": 210,
         "description": "Scenic oceanview cottage with rocky coastline.",
         "rating": 4.8,
         "tags": [
@@ -418,7 +418,7 @@
             "beach",
             "trending"
         ],
-        "vacant_dates": [
+        "vacancy": [
             "Dec 10-12",
             "Dec 18-20",
             "Jan 12-14"
@@ -427,7 +427,7 @@
     {
         "address": "9 Grand Ave",
         "city": "Houston",
-        "rate_per_night": 100,
+        "rate": 100,
         "description": "Modern urban apartment close to downtown.",
         "rating": 4.5,
         "tags": [
@@ -435,7 +435,7 @@
             "single",
             "trending"
         ],
-        "vacant_dates": [
+        "vacancy": [
             "Nov 28-30",
             "Dec 20-22",
             "Jan 5-7"
@@ -444,7 +444,7 @@
     {
         "address": "78 Redwood Dr",
         "city": "Santa Rosa",
-        "rate_per_night": 160,
+        "rate": 160,
         "description": "Tranquil cabin nestled among redwoods.",
         "rating": 4.6,
         "tags": [
@@ -452,7 +452,7 @@
             "countryside",
             "view"
         ],
-        "vacant_dates": [
+        "vacancy": [
             "Dec 3-5",
             "Dec 14-16",
             "Jan 8-10"
@@ -461,7 +461,7 @@
     {
         "address": "37 Palm St",
         "city": "Key West",
-        "rate_per_night": 340,
+        "rate": 340,
         "description": "Tropical paradise with ocean views and pool.",
         "rating": 4.9,
         "tags": [
@@ -469,7 +469,7 @@
             "pool",
             "beach"
         ],
-        "vacant_dates": [
+        "vacancy": [
             "Dec 2-4",
             "Dec 17-19",
             "Dec 27-29"
@@ -478,7 +478,7 @@
     {
         "address": "44 Lavender Ln",
         "city": "Napa",
-        "rate_per_night": 230,
+        "rate": 230,
         "description": "Chic farmhouse in wine country with vineyard views.",
         "rating": 4.8,
         "tags": [
@@ -486,7 +486,7 @@
             "countryside",
             "luxury"
         ],
-        "vacant_dates": [
+        "vacancy": [
             "Dec 9-11",
             "Dec 21-23",
             "Jan 9-11"
@@ -495,7 +495,7 @@
     {
         "address": "67 Sky Rd",
         "city": "Sedona",
-        "rate_per_night": 280,
+        "rate": 280,
         "description": "Hilltop home with panoramic desert views.",
         "rating": 5.0,
         "tags": [
@@ -503,7 +503,7 @@
             "luxury",
             "view"
         ],
-        "vacant_dates": [
+        "vacancy": [
             "Dec 6-8",
             "Dec 19-21",
             "Jan 3-5"
@@ -512,7 +512,7 @@
     {
         "address": "24 Mountain Pass",
         "city": "Breckenridge",
-        "rate_per_night": 300,
+        "rate": 300,
         "description": "Ski-in/ski-out lodge with hot tub and fireplace.",
         "rating": 4.9,
         "tags": [
@@ -520,7 +520,7 @@
             "luxury",
             "trending"
         ],
-        "vacant_dates": [
+        "vacancy": [
             "Dec 1-3",
             "Dec 16-18",
             "Jan 2-4"
@@ -529,7 +529,7 @@
     {
         "address": "15 River Bend",
         "city": "Burlington",
-        "rate_per_night": 190,
+        "rate": 190,
         "description": "Riverfront cabin with canoe access.",
         "rating": 4.5,
         "tags": [
@@ -537,7 +537,7 @@
             "lake",
             "countryside"
         ],
-        "vacant_dates": [
+        "vacancy": [
             "Nov 27-29",
             "Dec 20-22",
             "Jan 6-8"
@@ -546,7 +546,7 @@
     {
         "address": "90 Lake Shore",
         "city": "Traverse City",
-        "rate_per_night": 200,
+        "rate": 200,
         "description": "Serene lakeside retreat with outdoor fireplace.",
         "rating": "new",
         "tags": [
@@ -554,7 +554,7 @@
             "view",
             "luxury"
         ],
-        "vacant_dates": [
+        "vacancy": [
             "Dec 3-5",
             "Dec 10-12",
             "Dec 24-26"
@@ -563,7 +563,7 @@
     {
         "address": "29 Country Rd",
         "city": "Madison",
-        "rate_per_night": 140,
+        "rate": 140,
         "description": "Cozy cottage in the countryside with garden views.",
         "rating": 4.3,
         "tags": [
@@ -571,7 +571,7 @@
             "farm",
             "single"
         ],
-        "vacant_dates": [
+        "vacancy": [
             "Dec 11-13",
             "Dec 23-25",
             "Jan 7-9"
@@ -580,7 +580,7 @@
     {
         "address": "41 Palm Ave",
         "city": "Palm Springs",
-        "rate_per_night": 275,
+        "rate": 275,
         "description": "Spacious villa with pool and desert views.",
         "rating": 4.8,
         "tags": [
@@ -588,7 +588,7 @@
             "view",
             "luxury"
         ],
-        "vacant_dates": [
+        "vacancy": [
             "Dec 13-15",
             "Dec 26-28",
             "Jan 10-12"
@@ -597,7 +597,7 @@
     {
         "address": "8 Cedar Ln",
         "city": "Lake Placid",
-        "rate_per_night": 180,
+        "rate": 180,
         "description": "Charming log cabin with access to hiking trails.",
         "rating": 4.7,
         "tags": [
@@ -605,7 +605,7 @@
             "mountain",
             "trending"
         ],
-        "vacant_dates": [
+        "vacancy": [
             "Dec 5-7",
             "Dec 19-21",
             "Jan 15-17"
@@ -614,7 +614,7 @@
     {
         "address": "76 Ocean Dr",
         "city": "Laguna Beach",
-        "rate_per_night": 320,
+        "rate": 320,
         "description": "Luxury villa on the coast with panoramic views.",
         "rating": 5.0,
         "tags": [
@@ -622,7 +622,7 @@
             "luxury",
             "view"
         ],
-        "vacant_dates": [
+        "vacancy": [
             "Nov 30-Dec 2",
             "Dec 12-14",
             "Jan 2-4"
@@ -631,7 +631,7 @@
     {
         "address": "3 Lavender Rd",
         "city": "Savannah",
-        "rate_per_night": 160,
+        "rate": 160,
         "description": "Historic Southern home with charming decor.",
         "rating": 4.6,
         "tags": [
@@ -639,7 +639,7 @@
             "countryside",
             "trending"
         ],
-        "vacant_dates": [
+        "vacancy": [
             "Dec 8-10",
             "Dec 18-20",
             "Jan 4-6"
@@ -648,7 +648,7 @@
     {
         "address": "87 Boulder Dr",
         "city": "Jackson Hole",
-        "rate_per_night": 290,
+        "rate": 290,
         "description": "Ski lodge with stunning mountain views.",
         "rating": 4.9,
         "tags": [
@@ -656,7 +656,7 @@
             "luxury",
             "trending"
         ],
-        "vacant_dates": [
+        "vacancy": [
             "Dec 7-9",
             "Dec 14-16",
             "Dec 28-30"
@@ -665,7 +665,7 @@
     {
         "address": "66 Harbor Dr",
         "city": "Seattle",
-        "rate_per_night": 220,
+        "rate": 220,
         "description": "Modern urban loft with waterfront views.",
         "rating": 4.8,
         "tags": [
@@ -673,7 +673,7 @@
             "luxury",
             "view"
         ],
-        "vacant_dates": [
+        "vacancy": [
             "Dec 15-17",
             "Dec 23-25",
             "Jan 11-13"
@@ -682,7 +682,7 @@
     {
         "address": "52 Ocean Breeze",
         "city": "Virginia Beach",
-        "rate_per_night": 220,
+        "rate": 220,
         "description": "Bright coastal house just steps from the beach.",
         "rating": 4.7,
         "tags": [
@@ -690,7 +690,7 @@
             "view",
             "trending"
         ],
-        "vacant_dates": [
+        "vacancy": [
             "Dec 9-11",
             "Dec 22-24",
             "Jan 7-9"
@@ -699,7 +699,7 @@
     {
         "address": "91 Valley View",
         "city": "Aspen",
-        "rate_per_night": 350,
+        "rate": 350,
         "description": "Ski lodge with luxurious amenities and mountain access.",
         "rating": 4.9,
         "tags": [
@@ -707,7 +707,7 @@
             "luxury",
             "view"
         ],
-        "vacant_dates": [
+        "vacancy": [
             "Dec 12-14",
             "Dec 23-25",
             "Jan 6-8"
@@ -716,7 +716,7 @@
     {
         "address": "10 Wildflower Path",
         "city": "Boulder",
-        "rate_per_night": 185,
+        "rate": 185,
         "description": "Nature retreat with scenic hiking trails nearby.",
         "rating": 4.5,
         "tags": [
@@ -724,7 +724,7 @@
             "cabin",
             "trending"
         ],
-        "vacant_dates": [
+        "vacancy": [
             "Dec 1-3",
             "Dec 18-20",
             "Jan 5-7"
@@ -733,7 +733,7 @@
     {
         "address": "82 Pine Trail",
         "city": "Lake Tahoe",
-        "rate_per_night": 210,
+        "rate": 210,
         "description": "Mountain cabin with hot tub and lakeside views.",
         "rating": 4.8,
         "tags": [
@@ -741,7 +741,7 @@
             "mountain",
             "cabin"
         ],
-        "vacant_dates": [
+        "vacancy": [
             "Nov 29-Dec 1",
             "Dec 10-12",
             "Jan 3-5"
@@ -750,7 +750,7 @@
     {
         "address": "33 Maple St",
         "city": "Nashville",
-        "rate_per_night": 150,
+        "rate": 150,
         "description": "Modern loft in downtown Nashville near live music.",
         "rating": 4.4,
         "tags": [
@@ -758,7 +758,7 @@
             "single",
             "trending"
         ],
-        "vacant_dates": [
+        "vacancy": [
             "Dec 7-9",
             "Dec 21-23",
             "Jan 10-12"
@@ -767,7 +767,7 @@
     {
         "address": "21 Coral Reef",
         "city": "Miami",
-        "rate_per_night": 275,
+        "rate": 275,
         "description": "Vibrant tropical oasis with private pool.",
         "rating": 5.0,
         "tags": [
@@ -775,7 +775,7 @@
             "pool",
             "luxury"
         ],
-        "vacant_dates": [
+        "vacancy": [
             "Dec 8-10",
             "Dec 19-21",
             "Jan 2-4"
@@ -784,7 +784,7 @@
     {
         "address": "17 Old Barn Rd",
         "city": "Boise",
-        "rate_per_night": 135,
+        "rate": 135,
         "description": "Rustic barn-style cabin with charming decor.",
         "rating": 4.3,
         "tags": [
@@ -792,7 +792,7 @@
             "countryside",
             "trending"
         ],
-        "vacant_dates": [
+        "vacancy": [
             "Dec 14-16",
             "Dec 27-29",
             "Jan 9-11"
@@ -801,7 +801,7 @@
     {
         "address": "47 Sunset Blvd",
         "city": "San Diego",
-        "rate_per_night": 290,
+        "rate": 290,
         "description": "Stunning beach house with panoramic ocean views.",
         "rating": 4.9,
         "tags": [
@@ -809,7 +809,7 @@
             "luxury",
             "view"
         ],
-        "vacant_dates": [
+        "vacancy": [
             "Dec 5-7",
             "Dec 17-19",
             "Dec 30-Jan 1"
@@ -818,7 +818,7 @@
     {
         "address": "55 Orchard Ln",
         "city": "Burlington",
-        "rate_per_night": 170,
+        "rate": 170,
         "description": "Country home with apple orchard and lake access.",
         "rating": "new",
         "tags": [
@@ -826,7 +826,7 @@
             "lake",
             "countryside"
         ],
-        "vacant_dates": [
+        "vacancy": [
             "Dec 6-8",
             "Dec 20-22",
             "Jan 12-14"
@@ -835,7 +835,7 @@
     {
         "address": "14 Hillside Rd",
         "city": "Stowe",
-        "rate_per_night": 240,
+        "rate": 240,
         "description": "Ski cabin with wood-burning stove and mountain views.",
         "rating": 4.6,
         "tags": [
@@ -843,10 +843,928 @@
             "cabin",
             "view"
         ],
-        "vacant_dates": [
+        "vacancy": [
             "Dec 11-13",
             "Dec 25-27",
             "Jan 13-15"
+        ]
+    },
+    {
+        "address": "29 Coastal Rd",
+        "city": "Charleston",
+        "rate": 220,
+        "description": "Charming coastal cottage with historic details.",
+        "rating": 4.5,
+        "tags": [
+            "beach",
+            "single",
+            "view"
+        ],
+        "vacancy": [
+            "Dec 10-12",
+            "Dec 19-21",
+            "Jan 8-10"
+        ]
+    },
+    {
+        "address": "88 Maple Ridge",
+        "city": "Stowe",
+        "rate": 245,
+        "description": "Quaint ski cabin with easy mountain access.",
+        "rating": 4.6,
+        "tags": [
+            "mountain",
+            "cabin",
+            "trending"
+        ],
+        "vacancy": [
+            "Dec 2-4",
+            "Dec 14-16",
+            "Jan 12-14"
+        ]
+    },
+    {
+        "address": "77 Palm Cove",
+        "city": "Hawaii",
+        "rate": 375,
+        "description": "Secluded tropical retreat with private beach access.",
+        "rating": 5.0,
+        "tags": [
+            "tropical",
+            "luxury",
+            "beach"
+        ],
+        "vacancy": [
+            "Dec 9-11",
+            "Dec 22-24",
+            "Jan 4-6"
+        ]
+    },
+    {
+        "address": "45 River Ln",
+        "city": "Jackson",
+        "rate": 160,
+        "description": "Riverfront cabin with canoe and fishing access.",
+        "rating": 4.7,
+        "tags": [
+            "lake",
+            "countryside",
+            "single"
+        ],
+        "vacancy": [
+            "Nov 30-Dec 2",
+            "Dec 17-19",
+            "Jan 10-12"
+        ]
+    },
+    {
+        "address": "31 Vineyard Dr",
+        "city": "Sonoma",
+        "rate": 230,
+        "description": "Chic countryside villa in wine country.",
+        "rating": 4.8,
+        "tags": [
+            "farm",
+            "countryside",
+            "luxury"
+        ],
+        "vacancy": [
+            "Dec 11-13",
+            "Dec 23-25",
+            "Jan 5-7"
+        ]
+    },
+    {
+        "address": "12 Desert Blvd",
+        "city": "Phoenix",
+        "rate": 190,
+        "description": "Modern desert oasis with pool and privacy.",
+        "rating": 4.5,
+        "tags": [
+            "pool",
+            "tropical",
+            "trending"
+        ],
+        "vacancy": [
+            "Dec 5-7",
+            "Dec 15-17",
+            "Jan 2-4"
+        ]
+    },
+    {
+        "address": "48 Elm St",
+        "city": "Manchester",
+        "rate": 110,
+        "description": "Charming countryside cottage with forest views.",
+        "rating": 4.3,
+        "tags": [
+            "single",
+            "countryside",
+            "trending"
+        ],
+        "vacancy": [
+            "Dec 7-9",
+            "Dec 18-20",
+            "Jan 13-15"
+        ]
+    },
+    {
+        "address": "99 Coral Rd",
+        "city": "Galveston",
+        "rate": 185,
+        "description": "Sunny beach house near popular surf spots.",
+        "rating": 4.6,
+        "tags": [
+            "beach",
+            "view",
+            "trending"
+        ],
+        "vacancy": [
+            "Dec 4-6",
+            "Dec 14-16",
+            "Jan 8-10"
+        ]
+    },
+    {
+        "address": "65 Misty Ln",
+        "city": "Boone",
+        "rate": 175,
+        "description": "Cozy mountain cabin with rustic decor.",
+        "rating": 4.4,
+        "tags": [
+            "cabin",
+            "mountain",
+            "view"
+        ],
+        "vacancy": [
+            "Nov 28-30",
+            "Dec 21-23",
+            "Jan 9-11"
+        ]
+    },
+    {
+        "address": "5 Orchard Ave",
+        "city": "Spokane",
+        "rate": 130,
+        "description": "Peaceful farmhouse with nearby hiking trails.",
+        "rating": 4.3,
+        "tags": [
+            "farm",
+            "countryside",
+            "single"
+        ],
+        "vacancy": [
+            "Dec 6-8",
+            "Dec 20-22",
+            "Jan 15-17"
+        ]
+    },
+    {
+        "address": "39 Skyline Dr",
+        "city": "Palm Desert",
+        "rate": 260,
+        "description": "Elegant villa with pool and scenic desert views.",
+        "rating": 4.9,
+        "tags": [
+            "luxury",
+            "pool",
+            "tropical"
+        ],
+        "vacancy": [
+            "Dec 2-4",
+            "Dec 12-14",
+            "Dec 26-28"
+        ]
+    },
+    {
+        "address": "71 Boulder Rd",
+        "city": "Bend",
+        "rate": 155,
+        "description": "Cozy riverfront cabin perfect for nature lovers.",
+        "rating": "new",
+        "tags": [
+            "countryside",
+            "single",
+            "trending"
+        ],
+        "vacancy": [
+            "Dec 8-10",
+            "Dec 19-21",
+            "Jan 3-5"
+        ]
+    },
+    {
+        "address": "8 Snow Peak",
+        "city": "Park City",
+        "rate": 300,
+        "description": "Ski-in/ski-out chalet with beautiful mountain views.",
+        "rating": 4.9,
+        "tags": [
+            "mountain",
+            "luxury",
+            "view"
+        ],
+        "vacancy": [
+            "Dec 1-3",
+            "Dec 15-17",
+            "Dec 28-30"
+        ]
+    },
+    {
+        "address": "43 Sunset Dr",
+        "city": "Carmel",
+        "rate": 340,
+        "description": "Romantic coastal cottage with oceanfront access.",
+        "rating": 4.8,
+        "tags": [
+            "beach",
+            "luxury",
+            "view"
+        ],
+        "vacancy": [
+            "Dec 10-12",
+            "Dec 20-22",
+            "Jan 5-7"
+        ]
+    },
+    {
+        "address": "27 Harvest Rd",
+        "city": "Albany",
+        "rate": 120,
+        "description": "Classic farmhouse with barn and open fields.",
+        "rating": 4.4,
+        "tags": [
+            "farm",
+            "countryside",
+            "barn"
+        ],
+        "vacancy": [
+            "Dec 7-9",
+            "Dec 16-18",
+            "Jan 4-6"
+        ]
+    },
+    {
+        "address": "93 Whispering Pines",
+        "city": "Aspen",
+        "rate": 410,
+        "description": "Luxury retreat with private hot tub and ski access.",
+        "rating": 5.0,
+        "tags": [
+            "luxury",
+            "mountain",
+            "view"
+        ],
+        "vacancy": [
+            "Dec 11-13",
+            "Dec 24-26",
+            "Jan 9-11"
+        ]
+    },
+    {
+        "address": "22 Sandstone Path",
+        "city": "Santa Fe",
+        "rate": 250,
+        "description": "Adobe-style home with unique desert architecture.",
+        "rating": 4.7,
+        "tags": [
+            "single",
+            "countryside",
+            "trending"
+        ],
+        "vacancy": [
+            "Dec 5-7",
+            "Dec 21-23",
+            "Jan 6-8"
+        ]
+    },
+    {
+        "address": "64 Island View",
+        "city": "Martha's Vineyard",
+        "rate": 320,
+        "description": "Charming beachfront property with serene views.",
+        "rating": 4.9,
+        "tags": [
+            "beach",
+            "luxury",
+            "trending"
+        ],
+        "vacancy": [
+            "Dec 3-5",
+            "Dec 17-19",
+            "Dec 30-Jan 1"
+        ]
+    },
+    {
+        "address": "57 Aspen Way",
+        "city": "Telluride",
+        "rate": 285,
+        "description": "Beautifully crafted log cabin near ski slopes.",
+        "rating": 4.8,
+        "tags": [
+            "mountain",
+            "cabin",
+            "luxury"
+        ],
+        "vacancy": [
+            "Dec 9-11",
+            "Dec 25-27",
+            "Jan 13-15"
+        ]
+    },
+    {
+        "address": "34 Bayview St",
+        "city": "Newport",
+        "rate": 200,
+        "description": "Cozy beachside home with sunset views.",
+        "rating": 4.6,
+        "tags": [
+            "beach",
+            "view",
+            "trending"
+        ],
+        "vacancy": [
+            "Dec 8-10",
+            "Dec 18-20",
+            "Jan 4-6"
+        ]
+    },
+    {
+        "address": "19 Seaside Ln",
+        "city": "Cape Cod",
+        "rate": 270,
+        "description": "Cozy cottage by the water with classic Cape Cod charm.",
+        "rating": 4.7,
+        "tags": [
+            "beach",
+            "view",
+            "single"
+        ],
+        "vacancy": [
+            "Dec 14-16",
+            "Dec 26-28",
+            "Jan 10-12"
+        ]
+    },
+    {
+        "address": "66 Cedar Grove",
+        "city": "Lake Placid",
+        "rate": 250,
+        "description": "Rustic lakefront cabin with stunning winter views.",
+        "rating": 4.5,
+        "tags": [
+            "lake",
+            "cabin",
+            "view"
+        ],
+        "vacancy": [
+            "Dec 13-15",
+            "Dec 23-25",
+            "Jan 8-10"
+        ]
+    },
+    {
+        "address": "28 Blue Ridge",
+        "city": "Gatlinburg",
+        "rate": 180,
+        "description": "Cozy cabin nestled in the mountains, perfect for a retreat.",
+        "rating": 4.6,
+        "tags": [
+            "mountain",
+            "cabin",
+            "trending"
+        ],
+        "vacancy": [
+            "Dec 9-11",
+            "Dec 19-21",
+            "Jan 7-9"
+        ]
+    },
+    {
+        "address": "102 Palm Dr",
+        "city": "Key West",
+        "rate": 320,
+        "description": "Tropical getaway with pool and lush gardens.",
+        "rating": 4.9,
+        "tags": [
+            "tropical",
+            "pool",
+            "luxury"
+        ],
+        "vacancy": [
+            "Dec 5-7",
+            "Dec 15-17",
+            "Dec 29-31"
+        ]
+    },
+    {
+        "address": "3 Whisper Way",
+        "city": "Portland",
+        "rate": 145,
+        "description": "Charming urban retreat close to downtown.",
+        "rating": 4.3,
+        "tags": [
+            "urban",
+            "single",
+            "trending"
+        ],
+        "vacancy": [
+            "Dec 10-12",
+            "Dec 20-22",
+            "Jan 12-14"
+        ]
+    },
+    {
+        "address": "11 Ocean Blvd",
+        "city": "Maui",
+        "rate": 450,
+        "description": "Luxurious beachfront villa with panoramic ocean views.",
+        "rating": 4.9,
+        "tags": [
+            "beach",
+            "luxury",
+            "view"
+        ],
+        "vacancy": [
+            "Dec 3-5",
+            "Dec 14-16",
+            "Jan 2-4"
+        ]
+    },
+    {
+        "address": "22 Pinecrest Rd",
+        "city": "Boulder",
+        "rate": 185,
+        "description": "Mountain cabin with modern amenities and rustic charm.",
+        "rating": 4.6,
+        "tags": [
+            "mountain",
+            "cabin",
+            "trending"
+        ],
+        "vacancy": [
+            "Dec 7-9",
+            "Dec 19-21",
+            "Jan 4-6"
+        ]
+    },
+    {
+        "address": "33 Wildflower Dr",
+        "city": "Vail",
+        "rate": 350,
+        "description": "Ski-in ski-out chalet with private hot tub.",
+        "rating": 5.0,
+        "tags": [
+            "luxury",
+            "mountain",
+            "view"
+        ],
+        "vacancy": [
+            "Dec 10-12",
+            "Dec 24-26",
+            "Jan 8-10"
+        ]
+    },
+    {
+        "address": "77 Coastal Breeze",
+        "city": "San Diego",
+        "rate": 225,
+        "description": "Charming beachside home with perfect sunset views.",
+        "rating": 4.7,
+        "tags": [
+            "beach",
+            "view",
+            "luxury"
+        ],
+        "vacancy": [
+            "Dec 6-8",
+            "Dec 18-20",
+            "Jan 3-5"
+        ]
+    },
+    {
+        "address": "44 Autumn Ridge",
+        "city": "Lake Tahoe",
+        "rate": 300,
+        "description": "Stunning mountain retreat with lake views and outdoor fireplace.",
+        "rating": 4.8,
+        "tags": [
+            "mountain",
+            "lake",
+            "luxury"
+        ],
+        "vacancy": [
+            "Dec 1-3",
+            "Dec 15-17",
+            "Jan 4-6"
+        ]
+    },
+    {
+        "address": "58 Bluebell Ave",
+        "city": "Asheville",
+        "rate": 190,
+        "description": "Cozy home surrounded by beautiful gardens and mountain views.",
+        "rating": 4.6,
+        "tags": [
+            "countryside",
+            "garden",
+            "view"
+        ],
+        "vacancy": [
+            "Dec 10-12",
+            "Dec 21-23",
+            "Jan 5-7"
+        ]
+    },
+    {
+        "address": "23 Timber Ln",
+        "city": "Mammoth Lakes",
+        "rate": 265,
+        "description": "Rustic cabin perfect for ski lovers and winter vacations.",
+        "rating": 4.4,
+        "tags": [
+            "cabin",
+            "mountain",
+            "trending"
+        ],
+        "vacancy": [
+            "Dec 2-4",
+            "Dec 13-15",
+            "Jan 7-9"
+        ]
+    },
+    {
+        "address": "86 Redwood Ct",
+        "city": "Santa Cruz",
+        "rate": 210,
+        "description": "Secluded beach house with beautiful coastal views.",
+        "rating": 4.8,
+        "tags": [
+            "beach",
+            "luxury",
+            "view"
+        ],
+        "vacancy": [
+            "Dec 4-6",
+            "Dec 20-22",
+            "Jan 3-5"
+        ]
+    },
+    {
+        "address": "14 Maple Rd",
+        "city": "Durango",
+        "rate": 135,
+        "description": "Quaint country cabin in the heart of the Rocky Mountains.",
+        "rating": 4.5,
+        "tags": [
+            "countryside",
+            "cabin",
+            "trending"
+        ],
+        "vacancy": [
+            "Nov 30-Dec 2",
+            "Dec 15-17",
+            "Jan 6-8"
+        ]
+    },
+    {
+        "address": "75 Sunrise Blvd",
+        "city": "Key West",
+        "rate": 400,
+        "description": "Luxurious waterfront property with private pool and beach access.",
+        "rating": 4.9,
+        "tags": [
+            "tropical",
+            "luxury",
+            "pool"
+        ],
+        "vacancy": [
+            "Dec 1-3",
+            "Dec 10-12",
+            "Jan 4-6"
+        ]
+    },
+    {
+        "address": "57 Highland Dr",
+        "city": "Aspen",
+        "rate": 550,
+        "description": "Exquisite mountain villa with hot tub and stunning views.",
+        "rating": 5.0,
+        "tags": [
+            "luxury",
+            "mountain",
+            "view"
+        ],
+        "vacancy": [
+            "Dec 8-10",
+            "Dec 22-24",
+            "Jan 5-7"
+        ]
+    },
+    {
+        "address": "33 Ocean Breeze",
+        "city": "Nantucket",
+        "rate": 420,
+        "description": "Charming colonial-style home just steps from the beach.",
+        "rating": 4.7,
+        "tags": [
+            "beach",
+            "luxury",
+            "view"
+        ],
+        "vacancy": [
+            "Dec 5-7",
+            "Dec 15-17",
+            "Jan 9-11"
+        ]
+    },
+    {
+        "address": "65 Lantern St",
+        "city": "Charleston",
+        "rate": 270,
+        "description": "Gorgeous historic home in downtown Charleston with modern amenities.",
+        "rating": 4.8,
+        "tags": [
+            "urban",
+            "luxury",
+            "trending"
+        ],
+        "vacancy": [
+            "Dec 10-12",
+            "Dec 18-20",
+            "Jan 2-4"
+        ]
+    },
+    {
+        "address": "40 Whispering Pines",
+        "city": "Sedona",
+        "rate": 315,
+        "description": "Luxury desert villa with amazing red rock views.",
+        "rating": 4.9,
+        "tags": [
+            "luxury",
+            "desert",
+            "view"
+        ],
+        "vacancy": [
+            "Dec 3-5",
+            "Dec 17-19",
+            "Jan 5-7"
+        ]
+    },
+    {
+        "address": "90 Mountain Peak",
+        "city": "Jackson Hole",
+        "rate": 420,
+        "description": "Elegant mountain chalet with ski access and incredible views.",
+        "rating": 4.7,
+        "tags": [
+            "mountain",
+            "luxury",
+            "view"
+        ],
+        "vacancy": [
+            "Dec 8-10",
+            "Dec 22-24",
+            "Jan 7-9"
+        ]
+    },
+    {
+        "address": "19 Prairie Rd",
+        "city": "Great Falls",
+        "rate": 180,
+        "description": "Comfortable country home with wide-open spaces and quiet retreat.",
+        "rating": 4.4,
+        "tags": [
+            "farm",
+            "countryside",
+            "single"
+        ],
+        "vacancy": [
+            "Dec 6-8",
+            "Dec 16-18",
+            "Jan 12-14"
+        ]
+    },
+    {
+        "address": "64 Desert Oasis",
+        "city": "Scottsdale",
+        "rate": 500,
+        "description": "Luxury desert villa with private pool and expansive grounds.",
+        "rating": 5.0,
+        "tags": [
+            "luxury",
+            "tropical",
+            "pool"
+        ],
+        "vacancy": [
+            "Dec 3-5",
+            "Dec 14-16",
+            "Jan 6-8"
+        ]
+    },
+    {
+        "address": "72 Vineyard View",
+        "city": "Sonoma",
+        "rate": 350,
+        "description": "Charming villa with vineyard views and a private pool.",
+        "rating": 4.8,
+        "tags": [
+            "farm",
+            "luxury",
+            "view"
+        ],
+        "vacancy": [
+            "Dec 12-14",
+            "Dec 22-24",
+            "Jan 4-6"
+        ]
+    },
+    {
+        "address": "34 Crystal Lane",
+        "city": "Bend",
+        "rate": 200,
+        "description": "Charming home with river views and close to outdoor activities.",
+        "rating": 4.6,
+        "tags": [
+            "river",
+            "single",
+            "trending"
+        ],
+        "vacancy": [
+            "Dec 2-4",
+            "Dec 16-18",
+            "Jan 7-9"
+        ]
+    },
+    {
+        "address": "17 Sunrise Ave",
+        "city": "Portland",
+        "rate": 220,
+        "description": "Bright, modern apartment in the heart of Portland.",
+        "rating": 4.7,
+        "tags": [
+            "urban",
+            "single",
+            "view"
+        ],
+        "vacancy": [
+            "Dec 9-11",
+            "Dec 18-20",
+            "Jan 4-6"
+        ]
+    },
+    {
+        "address": "15 Bayside Dr",
+        "city": "Tampa",
+        "rate": 270,
+        "description": "Beachfront luxury apartment with amazing sunset views.",
+        "rating": 4.9,
+        "tags": [
+            "beach",
+            "luxury",
+            "view"
+        ],
+        "vacancy": [
+            "Dec 10-12",
+            "Dec 17-19",
+            "Jan 2-4"
+        ]
+    },
+    {
+        "address": "913 Walnut St",
+        "city": "Santa Barbara",
+        "rate": 220,
+        "description": "A peaceful barn retreat with sweeping countryside views.",
+        "rating": 4.6,
+        "tags": [
+            "barn",
+            "countryside",
+            "view"
+        ],
+        "vacancy": [
+            "Nov 16-18",
+            "Dec 2-4",
+            "Dec 17-19"
+        ]
+    },
+    {
+        "address": "1123 Cypress Rd",
+        "city": "Salt Lake City",
+        "rate": 175,
+        "description": "Rustic cabin nestled in the mountains.",
+        "rating": 4.8,
+        "tags": [
+            "cabin",
+            "mountain",
+            "trending"
+        ],
+        "vacancy": [
+            "Nov 20-22",
+            "Dec 6-8",
+            "Dec 19-21"
+        ]
+    },
+    {
+        "address": "338 Juniper Ln",
+        "city": "Savannah",
+        "rate": 190,
+        "description": "Quaint lakefront cabin with a private dock.",
+        "rating": 4.7,
+        "tags": [
+            "lake",
+            "cabin",
+            "view"
+        ],
+        "vacancy": [
+            "Nov 24-26",
+            "Dec 10-12",
+            "Dec 21-23"
+        ]
+    },
+    {
+        "address": "147 Chestnut Ave",
+        "city": "New Orleans",
+        "rate": 230,
+        "description": "Stylish urban apartment near downtown.",
+        "rating": "new",
+        "tags": [
+            "urban",
+            "single",
+            "trending"
+        ],
+        "vacancy": [
+            "Nov 18-20",
+            "Dec 5-7",
+            "Dec 15-17"
+        ]
+    },
+    {
+        "address": "522 Dogwood Ct",
+        "city": "Boulder",
+        "rate": 210,
+        "description": "Mountain cabin with cozy interiors and stunning views.",
+        "rating": 4.5,
+        "tags": [
+            "mountain",
+            "cabin",
+            "trending"
+        ],
+        "vacancy": [
+            "Nov 22-24",
+            "Dec 8-10",
+            "Dec 18-20"
+        ]
+    },
+    {
+        "address": "825 Magnolia St",
+        "city": "Charleston",
+        "rate": 260,
+        "description": "Luxury mansion with a private garden and pool.",
+        "rating": 4.9,
+        "tags": [
+            "mansion",
+            "pool",
+            "luxury"
+        ],
+        "vacancy": [
+            "Nov 19-21",
+            "Dec 7-9",
+            "Dec 23-25"
+        ]
+    },
+    {
+        "address": "731 Bamboo Dr",
+        "city": "Key West",
+        "rate": 280,
+        "description": "Tropical beach house with a poolside lounge.",
+        "rating": 4.8,
+        "tags": [
+            "tropical",
+            "beach",
+            "luxury"
+        ],
+        "vacancy": [
+            "Nov 20-22",
+            "Dec 4-6",
+            "Dec 19-21"
+        ]
+    },
+    {
+        "address": "482 Alder Way",
+        "city": "Jackson Hole",
+        "rate": 215,
+        "description": "Mountain cabin with easy access to hiking trails.",
+        "rating": 4.6,
+        "tags": [
+            "cabin",
+            "mountain",
+            "view"
+        ],
+        "vacancy": [
+            "Nov 25-27",
+            "Dec 9-11",
+            "Dec 18-20"
         ]
     }
 ]

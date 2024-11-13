@@ -1,0 +1,67 @@
+.container {
+  border: 1px #ddd solid;
+  width: 300px;
+  border-radius: 10px;
+  background-color: #fff;
+  transition: box-shadow 0s ease;
+}
+
+.container .image {
+  background: url("./src//assets/card-bg-hover.png");
+  background-size: cover;
+  aspect-ratio: 16/9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px 10px 0 0;
+}
+
+.container .image img {
+  width: 120px;
+  top: 50%;
+  left: 50%;
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  box-shadow: 0 0 15px #eee;
+}
+
+.container:hover .image img {
+  transform: scale(1.1);
+}
+
+.container .details {
+  padding: 20px;
+}
+
+.container .details h1 {
+  font-size: 16px;
+}
+
+.container .details h2 {
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: normal;
+  color: #aaa;
+}
+
+.container .details h3 {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.container .details div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.container .details div h2,
+.container .details div span {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+  margin-top: 2px;
+}
