@@ -1,7 +1,7 @@
 import './css/Card.css'
 import house_template from "./assets/house-template.png";
 
-export default function Section({ property }) {
+export default function Card({ property }) {
     return (
         <div class="container">
             <div class="image">
@@ -19,3 +19,4 @@ export default function Section({ property }) {
         </div>
     );
 }
+
