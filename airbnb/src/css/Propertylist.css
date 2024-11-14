@@ -27,7 +27,11 @@
   border-color: transparent;
 }
 
-
+.card-container .loading {
+  width: 100px;
+  grid-column: span 5;
+  justify-self: center;
+}
 
 
 
