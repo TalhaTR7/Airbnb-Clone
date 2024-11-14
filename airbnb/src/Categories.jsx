@@ -5,18 +5,23 @@ import { useEffect } from "react";
 export default function Categories() {
 
     useEffect(() => {
+        let scrollTimeout;
         const handleScroll = () => {
-            const container = document.getElementsByClassName('container')[0];
-            if (window.scrollY > 100) container.classList.add('scrolled');
+            const container = document.getElementsByClassName('category-container')[0];
+            clearTimeout(scrollTimeout);
+            if (window.scrollY > 100) scrollTimeout = setTimeout(() => {container.classList.add('scrolled')}, 1000);
             else container.classList.remove('scrolled');
         };
-
         window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+            clearTimeout(scrollTimeout);
+        };
     }, []);
+    
 
     return (
-        <div className="container">
+        <div className="category-container">
             <div className="list-wrapper">
                 <nav className="list">
                     <a>Luxury</a>

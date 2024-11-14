@@ -1,13 +1,19 @@
 .container {
   border: 1px #ddd solid;
   width: 300px;
+  height: 325px;
   border-radius: 10px;
   background-color: #fff;
   transition: box-shadow 0s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease;
+  z-index: 998;
 }
 
-.container .image {
-  background: url("./src//assets/card-bg-hover.png");
+.container .cover {
+  background: url("./src//assets/card-bg.png");
   background-size: cover;
   aspect-ratio: 16/9;
   display: flex;
@@ -16,7 +22,7 @@
   border-radius: 10px 10px 0 0;
 }
 
-.container .image img {
+.container .cover img {
   width: 120px;
   top: 50%;
   left: 50%;
@@ -24,44 +30,71 @@
 }
 
 .container:hover {
-  box-shadow: 0 0 15px #eee;
+  transform: scale(1.025);
+  cursor: pointer;
 }
 
-.container:hover .image img {
+.container:hover .cover img {
   transform: scale(1.1);
 }
 
+.container .details,
+.container .details .upper {
+  display: flex;
+  flex-direction: column;
+}
+
 .container .details {
+  position: absolute;
+  margin-top: 170px;
+  width: 300px;
   padding: 20px;
 }
 
-.container .details h1 {
+.container .details .upper h1 {
   font-size: 16px;
 }
 
-.container .details h2 {
-  margin-top: 15px;
+.container .details .upper h1 span {
   font-size: 14px;
   font-weight: normal;
-  color: #aaa;
+  opacity: 75%;
 }
 
-.container .details h3 {
-  font-size: 12px;
+.container .details .upper h3 {
+  position: absolute;
+  margin-top: 25px;
+  font-size: 14px;
   font-weight: normal;
+  opacity: 75%;
+  max-width: 250px;
 }
 
-.container .details div {
+.container .details .lower {
+  margin-top: 60px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-weight: bold;
 }
 
-.container .details div h2,
-.container .details div span {
+.container .details .lower div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: flex-start;
+  gap: 5px;
+}
+
+.container .details .lower h2 {
+  font-size: 16px;
+}
+
+.container .details .lower span {
+  align-self: center;
+}
+
+.container .details .lower h3 {
   font-size: 14px;
-  font-weight: bold;
-  color: #000;
-  margin-top: 2px;
+  font-weight: normal;
+  opacity: 75%;
 }

@@ -17,12 +17,12 @@ export default function Footer() {
                 </div>
                 <div className='columns'>
                     <h4>Hosting</h4>
-                    <a>Airbnb your home</a>
-                    <a>AirCover for Hosts</a>
+                    <a>Fakebnb your home</a>
+                    <a>FakeCover for Hosts</a>
                     <a>Hosting resources</a>
                     <a>Community forum</a>
                     <a>Hosting responsibly</a>
-                    <a>Airbnb-friendly apartments</a>
+                    <a>Fakebnb-friendly apartments</a>
                     <a>Join a free Hosting class</a>
                     <a>Find a co-host</a>
                 </div>
@@ -37,7 +37,7 @@ export default function Footer() {
                 </div>
             </div>
             <div className='lower-part'>
-                <p>© 2024 Fakebnb, Inc.</p>
+                <p style={{cursor:'auto'}}>© 2024 Fakebnb, Inc.</p>
                 <span>·</span>
                 <p>No Privacy</p>
                 <span>·</span>

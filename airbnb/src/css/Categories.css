@@ -1,11 +1,13 @@
-.container {
+.category-container {
     border-top: 1px #eee solid;
     background-color: #fff;
     width: 100%;
+    box-shadow: 0 5px 10px #ddd;
+    position: fixed;
+    z-index: 999;
 }
 
-.container.scrolled {
-    position: sticky;
+.category-container.scrolled {
     top: 105px;
     z-index: 999;
 }

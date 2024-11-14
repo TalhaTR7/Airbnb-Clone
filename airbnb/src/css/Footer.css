@@ -1,11 +1,13 @@
 
+
 .footer {
     display: flex;
     flex-direction: column;
-    margin: 50px 350px;
+    padding: 50px 350px;
+    margin-top: 50px;
+    background-color: #f7f7f7;
     color: #666;
 }
-
 
 .footer .upper-part {
     display: flex;
@@ -18,6 +20,17 @@
     display: flex;
     flex-direction: column;
     padding: 50px 0;
+}
+
+.footer .upper-part a,
+.footer .lower-part .socials i,
+.footer .lower-part p,
+.footer .lower-part h4 {
+    cursor: pointer;
+}
+
+.footer .upper-part a:hover {
+    text-decoration: underline;
 }
 
 .footer .lower-part {
@@ -68,3 +81,4 @@
         color: transparent;
     }
 }
+

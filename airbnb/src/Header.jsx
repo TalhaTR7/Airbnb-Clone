@@ -7,30 +7,35 @@ import Userlogin from './UserLogin';
 import 'react-datepicker/dist/react-datepicker.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import Categories from './Categories';
+import PropertyList from './PropertyList';
+
+
+
 
 export default function Header() {
     const [scrollPosition, setScrollPosition] = useState(0),
-            [checkIn, setCheckIn] = useState(null),
-            [checkOut, setCheckOut] = useState(null),
-            [dropdown, setDropdown] = useState(false),
-            [counter, setCounter] = useState(false),
-            [loginwindow, setLoginwindow] = useState(0),
-            [guestCount, setGuestCount] = useState(0),
-            counterRef = useRef(null),
-            dropdownRef = useRef(null),
-            loginwindowRef = useRef(null)
+        [checkIn, setCheckIn] = useState(null),
+        [checkOut, setCheckOut] = useState(null),
+        [dropdown, setDropdown] = useState(false),
+        [counter, setCounter] = useState(false),
+        [loginwindow, setLoginwindow] = useState(0),
+        [guestCount, setGuestCount] = useState(0),
+        counterRef = useRef(null),
+        dropdownRef = useRef(null),
+        loginwindowRef = useRef(null)
 
 
     const handleCounter = () => setCounter(!counter);
     const handleDropdown = () => setDropdown(!dropdown);
     const handleClickOutside = (event) => {
-        if (counterRef.current && !counterRef.current.contains(event.target)) 
+        if (counterRef.current && !counterRef.current.contains(event.target))
             setCounter(false);
         if (dropdownRef.current && !dropdownRef.current.contains(event.target))
             setDropdown(false);
         if (loginwindowRef.current && !loginwindowRef.current.contains(event.target))
             setLoginwindow(0);
     };
+
 
     useEffect(() => {
 
@@ -68,6 +73,7 @@ export default function Header() {
         }
     };
 
+
     function Counter() {
         const increment = () => setGuestCount(guestCount + 1);
         const decrement = () => setGuestCount(guestCount > 0 ? guestCount - 1 : 0);
@@ -75,12 +81,11 @@ export default function Header() {
         return (
             <div className="counter-popup" ref={counterRef}>
                 <button onClick={decrement} className="counter-arrow">{"-"}</button>
-                <input type="text" style={{textAlign:"center"}} value={guestCount} readOnly />
+                <input type="text" style={{ textAlign: "center" }} value={guestCount} readOnly />
                 <button onClick={increment} className="counter-arrow">{"+"}</button>
             </div>
         );
     }
-
 
 
     return (
@@ -113,12 +118,12 @@ export default function Header() {
                 </div>
                 <div className="search-section">
                     <label htmlFor="guests">Who</label>
-                    <input 
+                    <input
                         type="text"
                         value={guestCount === 0 ? '' : `${guestCount} guests`}
                         placeholder={guestCount === 0 ? getPlaceholder("Who") : ''}
-                        onClick={handleCounter} 
-                        readOnly 
+                        onClick={handleCounter}
+                        readOnly
                     />
                     {counter && <Counter />}
                 </div>
@@ -126,28 +131,28 @@ export default function Header() {
                     <i className="fa fa-search"></i>
                 </button>
             </div>
-            <img src={profile_img} onClick={handleDropdown} style={{cursor:'pointer'}} />
-                {dropdown && (
-                    <div className="dropdown" ref={dropdownRef}>
+            <img src={profile_img} onClick={handleDropdown} style={{ cursor: 'pointer' }} />
+            {dropdown && (
+                <div className="dropdown" ref={dropdownRef}>
                     <p onClick={() => {
-                            setLoginwindow(1);
-                            setDropdown(false);
-                        }}>LogIn</p>
-                        <p onClick={() => {
-                            setLoginwindow(2);
-                            setDropdown(false);
-                        }}>Sign In</p>
-                        <p onClick={() => {
-                            alert("On the way...");
-                            setDropdown(false);
-                        }}>Help Center</p>
-                    </div>
-                )}
-                { loginwindow !== 0 && (
-                    <div ref={loginwindowRef} style={{position:'absolute'}}>
-                        <Userlogin window={loginwindow} />
-                    </div>
-                )}
+                        setLoginwindow(1);
+                        setDropdown(false);
+                    }}>LogIn</p>
+                    <p onClick={() => {
+                        setLoginwindow(2);
+                        setDropdown(false);
+                    }}>Sign In</p>
+                    <p onClick={() => {
+                        alert("On the way...");
+                        setDropdown(false);
+                    }}>Help Center</p>
+                </div>
+            )}
+            {loginwindow !== 0 && (
+                <div ref={loginwindowRef} style={{ position: 'absolute' }}>
+                    <Userlogin window={loginwindow} />
+                </div>
+            )}
         </div>
     );
 }

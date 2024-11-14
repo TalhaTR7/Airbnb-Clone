@@ -20,7 +20,8 @@
     flex-direction: column;
     gap: 15px;
     align-items: center;
-    background: #fff;
+    background: url("../assets/login-bg.png");
+    background-size:cover;
     padding: 50px;
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
@@ -40,8 +41,8 @@
     justify-content: center;
     position: relative;
     margin-bottom: 20px;
-    background-color: #bbb;
     border-radius: 15px;
+    background-color: #eaeaea;
     gap: 5px;
     width: 300px;
     overflow: hidden;
@@ -53,17 +54,18 @@
     width: 150px;
     font-family: 'Built Titling';
     font-size: 20px;
-    color: #fff;
+    color: #999;
     cursor: pointer;
     background-color: transparent;
     border: none;
     z-index: 1;
-    transition: color 0.3s ease;
+    transition: none;
 }
 
 .login-tabs .active {
     background-color: #4b67d2;
     border-radius: 15px;
+    color: #fff;
 }
 
 .login-form form,
@@ -78,7 +80,7 @@
     flex: 1;
     width: 100%;
     padding: 12px;
-    background-color: #ccc;
+    background-color: #eaeaea;
     margin: 5px 0;
     border: none;
     border-radius: 5px;
