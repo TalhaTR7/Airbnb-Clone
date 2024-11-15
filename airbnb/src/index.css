@@ -4,6 +4,11 @@
 }
 
 @font-face {
+    font-family: 'Kaneda italic';
+    src: url('./assets/Kaneda-italic.TTF') format('truetype');
+}
+
+@font-face {
     font-family: 'Built Titling';
     src: url('./assets/Built Titling.TTF');
 }

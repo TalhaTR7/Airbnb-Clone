@@ -38,7 +38,7 @@
     margin: 10px 300px;
     display: flex;
     justify-content: space-between;
-    border-bottom: 3px #ddd solid;
+    border-bottom: 3px #eee solid;
     padding-bottom: 50px;
 }
 
@@ -75,8 +75,6 @@
     font-size: 30px;
     font-weight: normal;
 }
-
-
 
 .section-1 .right {
     margin-top: 20px;
@@ -135,4 +133,177 @@
 
 .section-1 .right button:hover {
     background-color: #2943ab;
+}
+
+
+
+
+
+.section-2, .section-3 {
+    margin: 10px 300px;
+    display: flex;
+    gap: 400px;
+    border-bottom: 3px #eee solid;
+    padding: 70px 50px;
+}
+
+.section-2 div {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.section-2 div div {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.section-2 div div i {
+    font-size: 30px;
+    align-self: center;
+}
+
+.section-2 div div div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.section-2 div div div span {
+    font-size: 20px;
+}
+.section-2 div div div p {
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.section-3 .about-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 50%;
+}
+
+.section-3 .about-section h1 {
+    font-family: Fakebnb;
+    font-weight: normal;
+    font-size: 30px;
+}
+
+.section-3 .host-section {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.section-3 .host-section img {
+    width: 150px;
+    border-radius: 100px;
+}
+
+.section-3 .host-section div {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-3 .host-section div h1 {
+    font-family: Fakebnb;
+    font-weight: normal;
+    font-size: 40px;
+}
+
+.section-3 .host-section div span {
+    margin-top: 5px;
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section-4 {
+    margin: 30px 300px;
+    text-align: center;
+    justify-items: center;
+}
+
+.section-4 h1 {
+    font-family: Kaneda italic;
+    font-size: 100px;
+    color: #333;
+}
+
+.section-4 span {
+    font-family: Fakebnb;
+    font-size: 30px;
+}
+
+.section-4 p {
+    font-size: 20px;
+    width: 30%;
+    margin-top: 10px;
+}
+
+.section-4 .rating-section {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: space-between;
+    width: 100%;
+}
+
+.section-4 .rating-section div {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-4 .rating-section div h2 {
+    font-size: 25px;
+    font-family: Fakebnb;
+    font-weight: normal;
+    margin-top: 50px;
+}
+
+
+
+
+
+
+
+.section-4 .review-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.section-4 .review-section .review  img {
+    width: 50px;
+}
+
+.section-4 .review-section .review div {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-4 .review-section .review div h1 {
+    font-family: Fakebnb;
+    font-weight: normal;
+    font-size: 30px;
 }
