@@ -38,7 +38,7 @@
     margin: 10px 300px;
     display: flex;
     justify-content: space-between;
-    border-bottom: 3px #eee solid;
+    border-bottom: 3px #ddd solid;
     padding-bottom: 50px;
 }
 
@@ -56,8 +56,7 @@
 
 .section-1 .left span {
     font-family: Fakebnb;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 25px;
 }
 
 .section-1 .left .status-container {
@@ -143,7 +142,7 @@
     margin: 10px 300px;
     display: flex;
     gap: 400px;
-    border-bottom: 3px #eee solid;
+    border-bottom: 3px #ddd solid;
     padding: 70px 50px;
 }
 
@@ -244,12 +243,13 @@
     margin: 30px 300px;
     text-align: center;
     justify-items: center;
+    border-bottom: 3px #ddd solid;
 }
 
 .section-4 h1 {
     font-family: Kaneda italic;
     font-size: 100px;
-    color: #333;
+    color: #555;
 }
 
 .section-4 span {
@@ -285,25 +285,118 @@
 
 
 
-
-
-
 .section-4 .review-section {
+    display: flex;
+    flex-direction: row;
+    padding: 80px 0;
+}
+
+.section-4 .review-section .right-reviews,
+.section-4 .review-section .left-reviews,
+.section-4 .review-section .left-reviews .review,
+.section-4 .review-section .left-reviews .review {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+}
+
+.section-4 .review-section .right-reviews,
+.section-4 .review-section .left-reviews {
+    gap: 60px;
+}
+
+.section-4 .review-section .right-reviews .review .user-info,
+.section-4 .review-section .left-reviews .review .user-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.section-4 .review-section .right-reviews .review .user-info div,
+.section-4 .review-section .left-reviews .review .user-info div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: left;
+}
+
+.section-4 .review-section .right-reviews .review .user-info div h1,
+.section-4 .review-section .left-reviews .review .user-info div h1 {
+    all: unset;
+    font-family: Fakebnb;
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.section-4 .review-section .right-reviews .review .user-info div p,
+.section-4 .review-section .left-reviews .review .user-info div p {
+    all: unset;
+    font-family: Helvetica;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.section-4 .review-section .right-reviews .review p,
+.section-4 .review-section .left-reviews .review p {
+    font-family: Helvetica;
+    font-size: 18px;
+    font-weight: normal;
+    width: 80%;
+    text-align: left;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section-5  {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 350px;
+    margin-bottom: 100px;
+}
+
+.section-5 h1 {
+    font-family: Fakebnb;
+    font-size: 30px;
+    font-weight: normal;
+    margin-top: 20px;
+}
+
+.section-5 div {
     display: flex;
     flex-direction: row;
 }
 
-.section-4 .review-section .review  img {
-    width: 50px;
-}
-
-.section-4 .review-section .review div {
+.section-5 div div {
     display: flex;
     flex-direction: column;
+    width: 30%;
 }
 
-.section-4 .review-section .review div h1 {
-    font-family: Fakebnb;
+.section-5 div div h2 {
+    font-family: Helvetica;
+    font-size: 20px;
     font-weight: normal;
-    font-size: 30px;
+    margin: 40px 0 10px 0;
+}
+
+.section-5 div div span {
+    font-family: Helvetica;
+    font-size: 16px;
+    margin-top: 10px;
+    line-height: 25px;
 }

@@ -45,21 +45,21 @@ export default function Propertydetail({ property }) {
                             <p>{property.beds} beds {property.baths} baths</p>
                         </div>
                     </div>
-                    <h1>${property.rate}<span>three nights +GST</span></h1>
+                    <h1>${property.rent}<span>three nights +GST</span></h1>
                     <button>Reserve</button>
                 </div>
             </section>
             <section className="section-2">
                 <div>
                     <div>
-                        <i class="fa-solid fa-car"></i>
+                        <i className="fa-solid fa-car"></i>
                         <div>
                             <span>Easy Transport</span>
                             <p>Get rides easily in the area</p>
                         </div>
                     </div>
                     <div>
-                        <i class="fa-solid fa-tv"></i>
+                        <i className="fa-solid fa-tv"></i>
                         <div>
                             <span>Netflix and chill</span>
                             <p>TV available with Netflix and cable</p>
@@ -68,14 +68,14 @@ export default function Propertydetail({ property }) {
                 </div>
                 <div>
                     <div>
-                        <i class="fa-solid fa-wifi"></i>
+                        <i className="fa-solid fa-wifi"></i>
                         <div>
                             <span>WIFI available</span>
                             <p>Keep yourself in touch socially</p>
                         </div>
                     </div>
                     <div>
-                        <i class="fa-solid fa-building-columns"></i>
+                        <i className="fa-solid fa-building-columns"></i>
                         <div>
                             <span>Explore History</span>
                             <p>Historical site nearby </p>
@@ -123,46 +123,72 @@ export default function Propertydetail({ property }) {
                         <span>{float(property.value)}</span>
                     </div>
                 </div>
-                <div className="review-section">
+                <div className="review-section" style={{gap:'40px'}}>
                     <section className="left-reviews">
-                        <div className="review">
-                            <img src={customer_img} />
-                            <div>
-                                <h1>John Snow</h1>
-                                <p>2 months ago</p>
+                    <div className="review">
+                            <div className="user-info">
+                                <img src={customer_img} style={{width:'50px'}} />
+                                <div>
+                                    <h1>John Snow</h1>
+                                    <p>3 months ago</p>
+                                </div>
                             </div>
                             <p>Amazing spot, right in the heart of the city. Super clean and cozy. The host was friendly and responsive. Will definitely book again!</p>
                         </div>
                         <div className="review">
-                            <img src={customer_img} />
-                            <div>
-                                <h1>Sansa Lannister</h1>
-                                <p>1 year ago</p>
+                            <div className="user-info">
+                                <img src={customer_img} style={{width:'50px'}} />
+                                <div>
+                                    <h1>Sansa Stark</h1>
+                                    <p>1 year ago</p>
+                                </div>
                             </div>
                             <p>Amazing spot, right in the heart of the city. Super clean and cozy. The host was friendly and responsive. Will definitely book again!</p>
                         </div>
                     </section>
-                    <section className="left-reviews">
-                        <div className="review">
-                            <img src={customer_img} />
-                            <div>
-                                <h1>Tyrion Lannister</h1>
-                                <p>8 months ago</p>
+                    <section className="right-reviews">
+                    <div className="review">
+                            <div className="user-info">
+                                <img src={customer_img} style={{width:'50px'}} />
+                                <div>
+                                    <h1>Tyrion Lannister</h1>
+                                    <p>8 months ago</p>
+                                </div>
                             </div>
                             <p>Amazing spot, right in the heart of the city. Super clean and cozy. The host was friendly and responsive. Will definitely book again!</p>
                         </div>
                         <div className="review">
-                            <img src={customer_img} />
-                            <div>
-                                <h1>Grey Worm</h1>
-                                <p>2 years ago</p>
+                            <div className="user-info">
+                                <img src={customer_img} style={{width:'50px'}} />
+                                <div>
+                                    <h1>Grey Worm</h1>
+                                    <p>2 years ago</p>
+                                </div>
                             </div>
                             <p>Amazing spot, right in the heart of the city. Super clean and cozy. The host was friendly and responsive. Will definitely book again!</p>
                         </div>
                     </section>
                 </div>
+            </section>
+            <section className="section-5">
+                <h1>Things to know</h1>
                 <div>
-
+                    <div>
+                        <h2>House rules</h2>
+                        <span>Check-in after 1:00 PM</span>
+                        <span>Check-in after 10:00 AM</span>
+                        <span>No parties or events</span>
+                    </div>
+                    <div>
+                        <h2>Safety & property</h2>
+                        <span>Check-in after 1:00 PM</span>
+                        <span>Check-in after 10:00 AM</span>
+                        <span>No parties or events</span>
+                    </div>
+                    <div>
+                        <h2>Cancellation policy</h2>
+                        <span>Cancel before 3 days for a partial refund. After that, this reservation is non-refundable.</span>
+                    </div>
                 </div>
             </section>
         </div>
