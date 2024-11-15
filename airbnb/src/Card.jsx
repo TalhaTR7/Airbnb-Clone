@@ -16,9 +16,9 @@ export default function Card({ property }) {
                 <div className="lower">
                     <div>
                         <h2>${property.rate} night</h2>
-                        <h3>{property.vacancy[0]}</h3>
+                        <h3>{property.vacancy}</h3>
                     </div>
-                    <span>★{property.rating === "new" ? "new" : parseFloat(property.rating).toFixed(1)}</span>
+                    <span>★{property.rating}</span>
                 </div>
             </div>
         </div>

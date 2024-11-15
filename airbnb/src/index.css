@@ -8,6 +8,11 @@
     src: url('./assets/Built Titling.TTF');
 }
 
+@font-face {
+    font-family: 'Fakebnb';
+    src: url('./assets/Fakebnb.TTF');
+}
+
 * {
     margin: 0;
     padding: 0;

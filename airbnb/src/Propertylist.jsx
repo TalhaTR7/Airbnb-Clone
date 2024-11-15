@@ -1,5 +1,5 @@
 
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import properties from './assets/property.json';
 import Card from './Card';
 import './css/Propertylist.css'
