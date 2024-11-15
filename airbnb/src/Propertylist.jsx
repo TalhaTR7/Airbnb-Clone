@@ -4,6 +4,7 @@ import properties from './assets/property.json';
 import Card from './Card';
 import './css/Propertylist.css'
 import loading_img from './assets/loading.svg'
+import { Link } from 'react-router-dom';
 
 export default function Propertylist() {
     const [quanta, setQuanta] = useState(25);
@@ -20,7 +21,9 @@ export default function Propertylist() {
     return (
         <div className="card-container">
             {properties.slice(0, quanta).map((property, index) => (
-                <Card key={index} property={property} />
+                <Link to={`/property-details/${property.fakeid}`} key={index}>
+                    <Card property={property} />
+                </Link>
             ))}
             {loading && <img src={loading_img} className="loading" />}
             {!loading && quanta < properties.length &&

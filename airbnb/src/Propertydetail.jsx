@@ -7,8 +7,15 @@ import hot_status from "./assets/status-hot.png"
 import favourite_status from "./assets/status-favourite.png"
 import host_img from "./assets/host-img.png"
 import customer_img from "./assets/profile.png"
+import { useParams } from "react-router-dom"
+import { useEffect } from "react"
 
-export default function Propertydetail({ property }) {
+export default function Propertydetail( {properties} ) {
+
+    const { fakeID } = useParams();
+    const property = properties.find(p => p.fakeid === fakeID);
+
+    console.log(property);
 
     const statusImages = {
         Trending: trending_status,
@@ -17,6 +24,10 @@ export default function Propertydetail({ property }) {
     };
 
     const float = (number) => parseFloat(number).toFixed(1);
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
 
     return (
         <div>

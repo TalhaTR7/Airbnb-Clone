@@ -1,18 +1,35 @@
 import Header from "./Header.jsx";
 import Footer from "./Footer.jsx";
 import Propertydetail from "./Propertydetail.jsx";
-
-import properties from './assets/property.json';
+import Propertylist from "./PropertyList.jsx";
+import Categories from "./Categories.jsx";
+import properties from "./assets/property.json";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 export default function App() {
 
-    const property = properties[83];
-    
     return (
-        <div>
-            <Header />
-            <Propertydetail property={property} />
-            <Footer />
-        </div>
+        <Router>
+            <Routes>
+                <Route path='/'
+                    element={
+                        <>
+                            <Header />
+                            <Categories />
+                            <Propertylist />
+                            <Footer />
+                        </>
+                    } />
+                <Route path='/property-details/:fakeID'
+                    element={
+                        <>
+                            <Header />
+                            <Propertydetail properties={properties} />
+                            <Footer />
+                        </>
+                    }
+                />
+            </Routes>
+        </Router>
     );
 }

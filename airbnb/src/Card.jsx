@@ -15,7 +15,7 @@ export default function Card({ property }) {
                 </div>
                 <div className="lower">
                     <div>
-                        <h2>${property.rate} night</h2>
+                        <h2>${property.rent}</h2>
                         <h3>{property.vacancy}</h3>
                     </div>
                     <span>★{parseFloat(property.rating).toFixed(1)}</span>

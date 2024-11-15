@@ -8,6 +8,7 @@ import 'react-datepicker/dist/react-datepicker.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import Categories from './Categories';
 import PropertyList from './PropertyList';
+import { Link } from 'react-router-dom';
 
 
 
@@ -90,7 +91,9 @@ export default function Header() {
 
     return (
         <div className="header">
-            <img src={logo_img} />
+            <Link to={'/'}>
+                <img src={logo_img} />
+            </Link>
             <div className="search-bar">
                 <div className="search-section">
                     <label htmlFor="where">Where</label>
