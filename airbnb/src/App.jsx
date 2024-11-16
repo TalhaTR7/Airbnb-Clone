@@ -1,7 +1,7 @@
 import Header from "./Header.jsx";
 import Footer from "./Footer.jsx";
 import Propertydetail from "./Propertydetail.jsx";
-import Propertylist from "./PropertyList.jsx";
+import Propertylist from "./Propertylist.jsx";
 import Categories from "./Categories.jsx";
 import properties from "./assets/property.json";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
