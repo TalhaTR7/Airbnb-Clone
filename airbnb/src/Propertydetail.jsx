@@ -31,9 +31,9 @@ export default function Propertydetail( {properties} ) {
     return (
         <div>
             <div className="image-grid">
-                <img src={propertyImg_1} />
-                <img src={propertyImg_2} />
-                <img src={propertyImg_3} />
+                <img src={new URL('https://a0.muscache.com/im/pictures/hosting/Hosting-1201729819587933418/original/51d2b06a-b1c0-40a3-9df5-e598f5908786.jpeg?im_w=1200')} />
+                <img src={new URL('https://a0.muscache.com/im/pictures/hosting/Hosting-1201729819587933418/original/5cd0ea04-d88b-418f-90e4-53200b0e88f8.jpeg?im_w=1440')} />
+                <img src={new URL('https://a0.muscache.com/im/pictures/hosting/Hosting-1201729819587933418/original/281e8998-bd5e-4289-b213-7a6c7d266094.jpeg?im_w=1440')} />
             </div>
             <section className="section-1">
                 <div className="left">
