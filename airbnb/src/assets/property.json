@@ -187,7 +187,7 @@
     "status": "Hot",
     "tags": [
       "river",
-      "single",
+      "camping",
       "trending"
     ]
   },
@@ -235,7 +235,7 @@
     "status": "Favourite",
     "tags": [
       "countryside",
-      "single",
+      "camping",
       "trending"
     ]
   },
@@ -524,7 +524,7 @@
     "tags": [
       "beach",
       "view",
-      "single"
+      "camping"
     ]
   },
   {
@@ -619,7 +619,7 @@
     "status": "Trending",
     "tags": [
       "beach",
-      "single",
+      "camping",
       "view"
     ]
   },
@@ -642,7 +642,7 @@
     "vacancy": "Dec 7-9",
     "status": "Trending",
     "tags": [
-      "single",
+      "camping",
       "countryside",
       "trending"
     ]
@@ -788,7 +788,7 @@
     "tags": [
       "farm",
       "countryside",
-      "single"
+      "camping"
     ]
   },
   {
@@ -835,7 +835,7 @@
     "status": "Hot",
     "tags": [
       "urban",
-      "single",
+      "camping",
       "trending"
     ]
   },
@@ -860,7 +860,7 @@
     "tags": [
       "lake",
       "countryside",
-      "single"
+      "camping"
     ]
   },
   {
@@ -1220,7 +1220,7 @@
     "tags": [
       "countryside",
       "farm",
-      "single"
+      "camping"
     ]
   },
   {
@@ -1290,7 +1290,7 @@
     "vacancy": "Dec 7-9",
     "status": "Hot",
     "tags": [
-      "single",
+      "camping",
       "countryside",
       "trending"
     ]
@@ -1531,7 +1531,7 @@
     "status": "Trending",
     "tags": [
       "urban",
-      "single",
+      "camping",
       "trending"
     ]
   },
@@ -1579,7 +1579,7 @@
     "status": "Trending",
     "tags": [
       "urban",
-      "single",
+      "camping",
       "trending"
     ]
   },
@@ -1652,7 +1652,7 @@
     "tags": [
       "farm",
       "countryside",
-      "single"
+      "camping"
     ]
   },
   {
@@ -1795,7 +1795,7 @@
     "status": "Hot",
     "tags": [
       "urban",
-      "single",
+      "camping",
       "trending"
     ]
   },
@@ -1819,7 +1819,7 @@
     "status": "Hot",
     "tags": [
       "urban",
-      "single",
+      "camping",
       "view"
     ]
   },
@@ -1842,7 +1842,7 @@
     "vacancy": "Dec 8-10",
     "status": "Trending",
     "tags": [
-      "single",
+      "camping",
       "urban",
       "trending"
     ]
@@ -2034,7 +2034,7 @@
     "vacancy": "Dec 5-7",
     "status": "Trending",
     "tags": [
-      "single",
+      "camping",
       "countryside",
       "trending"
     ]
@@ -2082,7 +2082,7 @@
     "vacancy": "Dec 8-10",
     "status": "Hot",
     "tags": [
-      "single",
+      "camping",
       "countryside",
       "trending"
     ]
@@ -2300,7 +2300,7 @@
     "tags": [
       "farm",
       "countryside",
-      "single"
+      "camping"
     ]
   },
   {
