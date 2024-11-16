@@ -1,21 +1,20 @@
 import "./css/Propertydetail.css"
-import propertyImg_1 from "./assets/property-img-1.png"
-import propertyImg_2 from "./assets/property-img-2.png"
-import propertyImg_3 from "./assets/property-img-3.png"
 import trending_status from "./assets/status-trending.png"
 import hot_status from "./assets/status-hot.png"
 import favourite_status from "./assets/status-favourite.png"
 import host_img from "./assets/host-img.png"
 import customer_img from "./assets/profile.png"
-import { useLocation } from "react-router-dom"
-import { useEffect } from "react"
+import { useLocation } from 'react-router-dom'
+import { useEffect } from 'react'
+import { useTheme } from './Theme'
 
 export default function Propertydetail( {properties} ) {
 
-    const location = useLocation();
-    const searchParams = new URLSearchParams(location.search);
-    const fakeID = searchParams.get('fakeid');
-    const property = properties.find(p => p.fakeid === fakeID);
+    const {darkmode} = useTheme(),
+        location = useLocation();
+        searchParams = new URLSearchParams(location.search),
+        fakeID = searchParams.get('fakeid'),
+        property = properties.find(p => p.fakeid === fakeID);
 
 
     const statusImages = {

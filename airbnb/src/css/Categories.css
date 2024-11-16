@@ -1,3 +1,5 @@
+
+
 .category-container {
     border-top: 1px #eee solid;
     background-color: #fff;
@@ -5,10 +7,16 @@
     box-shadow: 0 5px 10px #ddd;
     position: fixed;
     z-index: 999;
+    transition: all 0.5s cubic-bezier(1, 0, 0, 1);
+}
+
+.category-container.dark {
+    background-color: #333;
+    box-shadow: 0 5px 10px #111;
 }
 
 .category-container.scrolled {
-    top: 105px;
+    top: 120px;
     z-index: 999;
 }
 
@@ -35,7 +43,7 @@
     font-size: 14px;
     text-align: center;
     min-width: 90px;
-    font-family: Helvetica;
+    font-family: Arial;
     cursor: pointer;
     color: #bbb;
     transition: color 0.3s ease;
@@ -46,6 +54,15 @@
     color: #000;
 }
 
+.category-container.dark .list a:hover,
+.category-container.dark .list a.active {
+    color: #fff;
+}
+
+
+
+
+
 .fade-left,
 .fade-right {
     position: absolute;
@@ -54,14 +71,31 @@
     width: 300px;
     pointer-events: none;
     z-index: 1;
+    transition: background 1.5s ease, right 1.5s ease, left 1.5s ease;
 }
 
 .fade-left {
-    left: 0;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.8), transparent);
+    left: -300px;
+    background: linear-gradient(to right, #ffffffcc, transparent);
 }
 
 .fade-right {
+    right: -300px;
+    background: linear-gradient(to left, #ffffffcc, transparent);
+}
+
+.category-container.dark .fade-left {
+    background: linear-gradient(to right, #333333cc, transparent);
+}
+
+.category-container.dark .fade-right {
+    background: linear-gradient(to left, #333333cc, transparent);
+}
+
+.category-container.dark .fade-left {
+    left: 0;
+}
+
+.category-container.dark .fade-right {
     right: 0;
-    background: linear-gradient(to left, rgba(255, 255, 255, 0.8), transparent);
 }

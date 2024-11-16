@@ -1,10 +1,12 @@
 import "./css/Categories.css";
 import { useEffect, useState } from "react";
+import { useTheme } from './Theme';
 
 
 export default function Categories({ selectedCategory }) {
 
-    const [active, setActive] = useState(false);
+    const [active, setActive] = useState(false),
+        {darkmode} = useTheme();
 
     useEffect(() => {
         let scrollTimeout;
@@ -38,14 +40,14 @@ export default function Categories({ selectedCategory }) {
     ];
 
     return (
-        <div className="category-container">
+        <div className={`category-container ${darkmode ? "dark" : ""}`}>
             <div className="list-wrapper">
                 <nav className="list">
                     {categories.map((category) => (
                         <a
-                        key={category} 
-                        onClick={() => handleCategoryClick(category)}
-                        className={category === active ? "active" : ""}>
+                            key={category}
+                            onClick={() => handleCategoryClick(category)}
+                            className={category === active ? "active" : ""}>
                             {category}
                         </a>
                     ))}

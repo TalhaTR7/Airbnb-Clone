@@ -7,6 +7,21 @@
     margin-top: 50px;
     background-color: #f7f7f7;
     color: #666;
+    font-family: Arial;
+    transition: background-color 0.5s ease,
+                color 0.5s ease;
+}
+
+.footer.dark {
+    background-color: #222;
+}
+
+.footer h2 {
+    font-family: Fakebnb;
+    font-weight: normal;
+    font-size: 30px;
+    margin: 20px 0;
+    text-align: left;
 }
 
 .footer .upper-part {
@@ -63,6 +78,17 @@
     font-size: 28px;
     margin: 0 7px;
 }
+
+
+.footer.dark h2,
+.footer.dark .upper-part h4,
+.footer.dark .upper-part a,
+.footer.dark .lower-part .socials i,
+.footer.dark .lower-part p,
+.footer.dark .lower-part h4 {
+    color: #fff;
+}
+
 
 @media (max-width: 1200px) {
     .footer {

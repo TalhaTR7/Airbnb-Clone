@@ -1,18 +1,21 @@
-* {
-    transition: all 0.5s cubic-bezier(1, 0, 0, 1);
-    font-family: Helvetica;
-}
+
 
 .header {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 300px;
+    font-family: Arial;
     padding: 50px 0;
     background-color: #fff;
     position: sticky;
     top: 0;
     z-index: 1000;
+    transition: all 0.5s cubic-bezier(1, 0, 0, 1);
+}
+
+.header.dark {
+    background-color: #333;
 }
 
 .header img {
@@ -21,121 +24,135 @@
     background-color: transparent;
 }
 
+
+
+
+
+
 .header .search-bar {
     display: flex;
-    align-items: center;
-    border-radius: 20px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    justify-content: space-between;
+    width: 800px;
+    box-shadow: 0 3px 10px #ccc;
+    padding: 15px;
+    border-radius: 50px;
+    transition: all 0.5s cubic-bezier(1, 0, 0, 1);
 }
 
-.header .search-section {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    padding: 20px 0px 20px 50px;
-    border-radius: 20px;
-    background-color: #fff;
-    transition: padding 0.5s cubic-bezier(1, 0, 0, 1);
+.header.dark .search-bar {
+    box-shadow: 0 3px 10px #000;   
 }
 
-.header .search-section:hover {
-    background-color: #eee;
-}
 
-.header .search-section label {
-    color: #333;
-    font-size: 14px;
-    font-weight: bold;
+.header .search-bar input {
     background-color: transparent;
-}
-
-.header .search-section input {
     border: none;
-    color: #333;
-    text-align: left;
+    font-family: Fakebnb;
+    padding-left: 20px;
+    width: 100%;
     outline: none;
-    padding: 5px 0;
-    background-color: transparent;
+    font-size: 20px;
+    transition: all 0.5s cubic-bezier(1, 0, 0, 1);
 }
 
-.header .search-section input::placeholder {
-    color: #999;
-}
-
-.header .search-button {
-    position: relative;
-    background-color: #4b67d2;
-    border: none;
-    border-radius: 20px;
-    padding: 10px;
-    margin-right: 20px;
+.header.dark .search-bar input {
     color: #fff;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-.header .search-button:hover {
+.header .search-bar input::placeholder {
+    color: #bbb;
+}
+
+.header .search-bar button {
+    margin-right: 20px;
+    border-radius: 50px;
+    padding: 15px;
+    border: none;
+    background-color: #4b67d2;
+    transition: margin-right 0.5s cubic-bezier(1, 0, 0, 1);
+}
+
+.header .search-bar button:hover {
     background-color: #2943ab;
 }
 
-.header .search-button i {
-    font-size: 18px;
-    background-color: transparent;
+
+.header .search-bar button i {
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
 }
+
+
 
 .header.scrolled {
-    padding: 20px 0;
+    padding: 30px;
 }
 
-.header.scrolled .search-section {
-    padding-left: 0;
-    transition: padding 0.5s cubic-bezier(1, 0, 0, 1);
+.header.scrolled .search-bar {
+    display: flex;
+    width: 400px;
+    padding: 7px;
+    margin: auto 100px;
+    box-shadow: 0 3px 10px #ddd;
 }
 
-.header.scrolled .search-section label {
-    transition: none;
-    background-color: transparent;
-    color: transparent;
-    position: absolute;
+.header.scrolled.dark .search-bar {
+    box-shadow: 0 3px 10px #111;
 }
 
-.header.scrolled .search-section input::placeholder {
-    color: #333;
-    font-weight: bold;
-    text-align: center;
+.header.scrolled .search-bar input {
+    font-size: 18px;
 }
 
-.header.scrolled .search-section input {
-    text-align: center;
+.header.scrolled .search-bar button {
+    margin-right: 7px;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 .dropdown {
     position: absolute;
     top: 40px;
-    right: 190px;
+    right: 215px;
     background-color: #fff;
-    border: 1px solid #ddd;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 120px;
+    box-shadow: 0 4px 8px #ccc;
+    width: 180px;
     z-index: 10;
     text-align: left;
     transition: top 0.5s cubic-bezier(1, 0, 0, 1);
 }
 
+.dropdown.dark {
+    background-color: #333;
+    box-shadow: 0 0 15px #111;
+}
+
 .header.scrolled .dropdown {
-    top: 90px;
+    top: 100px;
 }
 
 .dropdown p {
-    margin: 0;
+    margin: 5px;
     padding: 10px;
     cursor: pointer;
     color: #333;
     font-size: 14px;
     transition: none;
+}
+
+.dropdown.dark p {
+    color: #fff;
 }
 
 .dropdown p:hover {
@@ -143,59 +160,6 @@
     border-radius: 10px;
 }
 
-.counter-popup {
-    position: absolute;
-    display: flex;
-    padding: 7px 10px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-    left: 0;
-    top: 70px;
-    transition: all 0.3s ease;
-}
-
-.counter-popup input {
-    padding: 0 50px;
-}
-
-.header.scrolled .counter-popup {
-    transition: all 0.3s ease;
-    top: 55px;
-    left: -40px;
-}
-
-.counter-arrow {
-    color: #fff;
-    font-family: Consolas, monospace;
-    background-color: #4b67d2;
-    padding: 7px 11px;
-    border: none;
-    border-radius: 20%;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-.datepicker .react-datepicker__day,
-.datepicker .react-datepicker__day-name,
-.datepicker .react-datepicker__current-month {
-    color: #333;
-}
-
-.datepicker .react-datepicker__month-container {
-    border-radius: 10px;
-}
-
-.datepicker .react-datepicker.datepicker {
-    background: transparent;
-}
-
-.datepicker .react-datepicker__day--selected,
-.datepicker .react-datepicker__day--keyboard-selected {
-    background-color: #4b67d2;
-    color: #fff;
-}
-
-.datepicker .react-datepicker__input-container {
-    background-color: #4b67d2;
+.dropdown.dark p:hover {
+    background-color: #222;   
 }

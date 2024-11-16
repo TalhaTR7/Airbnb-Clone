@@ -1,9 +1,11 @@
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import './css/Footer.css'
+import './css/Footer.css';
+import { useTheme } from './Theme';
 
 export default function Footer() {
+    const {darkmode} = useTheme();
     return (
-        <div className="footer">
+        <div className={`footer ${darkmode ? "dark" : ""}`}>
             <h2>Inspiration for future getaways</h2>
             <div className='upper-part'>
                 <div className='columns'>

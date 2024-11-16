@@ -48,6 +48,7 @@
     justify-content: space-between;
     border-bottom: 3px #ddd solid;
     padding-bottom: 50px;
+    font-family: Arial;
 }
 
 .section-1 .left {
@@ -160,6 +161,7 @@
     display: flex;
     gap: 400px;
     border-bottom: 3px #ddd solid;
+    font-family: Arial;
     padding: 70px 50px;
 }
 
@@ -260,6 +262,7 @@
     margin: 30px 300px;
     text-align: center;
     justify-items: center;
+    font-family: Arial;
     border-bottom: 3px #ddd solid;
 }
 
@@ -349,14 +352,12 @@
 .section-4 .review-section .right-reviews .review .user-info div p,
 .section-4 .review-section .left-reviews .review .user-info div p {
     all: unset;
-    font-family: Helvetica;
     font-size: 18px;
     font-weight: normal;
 }
 
 .section-4 .review-section .right-reviews .review p,
 .section-4 .review-section .left-reviews .review p {
-    font-family: Helvetica;
     font-size: 18px;
     font-weight: normal;
     width: 80%;
@@ -384,6 +385,7 @@
     flex-direction: column;
     margin: 20px 350px;
     margin-bottom: 100px;
+    font-family: Arial;
 }
 
 .section-5 h1 {
@@ -405,14 +407,12 @@
 }
 
 .section-5 div div h2 {
-    font-family: Helvetica;
     font-size: 20px;
     font-weight: normal;
     margin: 40px 0 10px 0;
 }
 
 .section-5 div div span {
-    font-family: Helvetica;
     font-size: 16px;
     margin-top: 10px;
     line-height: 25px;
