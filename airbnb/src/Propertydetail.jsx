@@ -7,12 +7,14 @@ import hot_status from "./assets/status-hot.png"
 import favourite_status from "./assets/status-favourite.png"
 import host_img from "./assets/host-img.png"
 import customer_img from "./assets/profile.png"
-import { useParams } from "react-router-dom"
+import { useLocation } from "react-router-dom"
 import { useEffect } from "react"
 
 export default function Propertydetail( {properties} ) {
 
-    const { fakeID } = useParams();
+    const location = useLocation();
+    const searchParams = new URLSearchParams(location.search);
+    const fakeID = searchParams.get('fakeid');
     const property = properties.find(p => p.fakeid === fakeID);
 
 

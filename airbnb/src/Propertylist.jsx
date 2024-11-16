@@ -25,7 +25,7 @@ export default function Propertylist({ selectedCategory }) {
     return (
         <div className="card-container">
             {properties.slice(0, quanta).map((property) => ( 
-                <Link to={`/property-details/${property.fakeid}`} key={property.fakeid}>
+                <Link to={`/property?fakeid=${property.fakeid}`} key={property.fakeid}>
                     <Card property={property} />
                 </Link>
             ))}

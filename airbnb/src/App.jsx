@@ -29,7 +29,7 @@ export default function App() {
                     }
                 />
                 <Route
-                    path="/property-details/:fakeID"
+                    path="/property"
                     element={
                         <>
                             <Header />
