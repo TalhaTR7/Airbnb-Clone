@@ -2,33 +2,22 @@ import './css/Header.css'
 import { useEffect, useState, useRef } from 'react';
 import logo_img from './assets/logo.png';
 import profile_img from './assets/profile.png';
-import DatePicker from 'react-datepicker';
 import Userlogin from './UserLogin';
-import 'react-datepicker/dist/react-datepicker.css';
-import '@fortawesome/fontawesome-free/css/all.min.css';
 import { Link } from 'react-router-dom';
+import Searchbar from './Searchbar';
 
 
 
 
 export default function Header() {
-    const [scrollPosition, setScrollPosition] = useState(0),
-        [checkIn, setCheckIn] = useState(null),
-        [checkOut, setCheckOut] = useState(null),
-        [dropdown, setDropdown] = useState(false),
-        [counter, setCounter] = useState(false),
+        const [dropdown, setDropdown] = useState(false),
         [loginwindow, setLoginwindow] = useState(0),
-        [guestCount, setGuestCount] = useState(0),
-        counterRef = useRef(null),
         dropdownRef = useRef(null),
         loginwindowRef = useRef(null)
 
 
-    const handleCounter = () => setCounter(!counter);
     const handleDropdown = () => setDropdown(!dropdown);
     const handleClickOutside = (event) => {
-        if (counterRef.current && !counterRef.current.contains(event.target))
-            setCounter(false);
         if (dropdownRef.current && !dropdownRef.current.contains(event.target))
             setDropdown(false);
         if (loginwindowRef.current && !loginwindowRef.current.contains(event.target))
@@ -56,80 +45,14 @@ export default function Header() {
     useEffect(() => {
         document.addEventListener("mousedown", handleClickOutside);
         return () => document.removeEventListener("mousedown", handleClickOutside);
-    }, [counter, dropdown, loginwindow]);
+    }, [dropdown, loginwindow]);
 
-
-    const getPlaceholder = (label) => {
-        if (scrollPosition > 100) return label;
-        else {
-            switch (label) {
-                case "Where": return "Search destination";
-                case "Check in": return "Set check in date";
-                case "Check out": return "Set check out date";
-                case "Who": return "Number of guests";
-                default: return "";
-            }
-        }
-    };
-
-
-    function Counter() {
-        const increment = () => setGuestCount(guestCount + 1);
-        const decrement = () => setGuestCount(guestCount > 0 ? guestCount - 1 : 0);
-
-        return (
-            <div className="counter-popup" ref={counterRef}>
-                <button onClick={decrement} className="counter-arrow">{"-"}</button>
-                <input type="text" style={{ textAlign: "center" }} value={guestCount} readOnly />
-                <button onClick={increment} className="counter-arrow">{"+"}</button>
-            </div>
-        );
-    }
 
 
     return (
         <div className="header">
             <Link to={'/'}><img src={logo_img} /></Link>
-            <div className="search-bar">
-                <div className="search-section">
-                    <label htmlFor="where">Where</label>
-                    <input
-                        type="text"
-                        placeholder={getPlaceholder("Where")} />
-                </div>
-                <div className="search-section">
-                    <label htmlFor="check-in">Check in</label>
-                    <DatePicker
-                        selected={checkIn}
-                        onChange={(date) => setCheckIn(date)}
-                        calendarClassName="datepicker"
-                        dateFormat='MMM d, yyyy'
-                        placeholderText={getPlaceholder("Check in")} />
-                </div>
-                <div className="search-section">
-                    <label htmlFor="check-out">Check out</label>
-                    <DatePicker
-                        selected={checkOut}
-                        onChange={(date) => setCheckOut(date)}
-                        calendarClassName="datepicker"
-                        dateFormat='MMM d, yyyy'
-                        placeholderText={getPlaceholder("Check out")} />
-                </div>
-                <div className="search-section">
-                    <label htmlFor="guests">Who</label>
-                    <input
-                        type="text"
-                        value={guestCount === 0 ? '' : `${guestCount} guests`}
-                        placeholder={guestCount === 0 ? getPlaceholder("Who") : ''}
-                        onClick={handleCounter}
-                        readOnly
-                    />
-                    {counter && <Counter />}
-                </div>
-                <button className="search-button">
-                    <i className="fa fa-search"></i>
-                </button>
-            </div>
+            <Searchbar />
             <img src={profile_img} onClick={handleDropdown} style={{ cursor: 'pointer' }} />
             {dropdown && (
                 <div className="dropdown" ref={dropdownRef}>
