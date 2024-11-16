@@ -10,7 +10,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 export default function App() {
     const [selectedCategory, setSelectedCategory] = useState(null);
 
-    const handleCategorySelect = (category) => {
+    const handleSelectedCategory = (category) => {
         setSelectedCategory(category);
     };
 
@@ -22,7 +22,7 @@ export default function App() {
                     element={
                         <>
                             <Header />
-                            <Categories onSelectCategory={handleCategorySelect} />
+                            <Categories selectedCategory={handleSelectedCategory} />
                             <Propertylist selectedCategory={selectedCategory} />
                             <Footer />
                         </>

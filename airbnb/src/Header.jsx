@@ -89,9 +89,7 @@ export default function Header() {
 
     return (
         <div className="header">
-            <Link to={'/'}>
-                <img src={logo_img} />
-            </Link>
+            <Link to={'/'}><img src={logo_img} /></Link>
             <div className="search-bar">
                 <div className="search-section">
                     <label htmlFor="where">Where</label>

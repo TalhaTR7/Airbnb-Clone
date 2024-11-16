@@ -15,7 +15,6 @@ export default function Propertydetail( {properties} ) {
     const { fakeID } = useParams();
     const property = properties.find(p => p.fakeid === fakeID);
 
-    console.log(property);
 
     const statusImages = {
         Trending: trending_status,
@@ -25,9 +24,7 @@ export default function Propertydetail( {properties} ) {
 
     const float = (number) => parseFloat(number).toFixed(1);
 
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, [])
+    useEffect(() => {window.scrollTo(0, 0)}, []);
 
     return (
         <div>

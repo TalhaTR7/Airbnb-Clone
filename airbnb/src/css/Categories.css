@@ -41,7 +41,8 @@
     transition: color 0.3s ease;
 }
 
-.list a:hover {
+.list a:hover,
+.list a.active {
     color: #000;
 }
 

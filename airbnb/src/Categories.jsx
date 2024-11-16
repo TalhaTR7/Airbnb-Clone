@@ -1,7 +1,11 @@
 import "./css/Categories.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
-export default function Categories({ onSelectCategory }) {
+
+export default function Categories({ selectedCategory }) {
+
+    const [active, setActive] = useState(false);
+
     useEffect(() => {
         let scrollTimeout;
         const handleScroll = () => {
@@ -22,6 +26,11 @@ export default function Categories({ onSelectCategory }) {
         };
     }, []);
 
+    const handleCategoryClick = (category) => {
+        setActive(category);
+        selectedCategory(category);
+    };
+
     const categories = [
         "Farm", "Countryside", "Cabin", "Mountain", "Luxury", "River", "View",
         "Barn", "Beach", "Mansion", "Urban", "Camping", "Tropical", "Lake",
@@ -34,9 +43,9 @@ export default function Categories({ onSelectCategory }) {
                 <nav className="list">
                     {categories.map((category) => (
                         <a
-                            key={category}
-                            onClick={() => onSelectCategory(category)}
-                        >
+                        key={category} 
+                        onClick={() => handleCategoryClick(category)}
+                        className={category === active ? "active" : ""}>
                             {category}
                         </a>
                     ))}

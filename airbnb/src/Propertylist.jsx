@@ -9,10 +9,8 @@ export default function Propertylist({ selectedCategory }) {
     const [quanta, setQuanta] = useState(25);
     const [loading, setLoading] = useState(false);
 
-    const filteredProperties = selectedCategory
-        ? allproperties.filter(property =>
-            property.tags.some(tag => tag.toLowerCase() === selectedCategory.toLowerCase())
-          )
+    const properties = selectedCategory
+        ? allproperties.filter(property => property.tags.some(tag => tag.toLowerCase() === selectedCategory.toLowerCase()))
         : allproperties;
     
 
@@ -26,13 +24,13 @@ export default function Propertylist({ selectedCategory }) {
 
     return (
         <div className="card-container">
-            {filteredProperties.slice(0, quanta).map((property, index) => ( 
-                <Link to={`/property-details/${property.fakeid}`} key={index}>
+            {properties.slice(0, quanta).map((property) => ( 
+                <Link to={`/property-details/${property.fakeid}`} key={property.fakeid}>
                     <Card property={property} />
                 </Link>
             ))}
             {loading && <img src={loading_img} className="loading" />}
-            {!loading && quanta < filteredProperties.length && 
+            {!loading && quanta < properties.length && 
                 <button onClick={loadMore}>Show more</button>
             }
         </div>
