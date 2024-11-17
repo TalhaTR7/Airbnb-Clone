@@ -1,34 +1,14 @@
 import "./css/Userlogin.css";
 import widelogo from "./assets/widelogo.png";
+import widelogo_dark from "./assets/dark/widelogo-dark.png";
 import { useEffect, useRef, useState } from "react";
+import { useTheme } from './Theme';
 
-function GiveForm({ isToggle }) {
-    return isToggle ? (
-        <div className="login-form">
-            <form>
-                <input type="email" placeholder="EMAIL" />
-                <input type="password" placeholder="PASSWORD" />
-                <button type="submit">LOGIN</button>
-            </form>
-        </div>
-    ) : (
-        <div className="signup-form">
-            <form>
-                <input type="email" placeholder="EMAIL" />
-                <div style={{display:'flex', flexDirection:'row', gap:'10px', justifyContent:'space-evenly'}}>
-                    <input type="text" placeholder="FIRST NAME" />
-                    <input type="text" placeholder="LAST NAME" />
-                </div>
-                <input type="password" placeholder="CREATE PASSWORD" />
-                <input type="password" placeholder="CONFIRM PASSWORD" />
-                <button type="submit">SIGN UP</button>
-            </form>
-        </div>
-    )
-}
+
 
 export default function Userlogin({ window }) {
     const [open, setOpen] = useState(true);
+    const { darkmode } = useTheme();
     const [toggle, setToggle] = useState(() => {
         if (window === 1) return true;
         if (window === 2) return false;
@@ -45,13 +25,48 @@ export default function Userlogin({ window }) {
         return () => document.removeEventListener("mousedown", handleClickOutside);
     }, [open]);
 
+
+
+    function GiveForm({ isToggle }) {
+        return isToggle ? (
+            <div className={`login-form ${darkmode ? "dark" : ""}`}>
+                <form>
+                    <input type="email" placeholder="EMAIL" />
+                    <input type="password" placeholder="PASSWORD" />
+                    <div>
+                        <button type="submit">LOGIN</button>
+                        <a onClick={() => setToggle(false)} style={{cursor:'pointer'}}>Create account</a>
+                    </div>
+                </form>
+            </div>
+        ) : (
+            <div className={`signup-form ${darkmode ? "dark" : ""}`}>
+                <form>
+                    <input type="email" placeholder="EMAIL" />
+                    <div style={{display:'flex', flexDirection:'row', gap:'10px', justifyContent:'space-evenly'}}>
+                        <input type="text" placeholder="FIRST NAME" />
+                        <input type="text" placeholder="LAST NAME" />
+                    </div>
+                    <input type="password" placeholder="CREATE PASSWORD" />
+                    <input type="password" placeholder="CONFIRM PASSWORD" />
+                    <div>
+                        <button type="submit">SIGN UP</button>
+                        <a onClick={() => setToggle(true)} style={{cursor:'pointer'}}>Already have an account</a>
+                    </div>
+                </form>
+            </div>
+        )
+    }
+
+
+
     return (
         <>
             {open && (
                 <div className="overlay-dark">
-                    <div className="login-popup" ref={openRef}>
-                        <img src={widelogo} alt="Logo" />
-                        <div className="login-tabs">
+                    <div className={`login-popup ${darkmode ? "dark" : ""}`} ref={openRef}>
+                        <img src={darkmode ? widelogo_dark : widelogo} alt="Logo" />
+                        <div className={`login-tabs ${darkmode ? "dark" : ""}`}>
                             <button className={toggle ? "active" : ""} onClick={() => setToggle(true)}>LOGIN</button>
                             <button className={!toggle ? "active" : ""} onClick={() => setToggle(false)}>SIGN UP</button>
                         </div>

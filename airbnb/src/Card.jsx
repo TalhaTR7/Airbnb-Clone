@@ -1,12 +1,17 @@
-import './css/Card.css'
+import './css/Card.css';
 import house_template from "./assets/house-template.png";
+import house_template_dark from "./assets/dark/house-template-dark.png";
 import React from 'react';
+import { useTheme } from './Theme';
 
 export default function Card({ property }) {
+
+    const { darkmode } = useTheme();
+
     return (
-        <div className="container">
+        <div className={`container ${darkmode ? "dark" : ""}`}>
             <div className="cover">
-                <img src={house_template} />
+                <img src={!darkmode ? house_template : house_template_dark} />
             </div>
             <div className="details">
                 <div className="upper">

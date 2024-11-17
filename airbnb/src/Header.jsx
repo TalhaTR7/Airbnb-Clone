@@ -3,19 +3,21 @@ import { useEffect, useState, useRef } from 'react';
 import logo_img from './assets/logo.png';
 import widelogo_img from './assets/widelogo.png';
 import profile_img from './assets/profile.png';
-import Userlogin from './UserLogin';
-import { Link } from 'react-router-dom';
+import widelogo_img_dark from './assets/dark/widelogo-dark.png';
+import profile_img_dark from './assets/dark/profile-dark.png';
+import Userlogin from './Userlogin';
+import { Link, useNavigate } from 'react-router-dom';
 import { useTheme } from './Theme';
 
-export default function Header() {
+export default function Header({ searchBarResult }) {
     const { darkmode, toggleDarkmode } = useTheme();
-    const [scrollPosition, setScrollPosition] = useState(0);
+    const [unknown, setScrollPosition] = useState(0);
+    const [city, setCity] = useState("");
     const [dropdown, setDropdown] = useState(false);
     const [loginwindow, setLoginwindow] = useState(0);
     const dropdownRef = useRef(null);
     const loginwindowRef = useRef(null);
-
-
+    const navigate = useNavigate();
 
 
     const handleDropdown = () => setDropdown(!dropdown);
@@ -25,6 +27,11 @@ export default function Header() {
         if (loginwindowRef.current && !loginwindowRef.current.contains(event.target))
             setLoginwindow(0);
     };
+    const handleSearchBar = (e) => {
+        e.preventDefault();
+        searchBarResult(city);
+        navigate(`/search?city=${city}`);
+    }
 
 
 
@@ -59,15 +66,15 @@ export default function Header() {
     return (
         <div className={`header ${darkmode ? "dark" : ""}`}>
             <Link to={'/'}>
-                <img src={widelogo_img} style={{ width: '150px' }} />
+                <img src={!darkmode ? widelogo_img : widelogo_img_dark} style={{ width: '150px' }} />
             </Link>
-            <div className="search-bar">
-                <input type="text" placeholder="Search your destination" />
-                <button>
+            <form className="search-bar" onSubmit={handleSearchBar}>
+                <input type="text" value={city} onChange={(e) => setCity(e.target.value)} placeholder="Search your destination" />
+                <button type='submit'>
                     <i className="fa fa-search"></i>
                 </button>
-            </div>
-            <img src={profile_img} onClick={handleDropdown} style={{ cursor: 'pointer' }} />
+            </form>
+            <img src={!darkmode ? profile_img : profile_img_dark} onClick={handleDropdown} style={{ cursor: 'pointer' }} />
             {dropdown && (
                 <div className={`dropdown ${darkmode ? "dark" : ""}`} ref={dropdownRef}>
                     <p onClick={() => {
@@ -78,7 +85,7 @@ export default function Header() {
                         setLoginwindow(2);
                         setDropdown(false);
                     }}>Sign In</p>
-                    <p onClick={toggleDarkmode}>Dark mode</p>
+                    <p onClick={toggleDarkmode} className={darkmode ? "darkmode-button" : ""}>Dark mode</p>
                     <p onClick={() => {
                         alert("On the way...");
                         setDropdown(false);

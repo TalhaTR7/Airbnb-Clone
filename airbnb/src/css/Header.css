@@ -1,9 +1,7 @@
-
-
 .header {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 300px;
     font-family: Arial;
     padding: 50px 0;
@@ -15,13 +13,14 @@
 }
 
 .header.dark {
-    background-color: #333;
+    background-color: #222;
 }
 
 .header img {
     width: 50px;
     height: auto;
     background-color: transparent;
+    margin: auto 200px;
 }
 
 
@@ -30,6 +29,7 @@
 
 
 .header .search-bar {
+    position: absolute;
     display: flex;
     justify-content: space-between;
     width: 800px;
@@ -37,10 +37,13 @@
     padding: 15px;
     border-radius: 50px;
     transition: all 0.5s cubic-bezier(1, 0, 0, 1);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .header.dark .search-bar {
-    box-shadow: 0 3px 10px #000;   
+    box-shadow: 0 3px 10px #000;
 }
 
 
@@ -53,6 +56,10 @@
     outline: none;
     font-size: 20px;
     transition: all 0.5s cubic-bezier(1, 0, 0, 1);
+}
+
+.header.scrolled .search-bar:has(input:focus) {
+    width: 800px;
 }
 
 .header.dark .search-bar input {
@@ -69,7 +76,11 @@
     padding: 15px;
     border: none;
     background-color: #4b67d2;
-    transition: margin-right 0.5s cubic-bezier(1, 0, 0, 1);
+    transition: margin-right 1s ease;
+}
+
+.header.dark .search-bar button {
+    background-color: #00ccff;
 }
 
 .header .search-bar button:hover {
@@ -86,19 +97,20 @@
 
 
 .header.scrolled {
-    padding: 30px;
+    padding: 30px 100px;
 }
 
 .header.scrolled .search-bar {
-    display: flex;
     width: 400px;
     padding: 7px;
-    margin: auto 100px;
-    box-shadow: 0 3px 10px #ddd;
 }
 
-.header.scrolled.dark .search-bar {
-    box-shadow: 0 3px 10px #111;
+.header.dark .search-bar {
+    box-shadow:
+        -4px -4px 15px rgba(1, 196, 255, 0.519),
+        -4px 4px 20px rgba(255, 111, 0, 0.832),
+        4px 4px 15px rgba(0, 98, 255, 0.614),
+        4px -4px 10px rgba(234, 1, 255, 0.504);
 }
 
 .header.scrolled .search-bar input {
@@ -106,7 +118,8 @@
 }
 
 .header.scrolled .search-bar button {
-    margin-right: 7px;
+    margin: 0;
+    transition: margin 0.5s cubic-bezier(1, 0, 0, 1);
 }
 
 
@@ -123,14 +136,15 @@
 .dropdown {
     position: absolute;
     top: 40px;
-    right: 215px;
+    right: 270px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px #ccc;
     width: 180px;
     z-index: 10;
     text-align: left;
-    transition: top 0.5s cubic-bezier(1, 0, 0, 1);
+    transition: top 0.5s cubic-bezier(1, 0, 0, 1),
+                right 0.5s cubic-bezier(1, 0, 0, 1);
 }
 
 .dropdown.dark {
@@ -140,6 +154,7 @@
 
 .header.scrolled .dropdown {
     top: 100px;
+    right: 240px;
 }
 
 .dropdown p {
@@ -161,5 +176,11 @@
 }
 
 .dropdown.dark p:hover {
-    background-color: #222;   
+    background-color: #222;
+}
+
+.darkmode-button,
+.darkmode-button:hover {
+    background-color: #00ccff;
+    border-radius: 10px;
 }

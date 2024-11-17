@@ -18,13 +18,26 @@
   color: #333;
   grid-column: span 5;
   justify-self: center;
-  transition: all 0.1s ease;
+  transition: all 0.25s ease;
 }
+
+.card-container button {
+  color: #111;
+}
+
+.card-container.dark button {
+  color: #fff;
+}
+
 
 .card-container button:hover {
   background-color: #4b67d2;
   color: #fff;
   border-color: transparent;
+}
+
+.card-container.dark button:hover {
+  background-color: #00ccff;
 }
 
 .card-container .loading {

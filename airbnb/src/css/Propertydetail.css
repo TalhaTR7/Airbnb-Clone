@@ -51,6 +51,18 @@
     font-family: Arial;
 }
 
+.section-1.dark,
+.section-2.dark,
+.section-3.dark,
+.section-4.dark {
+    border-bottom: 1px #fff solid;
+    color: #fff;
+}
+
+.section-5.dark {
+    color: #fff;
+}
+
 .section-1 .left {
     display: flex;
     flex-direction: column;
@@ -70,7 +82,6 @@
 
 .section-1 .left .status-container {
     border-radius: 20px;
-    border: 1px #aaa solid;
     display: flex;
     margin-top: 100px;
     align-items: center;
@@ -78,6 +89,12 @@
     justify-content: space-between;
     padding-right: 70px;
     padding-left: 20px;
+    box-shadow: 0 5px 15px #ccc;
+    transition: box-shadow 0.5s ease;
+}
+
+.section-1.dark .left .status-container {
+    box-shadow: 0 5px 15px #050505;
 }
 
 .section-1 .left .status-container span {
@@ -96,6 +113,17 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.section-1.dark .right {
+    background: none;
+    background-color: transparent;
+    box-shadow:
+        inset -4px -4px 15px rgba(1, 196, 255, 0.519),
+        inset -4px 4px 20px rgba(255, 111, 0, 0.832),
+        inset 4px 4px 15px rgba(0, 98, 255, 0.614),
+        inset 4px -4px 10px rgba(234, 1, 255, 0.504),
+        0px 5px 15px #050505;
 }
 
 .section-1 .right .upper-part {
@@ -140,8 +168,17 @@
     transition: none;
 }
 
+.section-1.dark .right button {
+    background-color: #fff;
+    color: #111;
+}
+
 .section-1 .right button:hover {
     background-color: #2943ab;
+}
+
+.section-1.dark .right button:hover {
+    background-color: #ccc;
 }
 
 
@@ -156,7 +193,12 @@
 
 
 
-.section-2, .section-3 {
+
+
+
+
+.section-2,
+.section-3 {
     margin: 10px 300px;
     display: flex;
     gap: 400px;
@@ -191,6 +233,7 @@
 .section-2 div div div span {
     font-size: 20px;
 }
+
 .section-2 div div div p {
     font-size: 18px;
 }
@@ -223,6 +266,17 @@
     display: flex;
     gap: 20px;
     align-items: center;
+    background: url("../assets/login-bg.png");
+    background-size: cover;
+    box-shadow: 0 0 15px #ccc;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.section-3.dark .host-section,
+.section-4.dark .review {
+    background: none;
+    box-shadow: 0px 5px 15px #050505;
 }
 
 .section-3 .host-section img {
@@ -269,7 +323,19 @@
 .section-4 h1 {
     font-family: Kaneda italic;
     font-size: 100px;
+    width: 9%;
     color: #333;
+}
+
+.section-4.dark h1 {
+    color: transparent;
+    background: linear-gradient(135deg,
+            #ff9393 0%,
+            #00ffff 50%,
+            #af04ff 100%
+        );
+    -webkit-background-clip: text;
+    background-clip: text;
 }
 
 .section-4 span {
@@ -313,7 +379,7 @@
 
 .section-4 .review-section .right-reviews,
 .section-4 .review-section .left-reviews,
-.section-4 .review-section .left-reviews .review,
+.section-4 .review-section .right-reviews .review,
 .section-4 .review-section .left-reviews .review {
     display: flex;
     flex-direction: column;
@@ -354,15 +420,29 @@
     all: unset;
     font-size: 18px;
     font-weight: normal;
+    color: #777;
 }
 
 .section-4 .review-section .right-reviews .review p,
 .section-4 .review-section .left-reviews .review p {
     font-size: 18px;
     font-weight: normal;
+    color: #333;
     width: 80%;
     text-align: left;
     margin-top: 20px;
+}
+
+.section-4.dark .review-section .right-reviews .review p,
+.section-4.dark .review-section .left-reviews .review p {
+    color: #eee;
+}
+
+
+.review {
+    box-shadow: 0 5px 10px #ccc;
+    border-radius: 20px;
+    padding: 20px;
 }
 
 
@@ -379,8 +459,7 @@
 
 
 
-
-.section-5  {
+.section-5 {
     display: flex;
     flex-direction: column;
     margin: 20px 350px;

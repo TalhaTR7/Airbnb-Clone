@@ -1,12 +1,13 @@
 import "./css/Categories.css";
-import { useEffect, useState } from "react";
+import { useEffect } from 'react';
 import { useTheme } from './Theme';
+import { useNavigate } from 'react-router-dom';
 
 
-export default function Categories({ selectedCategory }) {
+export default function Categories({ selectedCategory, activeCategory }) {
 
-    const [active, setActive] = useState(false),
-        {darkmode} = useTheme();
+    const {darkmode} = useTheme();
+    const navigate = useNavigate();
 
     useEffect(() => {
         let scrollTimeout;
@@ -29,8 +30,8 @@ export default function Categories({ selectedCategory }) {
     }, []);
 
     const handleCategoryClick = (category) => {
-        setActive(category);
         selectedCategory(category);
+        navigate(`/search?category=${category}`);
     };
 
     const categories = [
@@ -47,7 +48,7 @@ export default function Categories({ selectedCategory }) {
                         <a
                             key={category}
                             onClick={() => handleCategoryClick(category)}
-                            className={category === active ? "active" : ""}>
+                            className={category === activeCategory ? "active" : ""}>
                             {category}
                         </a>
                     ))}

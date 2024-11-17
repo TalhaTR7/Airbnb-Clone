@@ -11,12 +11,13 @@
 }
 
 .category-container.dark {
-    background-color: #333;
+    background-color: #222;
     box-shadow: 0 5px 10px #111;
+    border-top: 1px #111 solid;
 }
 
 .category-container.scrolled {
-    top: 120px;
+    top: 110px;
     z-index: 999;
 }
 
@@ -71,31 +72,22 @@
     width: 300px;
     pointer-events: none;
     z-index: 1;
-    transition: background 1.5s ease, right 1.5s ease, left 1.5s ease;
 }
 
 .fade-left {
-    left: -300px;
+    left: 0;
     background: linear-gradient(to right, #ffffffcc, transparent);
 }
 
 .fade-right {
-    right: -300px;
+    right: 0;
     background: linear-gradient(to left, #ffffffcc, transparent);
 }
 
 .category-container.dark .fade-left {
-    background: linear-gradient(to right, #333333cc, transparent);
+    background: transparent;
 }
 
 .category-container.dark .fade-right {
-    background: linear-gradient(to left, #333333cc, transparent);
-}
-
-.category-container.dark .fade-left {
-    left: 0;
-}
-
-.category-container.dark .fade-right {
-    right: 0;
+    background: transparent;
 }

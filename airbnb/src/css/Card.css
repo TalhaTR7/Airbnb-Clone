@@ -8,19 +8,30 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  transition: transform 0.3s ease;
+  transition: transform 0.25s ease;
   z-index: 998;
   color: #000;
 }
 
+.container.dark {
+  background-color: #272727;
+  border-color: transparent;
+}
+
 .container .cover {
-  background: url("./src//assets/card-bg.png");
+  background: url("./src/assets/card-bg.png");
   background-size: cover;
   aspect-ratio: 16/9;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 10px 10px 0 0;
+  transition: background 0.5s ease;
+  animation: background 1s forwards;
+}
+
+.container.dark .cover {
+  background: url("./src/assets/dark/card-bg-dark.png");
 }
 
 .container .cover img {
@@ -28,6 +39,7 @@
   top: 50%;
   left: 50%;
   transition: transform 0.3s ease;
+  animation: all 1s forwards;
 }
 
 .container:hover {
@@ -43,6 +55,11 @@
 .container .details .upper {
   display: flex;
   flex-direction: column;
+}
+
+.container.dark .details,
+.container.dark .details upper {
+  color: #fff;
 }
 
 .container .details {
