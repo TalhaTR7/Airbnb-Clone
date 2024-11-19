@@ -1,0 +1,524 @@
+
+.dark {
+    background-color: #222;
+}
+
+header {
+    border-bottom: 2px #ddd solid;
+    z-index: 1000;
+}
+
+header img {
+    width: 150px;
+    margin: 30px 200px;
+    background-color: transparent;
+}
+
+
+.dark header {
+    border-color: #111;
+}
+
+
+
+
+
+
+
+.absolute,
+.main-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px 400px;
+    margin-top: 100px;
+}
+
+
+
+
+
+.absolute .a {
+    position: absolute;
+    margin-left: -60px;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+    padding: 25px;
+}
+
+.absolute .a:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.absolute .a i {
+    background-color: transparent;
+    text-align: center;
+    font-size: 24px;
+}
+
+.absolute h1 {
+    font-family: Fakebnb;
+    font-size: 30px;
+    color: #333;
+}
+
+
+.absolute.dark,
+.absolute.dark h1,
+.absolute.dark i {
+    color: #fff;
+}
+
+.absolute.dark .a:hover {
+    background-color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+.main-container {
+    justify-content: space-between;
+    margin: 20px 400px;
+    align-items: flex-start;
+}
+
+.main-container .left-section {
+    width: 60%;
+}
+
+
+.left-section .rare-find {
+    box-shadow: 0 5px 15px #ccc;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-section.dark .rare-find {
+    color: #fff;
+    box-shadow: 0 5px 15px #050505;
+}
+
+
+
+.rare-find div {
+    display: flex;
+    flex-direction: column;
+}
+
+.rare-find div h1 {
+    font: 24px Fakebnb;
+}
+
+.rare-find div span {
+    font: 18px Arial;
+}
+
+.rare-find i {
+    font-size: 40px;
+    color: #333;
+    margin-right: 30px;
+}
+
+.left-section.dark .rare-find i,
+.left-section.dark h1,
+.left-section.dark p,
+.left-section.dark span,
+.left-section.dark li,
+.left-section.dark .fa-google-pay,
+.left-section.dark .fa-paypal,
+.left-section.dark .fa-cc-visa,
+.left-section.dark .fa-bitcoin,
+.left-section.dark .fa-amazon-pay,
+.left-section.dark input:focus,
+.left-section.dark input {
+    color: #fff;
+}
+
+.left-section.dark input {
+    border-color: #aaa;
+}
+
+
+
+
+
+
+
+.left-section h1 {
+    font: 24px Fakebnb;
+}
+
+
+.left-section .visit-info {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+    padding-bottom: 30px;
+    border-bottom: 1px #aaa solid;
+}
+
+.visit-info div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.visit-info div .left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.visit-info div .right {
+    display: flex;
+    flex-direction: row;
+    margin-right: 30px;
+    gap: 20px;
+}
+
+.visit-info div .right i {
+    padding: 10px;
+    border-radius: 20px;
+    width: 35px;
+    height: 35px;
+    background-color: #4b67d2;
+    color: #fff;
+}
+
+.visit-info div .right i:hover,
+.checkout button:hover {
+    background-color: #2943ab;
+}
+
+
+
+.payment-info .upper-part {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.payment-info .upper-part .banks {
+    margin: 0 20px;
+}
+
+
+.payment-info .upper-part .banks i {
+    font-size: 24px;
+    text-align: center;
+    padding: 7px;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+.fa-google-pay {
+    color: #555;
+}
+
+.fa-paypal {
+    color: #0088ff;
+}
+
+.fa-cc-visa {
+    color: #1900ba;
+}
+
+.fa-bitcoin {
+    color: #ffaa00;
+}
+
+.fa-amazon-pay {
+    color: #212846;
+}
+
+.payment-info {
+    margin: 30px 0;
+    padding-bottom: 50px;
+    border-bottom: 1px #aaa solid;
+}
+
+
+.payment-info .card-info {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+}
+
+.card-number {
+    padding: 15px;
+    font-size: 14px;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    border: 1px #777 solid;
+    background-color: transparent;
+    border-bottom: none;
+    outline: none;
+}
+
+.card-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.exp-date,
+.cvv {
+    padding: 15px;
+    font-size: 14px;
+    text-align: left;
+    flex: 1;
+    background-color: inherit;
+    outline: none;
+    border: 1px #777 solid;
+}
+
+.exp-date {
+    border-bottom-left-radius: 10px;
+    border-right: none;
+}
+
+.cvv {
+    border-bottom-right-radius: 10px;
+}
+
+input::placeholder {
+    font: 18px Arial;
+}
+
+input:focus {
+    border: 1px #000 solid;
+}
+
+
+
+
+
+
+.cancellation,
+.ground-rules {
+    margin: 50px auto;
+    padding-bottom: 50px;
+    border-bottom: 1px #aaa solid;
+}
+
+.cancellation p {
+    font: 18px Arial;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+
+.ground-rules p,
+.ground-rules li {
+    font: 18px Arial;
+}
+
+
+
+
+.checkout p {
+    text-align: justify;
+    font: 14px Arial;
+    margin: 30px 0;
+}
+
+.checkout button {
+    font: 20px Fakebnb;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+    background-color: #4b67d2;
+    color: #fff;
+}
+
+
+
+.left-section.dark button,
+.left-section.dark .visit-info div .right i {
+    background: linear-gradient(to left, #00ccff, #9900ff);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main-container .right-section {
+    width: 35%;
+    position: sticky;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px #aaa solid;
+    top: 60px;
+}
+
+
+.right-section img {
+    border-radius: 12px;
+    box-shadow: 0 4px 7px #aaa;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.right-section.dark {
+    border: none;
+    box-shadow: 0 5px 15px #050505;
+}
+
+.right-section.dark img {
+    box-shadow: none;
+}
+
+
+
+.right-section .name {
+    border-bottom: 1px #aaa solid;
+    padding-bottom: 25px;
+}
+
+.right-section .name h1 {
+    font-family: Fakebnb;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.right-section .name span {
+    font-family: Arial;
+    font-size: 18px;
+    color: #333;
+}
+
+
+
+
+
+
+
+
+.right-section .pricing h1 {
+    font-family: Fakebnb;
+    font-size: 25px;
+    font-weight: normal;
+    margin: 20px auto;
+}
+
+.right-section .price {
+    font: 18px Arial;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 0;
+    color: #333;
+}
+
+.right-section .total {
+    border-top: 1px #aaa solid;
+    margin: 10px 0;
+    padding-top: 15px;
+}
+
+
+
+.right-section.dark h1,
+.right-section.dark span {
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+footer {
+    padding: 50px 350px;
+    margin-top: 100px;
+    font-family: Arial;
+    color: #666;
+    border-top: 1px #aaa solid;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: background-color 0.5s ease,
+                color 0.5s ease;
+}
+
+
+footer .socials i,
+footer p,
+footer h4,
+button,
+.fa-arrow-left,
+.fa-arrow-right {
+    cursor: pointer;
+}
+
+
+footer p {
+    text-align: left;
+}
+
+footer span {
+    margin: 0 10px;
+}
+
+footer .socials {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+}
+
+footer .socials i {
+    color: #333;
+    font-size: 28px;
+    margin: 0 7px;
+}
+
+
+footer.dark .socials i,
+footer.dark p,
+footer.dark h4 {
+    color: #fff;
+}

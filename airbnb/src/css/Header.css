@@ -80,7 +80,7 @@
 }
 
 .header.dark .search-bar button {
-    background-color: #00ccff;
+    background: linear-gradient(to left, #00ccff, #9900ff);
 }
 
 .header .search-bar button:hover {
@@ -181,6 +181,6 @@
 
 .darkmode-button,
 .darkmode-button:hover {
-    background-color: #00ccff;
+    background: linear-gradient(to left, #00ccff, #9900ff);
     border-radius: 10px;
 }

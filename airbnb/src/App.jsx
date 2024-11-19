@@ -7,6 +7,7 @@ import Propertylist from "./Propertylist.jsx";
 import Categories from "./Categories.jsx";
 import properties from "./assets/property.json";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Reservation from "./Reservation.jsx";
 
 export default function App() {
     const [selectedCategory, setSelectedCategory] = useState(null);
@@ -68,7 +69,12 @@ export default function App() {
                         </body>
                     }
                 />
+                <Route
+                    path="/reservation"
+                    element={<Reservation properties={properties} />}
+                />
             </Routes>
         </Router>
     );
+
 }

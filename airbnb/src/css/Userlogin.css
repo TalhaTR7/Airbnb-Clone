@@ -35,12 +35,12 @@
     background: none;
     background-color: #111;
     border-radius: 30px;
-    box-shadow:
-    inset -4px -4px 15px rgba(1, 196, 255, 0.519),
-    inset -4px 4px 20px rgba(255, 111, 0, 0.832),
-    inset 4px 4px 15px rgba(0, 98, 255, 0.614),
-    inset 4px -4px 10px rgba(234, 1, 255, 0.504),
-    0px 4px 15px #111
+    box-shadow: inset -4px -8px 35px rgba(1, 196, 255, 0.519),
+                inset 5px -11px 20px 0px rgba(255, 111, 0, 0.832),
+                inset 4px 4px 15px rgba(0, 98, 255, 0.614),
+                inset 4px -4px 10px rgba(234, 1, 255, 0.504),
+                inset 4px 4px 10px rgba(1, 196, 255, 0.519),
+                0px 4px 15px #111
 }
 
 .login-popup img {

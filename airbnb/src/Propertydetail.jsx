@@ -8,7 +8,7 @@ import hot_status_dark from "./assets/dark/status-hot-dark.png"
 import favourite_status_dark from "./assets/dark/status-favourite-dark.png"
 import customer_img_dark from "./assets/dark/profile-dark.png"
 import host_img from "./assets/host-img.png"
-import { useLocation } from 'react-router-dom'
+import { useLocation, Link } from 'react-router-dom'
 import { useEffect } from 'react'
 import { useTheme } from './Theme'
 
@@ -58,8 +58,10 @@ export default function Propertydetail({ properties }) {
                             <p>{property.beds} beds {property.baths} baths</p>
                         </div>
                     </div>
-                    <h1>${property.rent}<span>three nights +GST</span></h1>
-                    <button>Reserve</button>
+                    <h1>${property.rent}<span>a night +GST</span></h1>
+                    <Link to={`/reservation?fakeid=${property.fakeid}`}>
+                        <button>Reserve</button>
+                    </Link>
                 </div>
             </section>
             <section className={`section-2 ${darkmode ? "dark" : ""}`}>
@@ -200,8 +202,8 @@ export default function Propertydetail({ properties }) {
                     </div>
                     <div>
                         <h2>Cancellation policy</h2>
-                        <span>Cancel before 3 days for a partial refund. After that, this reservation is non-refundable.</span>
-                    </div>
+                        <span>Cancel 3 days before reservation for a partial refund. After that, this reservation is non-refundable.</span>
+                        </div>
                 </div>
             </section>
             <div className="gradient-box" />

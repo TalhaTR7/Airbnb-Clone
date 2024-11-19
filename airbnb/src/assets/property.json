@@ -15,7 +15,7 @@
     "rating": 4.5,
     "beds": 5.0,
     "baths": 1,
-    "vacancy": "Nov 19-21",
+    "vacancy": "Nov 18-25",
     "status": "Trending",
     "tags": [
       "mansion",
@@ -39,7 +39,7 @@
     "rating": 4.4,
     "beds": 1,
     "baths": 1,
-    "vacancy": "Dec 13-15",
+    "vacancy": "Dec 13-20",
     "status": "Hot",
     "tags": [
       "lake",
@@ -63,7 +63,7 @@
     "rating": 4.6,
     "beds": 2,
     "baths": 1,
-    "vacancy": "Nov 26-28",
+    "vacancy": "Nov 23-29",
     "status": "Trending",
     "tags": [
       "farm",
@@ -87,7 +87,7 @@
     "rating": 4.6,
     "beds": 3,
     "baths": 2,
-    "vacancy": "Dec 3-5",
+    "vacancy": "Dec 3-11",
     "status": "Trending",
     "tags": [
       "cabin",
@@ -111,7 +111,7 @@
     "rating": 4.7,
     "beds": 3,
     "baths": 1,
-    "vacancy": "Dec 8-10",
+    "vacancy": "Dec 1-10",
     "status": "Favourite",
     "tags": [
       "countryside",
@@ -159,7 +159,7 @@
     "rating": 4.6,
     "beds": 4.0,
     "baths": 1,
-    "vacancy": "Jan 3-5",
+    "vacancy": "Jan 3-8",
     "status": "Trending",
     "tags": [
       "lake",
@@ -183,7 +183,7 @@
     "rating": 4.6,
     "beds": 2,
     "baths": 2,
-    "vacancy": "Dec 3-5",
+    "vacancy": "Dec 3-6",
     "status": "Trending",
     "tags": [
       "beach",
@@ -207,7 +207,7 @@
     "rating": 4.3,
     "beds": 2,
     "baths": 1,
-    "vacancy": "Dec 3-5",
+    "vacancy": "Dec 1-5",
     "status": "Hot",
     "tags": [
       "urban",
@@ -231,7 +231,7 @@
     "rating": 4.7,
     "beds": 3,
     "baths": 1,
-    "vacancy": "Dec 2-4",
+    "vacancy": "Dec 2-8",
     "status": "Favourite",
     "tags": [
       "luxury",
@@ -255,7 +255,7 @@
     "rating": 4.6,
     "beds": 1,
     "baths": 1,
-    "vacancy": "Dec 6-8",
+    "vacancy": "Dec 6-12",
     "status": "Trending",
     "tags": [
       "cabin",
@@ -279,7 +279,7 @@
     "rating": 4.6,
     "beds": 4.0,
     "baths": 2,
-    "vacancy": "Dec 6-8",
+    "vacancy": "Dec 6-13",
     "status": "Trending",
     "tags": [
       "farm",
@@ -303,7 +303,7 @@
     "rating": 4.7,
     "beds": 2,
     "baths": 1,
-    "vacancy": "Dec 5-7",
+    "vacancy": "Dec 2-7",
     "status": "Favourite",
     "tags": [
       "beach",
@@ -327,7 +327,7 @@
     "rating": 4.7,
     "beds": 2,
     "baths": 1,
-    "vacancy": "Dec 10-12",
+    "vacancy": "Dec 10-18",
     "status": "Favourite",
     "tags": [
       "luxury",
@@ -351,7 +351,7 @@
     "rating": 4.6,
     "beds": 2,
     "baths": 2,
-    "vacancy": "Nov 18-20",
+    "vacancy": "Nov 18-26",
     "status": "Trending",
     "tags": [
       "cabin",
@@ -375,7 +375,7 @@
     "rating": 4.5,
     "beds": 4.0,
     "baths": 2,
-    "vacancy": "Nov 28-30",
+    "vacancy": "Nov 25-30",
     "status": "Trending",
     "tags": [
       "view",
@@ -399,7 +399,7 @@
     "rating": 4.5,
     "beds": 3,
     "baths": 2,
-    "vacancy": "Dec 14-16",
+    "vacancy": "Dec 14-19",
     "status": "Trending",
     "tags": [
       "beach",
@@ -423,7 +423,7 @@
     "rating": 4.4,
     "beds": 2,
     "baths": 1,
-    "vacancy": "Dec 7-9",
+    "vacancy": "Dec 7-15",
     "status": "Hot",
     "tags": [
       "camping",
@@ -447,7 +447,7 @@
     "rating": 4.4,
     "beds": 2,
     "baths": 2,
-    "vacancy": "Dec 10-12",
+    "vacancy": "Dec 10-13",
     "status": "Hot",
     "tags": [
       "beach",
@@ -471,7 +471,7 @@
     "rating": 4.6,
     "beds": 1,
     "baths": 1,
-    "vacancy": "Dec 6-8",
+    "vacancy": "Dec 6-11",
     "status": "Trending",
     "tags": [
       "farm",
@@ -519,7 +519,7 @@
     "rating": 4.7,
     "beds": 2,
     "baths": 1,
-    "vacancy": "Dec 4-6",
+    "vacancy": "Dec 4-11",
     "status": "Favourite",
     "tags": [
       "beach",
@@ -543,7 +543,7 @@
     "rating": 4.7,
     "beds": 4.0,
     "baths": 2,
-    "vacancy": "Dec 3-5",
+    "vacancy": "Dec 3-11",
     "status": "Favourite",
     "tags": [
       "beach",
@@ -567,7 +567,7 @@
     "rating": 4.7,
     "beds": 3,
     "baths": 1,
-    "vacancy": "Dec 5-7",
+    "vacancy": "Dec 1-7",
     "status": "Favourite",
     "tags": [
       "farm",
@@ -591,7 +591,7 @@
     "rating": 4.6,
     "beds": 1,
     "baths": 1,
-    "vacancy": "Dec 5-7",
+    "vacancy": "Dec 5-12",
     "status": "Trending",
     "tags": [
       "beach",
@@ -615,7 +615,7 @@
     "rating": 4.7,
     "beds": 2,
     "baths": 2,
-    "vacancy": "Nov 16-18",
+    "vacancy": "Nov 16-23",
     "status": "Favourite",
     "tags": [
       "barn",
@@ -639,7 +639,7 @@
     "rating": 4.6,
     "beds": 4.0,
     "baths": 2,
-    "vacancy": "Dec 5-7",
+    "vacancy": "Dec 5-13",
     "status": "Trending",
     "tags": [
       "camping",
@@ -663,7 +663,7 @@
     "rating": 4.4,
     "beds": 2,
     "baths": 2,
-    "vacancy": "Dec 3-5",
+    "vacancy": "Dec 3-9",
     "status": "Hot",
     "tags": [
       "luxury",
@@ -687,7 +687,7 @@
     "rating": 4.5,
     "beds": 2,
     "baths": 1,
-    "vacancy": "Dec 10-12",
+    "vacancy": "Dec 4-12",
     "status": "Trending",
     "tags": [
       "beach",
@@ -711,7 +711,7 @@
     "rating": 4.6,
     "beds": 4.0,
     "baths": 1,
-    "vacancy": "Dec 28-30",
+    "vacancy": "Dec 26-31",
     "status": "Trending",
     "tags": [
       "beach",
@@ -735,7 +735,7 @@
     "rating": 4.4,
     "beds": 2,
     "baths": 1,
-    "vacancy": "Dec 1-3",
+    "vacancy": "Dec 1-5",
     "status": "Hot",
     "tags": [
       "countryside",
@@ -759,7 +759,7 @@
     "rating": 4.6,
     "beds": 3,
     "baths": 2,
-    "vacancy": "Dec 5-7",
+    "vacancy": "Dec 4-8",
     "status": "Trending",
     "tags": [
       "mountain",
@@ -783,7 +783,7 @@
     "rating": 4.6,
     "beds": 2,
     "baths": 2,
-    "vacancy": "Dec 4-6",
+    "vacancy": "Dec 4-9",
     "status": "Trending",
     "tags": [
       "beach",
@@ -807,7 +807,7 @@
     "rating": 4.6,
     "beds": 2,
     "baths": 1,
-    "vacancy": "Jan 10-12",
+    "vacancy": "Jan 7-12",
     "status": "Trending",
     "tags": [
       "lake",
@@ -831,7 +831,7 @@
     "rating": 4.6,
     "beds": 2,
     "baths": 2,
-    "vacancy": "Dec 12-14",
+    "vacancy": "Dec 12-16",
     "status": "Trending",
     "tags": [
       "beach",
@@ -855,7 +855,7 @@
     "rating": 4.4,
     "beds": 3,
     "baths": 2,
-    "vacancy": "Dec 9-11",
+    "vacancy": "Dec 9-16",
     "status": "Hot",
     "tags": [
       "urban",
@@ -879,7 +879,7 @@
     "rating": 4.5,
     "beds": 4.0,
     "baths": 1,
-    "vacancy": "Dec 10-12",
+    "vacancy": "Dec 10-17",
     "status": "Trending",
     "tags": [
       "beach",
@@ -903,7 +903,7 @@
     "rating": 4.6,
     "beds": 2,
     "baths": 2,
-    "vacancy": "Dec 6-8",
+    "vacancy": "Dec 6-14",
     "status": "Trending",
     "tags": [
       "farm",
@@ -927,7 +927,7 @@
     "rating": 4.5,
     "beds": 2,
     "baths": 1,
-    "vacancy": "Dec 2-4",
+    "vacancy": "Dec 2-9",
     "status": "Trending",
     "tags": [
       "cabin",
@@ -951,7 +951,7 @@
     "rating": 4.5,
     "beds": 3,
     "baths": 1,
-    "vacancy": "Dec 7-9",
+    "vacancy": "Dec 7-12",
     "status": "Trending",
     "tags": [
       "urban",
@@ -975,7 +975,7 @@
     "rating": 4.3,
     "beds": 1,
     "baths": 1,
-    "vacancy": "Dec 8-10",
+    "vacancy": "Dec 8-13",
     "status": "Hot",
     "tags": [
       "camping",
@@ -999,7 +999,7 @@
     "rating": 4.3,
     "beds": 3,
     "baths": 1,
-    "vacancy": "Dec 11-13",
+    "vacancy": "Dec 11-17",
     "status": "Hot",
     "tags": [
       "countryside",
@@ -1023,7 +1023,7 @@
     "rating": 4.7,
     "beds": 3,
     "baths": 2,
-    "vacancy": "Dec 8-10",
+    "vacancy": "Dec 8-15",
     "status": "Favourite",
     "tags": [
       "beach",
@@ -1047,7 +1047,7 @@
     "rating": 4.6,
     "beds": 4.0,
     "baths": 2,
-    "vacancy": "Dec 5-7",
+    "vacancy": "Dec 5-11",
     "status": "Trending",
     "tags": [
       "pool",
@@ -1071,7 +1071,7 @@
     "rating": 4.5,
     "beds": 2,
     "baths": 1,
-    "vacancy": "Dec 4-6",
+    "vacancy": "Dec 2-6",
     "status": "Trending",
     "tags": [
       "beach",
@@ -1095,7 +1095,7 @@
     "rating": 4.4,
     "beds": 2,
     "baths": 1,
-    "vacancy": "Dec 10-12",
+    "vacancy": "Dec 11-15",
     "status": "Hot",
     "tags": [
       "mountain",
@@ -1119,7 +1119,7 @@
     "rating": 4.6,
     "beds": 4.0,
     "baths": 2,
-    "vacancy": "Dec 9-11",
+    "vacancy": "Dec 9-16",
     "status": "Trending",
     "tags": [
       "countryside",
@@ -1143,7 +1143,7 @@
     "rating": 4.5,
     "beds": 2,
     "baths": 2,
-    "vacancy": "Dec 18-20",
+    "vacancy": "Dec 18-23",
     "status": "Trending",
     "tags": [
       "cabin",
@@ -1167,7 +1167,7 @@
     "rating": 4.6,
     "beds": 3,
     "baths": 2,
-    "vacancy": "Dec 1-3",
+    "vacancy": "Dec 1-6",
     "status": "Trending",
     "tags": [
       "mountain",
@@ -1191,7 +1191,7 @@
     "rating": 4.5,
     "beds": 4.0,
     "baths": 1,
-    "vacancy": "Dec 10-12",
+    "vacancy": "Dec 10-17",
     "status": "Trending",
     "tags": [
       "urban",
@@ -1215,7 +1215,7 @@
     "rating": 4.4,
     "beds": 3,
     "baths": 2,
-    "vacancy": "Jan 6-8",
+    "vacancy": "Jan 2-8",
     "status": "Hot",
     "tags": [
       "countryside",
@@ -1239,7 +1239,7 @@
     "rating": 4.8,
     "beds": 3,
     "baths": 2,
-    "vacancy": "Dec 5-7",
+    "vacancy": "Dec 5-10",
     "status": "Favourite",
     "tags": [
       "tropical",
@@ -1263,7 +1263,7 @@
     "rating": 4.5,
     "beds": 3,
     "baths": 2,
-    "vacancy": "Dec 8-10",
+    "vacancy": "Dec 8-16",
     "status": "Trending",
     "tags": [
       "tropical",
@@ -1287,7 +1287,7 @@
     "rating": 4.6,
     "beds": 3,
     "baths": 1,
-    "vacancy": "Nov 18-20",
+    "vacancy": "Nov 18-25",
     "status": "Trending",
     "tags": [
       "urban",
@@ -1311,7 +1311,7 @@
     "rating": 4.5,
     "beds": 3,
     "baths": 1,
-    "vacancy": "Dec 3-5",
+    "vacancy": "Dec 3-11",
     "status": "Trending",
     "tags": [
       "luxury",
@@ -1335,7 +1335,7 @@
     "rating": 4.6,
     "beds": 4.0,
     "baths": 1,
-    "vacancy": "Dec 12-14",
+    "vacancy": "Dec 12-16",
     "status": "Trending",
     "tags": [
       "cabin",
@@ -1359,7 +1359,7 @@
     "rating": 4.8,
     "beds": 3,
     "baths": 2,
-    "vacancy": "Dec 1-3",
+    "vacancy": "Dec 1-6",
     "status": "Favourite",
     "tags": [
       "beach",
@@ -1383,7 +1383,7 @@
     "rating": 4.3,
     "beds": 4.0,
     "baths": 2,
-    "vacancy": "Dec 7-9",
+    "vacancy": "Dec 7-12",
     "status": "Hot",
     "tags": [
       "farm",
@@ -1407,7 +1407,7 @@
     "rating": 4.7,
     "beds": 2,
     "baths": 1,
-    "vacancy": "Dec 8-10",
+    "vacancy": "Dec 8-12",
     "status": "Favourite",
     "tags": [
       "luxury",
@@ -1431,7 +1431,7 @@
     "rating": 4.6,
     "beds": 3,
     "baths": 1,
-    "vacancy": "Nov 27-29",
+    "vacancy": "Nov 27-30",
     "status": "Trending",
     "tags": [
       "cabin",
@@ -1455,7 +1455,7 @@
     "rating": 4.6,
     "beds": 2,
     "baths": 1,
-    "vacancy": "Dec 10-12",
+    "vacancy": "Dec 7-12",
     "status": "Trending",
     "tags": [
       "beach",
@@ -1479,7 +1479,7 @@
     "rating": 4.6,
     "beds": 2,
     "baths": 2,
-    "vacancy": "Dec 9-11",
+    "vacancy": "Dec 7-11",
     "status": "Trending",
     "tags": [
       "mountain",
@@ -1503,7 +1503,7 @@
     "rating": 4.3,
     "beds": 4.0,
     "baths": 2,
-    "vacancy": "Nov 28-30",
+    "vacancy": "Nov 24-30",
     "status": "Hot",
     "tags": [
       "urban",
@@ -1527,7 +1527,7 @@
     "rating": 4.5,
     "beds": 1,
     "baths": 1,
-    "vacancy": "Dec 10-12",
+    "vacancy": "Dec 10-16",
     "status": "Trending",
     "tags": [
       "view",
@@ -1551,7 +1551,7 @@
     "rating": 4.5,
     "beds": 1,
     "baths": 1,
-    "vacancy": "Dec 1-3",
+    "vacancy": "Dec 1-6",
     "status": "Trending",
     "tags": [
       "mountain",
@@ -1575,7 +1575,7 @@
     "rating": 4.6,
     "beds": 2,
     "baths": 2,
-    "vacancy": "Dec 6-8",
+    "vacancy": "Dec 6-9",
     "status": "Trending",
     "tags": [
       "mountain",
@@ -1599,7 +1599,7 @@
     "rating": 4.7,
     "beds": 4.0,
     "baths": 2,
-    "vacancy": "Nov 17-19",
+    "vacancy": "Nov 17-21",
     "status": "Favourite",
     "tags": [
       "beach",
@@ -1623,7 +1623,7 @@
     "rating": 4.7,
     "beds": 4.0,
     "baths": 2,
-    "vacancy": "Dec 13-15",
+    "vacancy": "Dec 13-19",
     "status": "Favourite",
     "tags": [
       "pool",
@@ -1647,7 +1647,7 @@
     "rating": 4.4,
     "beds": 4.0,
     "baths": 2,
-    "vacancy": "Dec 10-12",
+    "vacancy": "Dec 10-14",
     "status": "Hot",
     "tags": [
       "urban",
@@ -1671,7 +1671,7 @@
     "rating": 4.5,
     "beds": 2,
     "baths": 1,
-    "vacancy": "Nov 24-26",
+    "vacancy": "Nov 24-29",
     "status": "Trending",
     "tags": [
       "lake",
@@ -1695,7 +1695,7 @@
     "rating": 4.5,
     "beds": 1,
     "baths": 1,
-    "vacancy": "Dec 11-13",
+    "vacancy": "Dec 7-13",
     "status": "Trending",
     "tags": [
       "farm",
@@ -1719,7 +1719,7 @@
     "rating": 4.3,
     "beds": 2,
     "baths": 1,
-    "vacancy": "Dec 7-9",
+    "vacancy": "Dec 7-11",
     "status": "Hot",
     "tags": [
       "mountain",
@@ -1743,7 +1743,7 @@
     "rating": 4.4,
     "beds": 2,
     "baths": 1,
-    "vacancy": "Nov 22-24",
+    "vacancy": "Nov 22-26",
     "status": "Hot",
     "tags": [
       "mountain",
@@ -1767,7 +1767,7 @@
     "rating": 4.6,
     "beds": 2,
     "baths": 1,
-    "vacancy": "Nov 25-27",
+    "vacancy": "Nov 25-29",
     "status": "Trending",
     "tags": [
       "cabin",
@@ -1791,7 +1791,7 @@
     "rating": 4.8,
     "beds": 3,
     "baths": 2,
-    "vacancy": "Nov 20-22",
+    "vacancy": "Nov 20-23",
     "status": "Favourite",
     "tags": [
       "tropical",
@@ -1815,7 +1815,7 @@
     "rating": 4.4,
     "beds": 4.0,
     "baths": 2,
-    "vacancy": "Dec 1-3",
+    "vacancy": "Dec 1-7",
     "status": "Hot",
     "tags": [
       "mountain",
@@ -1839,7 +1839,7 @@
     "rating": 4.6,
     "beds": 3,
     "baths": 1,
-    "vacancy": "Dec 9-11",
+    "vacancy": "Dec 9-13",
     "status": "Trending",
     "tags": [
       "farm",
@@ -1863,7 +1863,7 @@
     "rating": 4.5,
     "beds": 3,
     "baths": 1,
-    "vacancy": "Dec 10-12",
+    "vacancy": "Dec 10-17",
     "status": "Trending",
     "tags": [
       "countryside",
@@ -1887,7 +1887,7 @@
     "rating": 4.5,
     "beds": 4.0,
     "baths": 2,
-    "vacancy": "Nov 20-22",
+    "vacancy": "Nov 20-26",
     "status": "Trending",
     "tags": [
       "cabin",
@@ -1911,7 +1911,7 @@
     "rating": 4.5,
     "beds": 1,
     "baths": 1,
-    "vacancy": "Dec 11-13",
+    "vacancy": "Dec 11-17",
     "status": "Trending",
     "tags": [
       "mountain",
@@ -1935,7 +1935,7 @@
     "rating": 4.4,
     "beds": 2,
     "baths": 2,
-    "vacancy": "Dec 3-5",
+    "vacancy": "Dec 3-8",
     "status": "Hot",
     "tags": [
       "lake",
@@ -1959,7 +1959,7 @@
     "rating": 4.6,
     "beds": 3,
     "baths": 2,
-    "vacancy": "Dec 7-9",
+    "vacancy": "Dec 7-12",
     "status": "Trending",
     "tags": [
       "camping",
@@ -1983,7 +1983,7 @@
     "rating": 4.6,
     "beds": 4.0,
     "baths": 1,
-    "vacancy": "Dec 12-14",
+    "vacancy": "Dec 12-16",
     "status": "Trending",
     "tags": [
       "farm",
@@ -2007,7 +2007,7 @@
     "rating": 4.6,
     "beds": 2,
     "baths": 2,
-    "vacancy": "Dec 11-13",
+    "vacancy": "Dec 11-15",
     "status": "Trending",
     "tags": [
       "luxury",
@@ -2031,7 +2031,7 @@
     "rating": 4.2,
     "beds": 2,
     "baths": 2,
-    "vacancy": "Dec 2-4",
+    "vacancy": "Dec 2-7",
     "status": "Hot",
     "tags": [
       "river",
@@ -2055,7 +2055,7 @@
     "rating": 4.4,
     "beds": 3,
     "baths": 1,
-    "vacancy": "Dec 7-9",
+    "vacancy": "Dec 7-12",
     "status": "Hot",
     "tags": [
       "mountain",
@@ -2079,7 +2079,7 @@
     "rating": 4.5,
     "beds": 3,
     "baths": 1,
-    "vacancy": "Dec 12-14",
+    "vacancy": "Dec 12-18",
     "status": "Trending",
     "tags": [
       "cabin",
@@ -2103,7 +2103,7 @@
     "rating": 4.7,
     "beds": 4.0,
     "baths": 1,
-    "vacancy": "Dec 15-17",
+    "vacancy": "Dec 15-21",
     "status": "Favourite",
     "tags": [
       "urban",
@@ -2127,7 +2127,7 @@
     "rating": 4.5,
     "beds": 2,
     "baths": 2,
-    "vacancy": "Dec 9-11",
+    "vacancy": "Dec 9-15",
     "status": "Trending",
     "tags": [
       "beach",
@@ -2151,7 +2151,7 @@
     "rating": 4.4,
     "beds": 3,
     "baths": 2,
-    "vacancy": "Dec 12-14",
+    "vacancy": "Dec 12-16",
     "status": "Hot",
     "tags": [
       "mountain",
@@ -2175,7 +2175,7 @@
     "rating": 4.5,
     "beds": 3,
     "baths": 1,
-    "vacancy": "Dec 6-8",
+    "vacancy": "Dec 6-11",
     "status": "Trending",
     "tags": [
       "beach",
@@ -2199,7 +2199,7 @@
     "rating": 4.7,
     "beds": 3,
     "baths": 2,
-    "vacancy": "Nov 16-18",
+    "vacancy": "Nov 16-20",
     "status": "Favourite",
     "tags": [
       "beach",
@@ -2223,7 +2223,7 @@
     "rating": 4.4,
     "beds": 3,
     "baths": 1,
-    "vacancy": "Dec 2-4",
+    "vacancy": "Dec 2-10",
     "status": "Hot",
     "tags": [
       "tropical",
@@ -2247,7 +2247,7 @@
     "rating": 4.5,
     "beds": 2,
     "baths": 1,
-    "vacancy": "Nov 22-24",
+    "vacancy": "Nov 22-25",
     "status": "Trending",
     "tags": [
       "beach",
@@ -2271,7 +2271,7 @@
     "rating": 4.5,
     "beds": 3,
     "baths": 1,
-    "vacancy": "Dec 8-10",
+    "vacancy": "Dec 8-13",
     "status": "Trending",
     "tags": [
       "camping",
@@ -2295,7 +2295,7 @@
     "rating": 4.5,
     "beds": 2,
     "baths": 2,
-    "vacancy": "Dec 1-3",
+    "vacancy": "Dec 1-7",
     "status": "Trending",
     "tags": [
       "cabin",
@@ -2319,7 +2319,7 @@
     "rating": 4.3,
     "beds": 2,
     "baths": 1,
-    "vacancy": "Dec 14-16",
+    "vacancy": "Dec 14-19",
     "status": "Hot",
     "tags": [
       "barn",
@@ -2343,7 +2343,7 @@
     "rating": 4.3,
     "beds": 3,
     "baths": 1,
-    "vacancy": "Nov 28-30",
+    "vacancy": "Nov 25-30",
     "status": "Hot",
     "tags": [
       "cabin",
@@ -2367,7 +2367,7 @@
     "rating": 4.5,
     "beds": 2,
     "baths": 2,
-    "vacancy": "Dec 5-7",
+    "vacancy": "Dec 5-9",
     "status": "Trending",
     "tags": [
       "cabin",
@@ -2391,7 +2391,7 @@
     "rating": 4.3,
     "beds": 3,
     "baths": 2,
-    "vacancy": "Nov 20-22",
+    "vacancy": "Nov 20-25",
     "status": "Hot",
     "tags": [
       "lake",
@@ -2415,7 +2415,7 @@
     "rating": 4.4,
     "beds": 5.0,
     "baths": 1,
-    "vacancy": "Nov 25-27",
+    "vacancy": "Nov 25-29",
     "status": "Hot",
     "tags": [
       "mansion",
@@ -2439,7 +2439,7 @@
     "rating": 4.6,
     "beds": 3,
     "baths": 2,
-    "vacancy": "Dec 2-4",
+    "vacancy": "Dec 2-9",
     "status": "Trending",
     "tags": [
       "mountain",
@@ -2463,7 +2463,7 @@
     "rating": 4.5,
     "beds": 2,
     "baths": 2,
-    "vacancy": "Dec 8-10",
+    "vacancy": "Dec 8-11",
     "status": "Trending",
     "tags": [
       "mountain",
@@ -2487,7 +2487,7 @@
     "rating": 4.4,
     "beds": 2,
     "baths": 2,
-    "vacancy": "Dec 1-3",
+    "vacancy": "Dec 1-6",
     "status": "Hot",
     "tags": [
       "tropical",
