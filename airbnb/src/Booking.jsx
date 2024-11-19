@@ -1,27 +1,10 @@
 
-import "./css/Reservation.css";
+import "./css/Booking.css";
 import widelogo from "./assets/widelogo.png";
 import widelogo_dark from "./assets/dark/widelogo-dark.png";
 import React, { useEffect, useState } from "react";
 import { useTheme } from "./Theme";
 import { useLocation, Link } from 'react-router-dom';
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 export default function Reservation({ properties }) {
@@ -46,6 +29,45 @@ export default function Reservation({ properties }) {
     const nights = (checkout - checkin) + 1;
 
     useEffect(() => { window.scrollTo(0, 0) }, []);
+
+
+    const [cardnumber, setcardnumber] = useState("");
+    const [expirydate, setexpirydate] = useState("");
+    const [cvv, setcvv] = useState("");
+
+    /*
+
+    const handlecardnumber = (value) => {
+        const regex = '^\d{16}$';
+        setValid(regex.test(value));
+    }
+
+    const handleexpirydate = (value) => {
+        const regex = /^(0[1-9]|1[0-2])\/\d{2}$/;
+        regex.test(value) ? setValid(true) : setValid(false);
+    };
+
+    const handlecvv = (value) => {
+        const regex = /^\d{3}$/;
+        regex.test(value) ? setValid(true) : setValid(false);
+    };
+
+    const handleCardValidation = () => {
+        isValid
+        ? {
+            alert("Place booked!");
+            return true;
+        }
+        : {
+            alert("Kindly fill out your card details");
+            return false;
+        }
+    };*/
+
+    const handleCardValidation = false;
+
+
+
 
 
     function LeftSection() {
@@ -83,9 +105,6 @@ export default function Reservation({ properties }) {
 
         const increaseGuests = () => { setGuests(guests + 1); }
         const decreaseGuests = () => { guests > 1 ? setGuests(guests - 1) : null; }
-
-
-
 
 
         return (
@@ -145,10 +164,25 @@ export default function Reservation({ properties }) {
                         </div>
                     </div>
                     <div className="card-info">
-                        <input type="text" className="card-number" placeholder="Card number" />
+                        <input
+                            type="text"
+                            className="card-number"
+                            placeholder="Card number"
+                            value={cardnumber}
+                            onChange={(e) => setcardnumber(e.target.value)} />
                         <div className="card-details">
-                            <input type="text" className="exp-date" placeholder="Expiration date" />
-                            <input type="text" className="cvv" placeholder="CVV" />
+                            <input
+                                type="text"
+                                className="exp-date"
+                                placeholder="Expiration date"
+                                value={expirydate}
+                                onChange={(e) => setexpirydate(e.target.value)} />
+                            <input
+                                type="text"
+                                className="cvv"
+                                placeholder="CVV"
+                                value={cvv}
+                                onChange={(e) => setcvv(e.target.value)} />
                         </div>
                     </div>
                 </section>
@@ -164,11 +198,23 @@ export default function Reservation({ properties }) {
                 </section>
                 <section className="checkout">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas luctus ultrices purus, a pretium dui dapibus ut. Duis pretium eu nibh accumsan dictum. Sed rhoncus malesuada blandit. Maecenas elementum neque vitae facilisis molestie.</p>
-                    <button>Confirm and pay</button>
+                    <Link  to={
+                        handleCardValidation
+                        ? `/property?fakeid=${property.fakeid}`
+                        : `/booking?fakeid=${property.fakeid}`}>
+                        <button>Confirm and pay</button>
+                    </Link>
                 </section>
             </section>
         )
     }
+
+
+
+
+
+
+
 
 
 

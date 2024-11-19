@@ -339,6 +339,7 @@ input:focus {
 .checkout p {
     text-align: justify;
     font: 14px Arial;
+    cursor: auto;
     margin: 30px 0;
 }
 
@@ -521,4 +522,15 @@ footer.dark .socials i,
 footer.dark p,
 footer.dark h4 {
     color: #fff;
+}
+
+
+
+
+
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 4px;
 }

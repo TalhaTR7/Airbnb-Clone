@@ -59,7 +59,7 @@ export default function Propertydetail({ properties }) {
                         </div>
                     </div>
                     <h1>${property.rent}<span>a night +GST</span></h1>
-                    <Link to={`/reservation?fakeid=${property.fakeid}`}>
+                    <Link to={`/booking?fakeid=${property.fakeid}`}>
                         <button>Reserve</button>
                     </Link>
                 </div>
