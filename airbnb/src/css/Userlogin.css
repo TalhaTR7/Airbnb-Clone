@@ -137,8 +137,9 @@
 }
 
 .login-form.dark input,
-.signup-form.dark input {
-    background-color: #fff;
+.signup-form.dark input,
+.login-tabs.dark {
+    background-color: #222;
 }
 
 .login-form div button,
@@ -160,4 +161,9 @@
 .login-form button:hover,
 .signup-form button:hover {
     background-color: #233FB0;
+}
+
+.signup-form.dark,
+.login-form.dark {
+    background-color: transparent;
 }
