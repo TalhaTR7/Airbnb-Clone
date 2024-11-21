@@ -85,7 +85,6 @@ export default function Header({ searchBarResult }) {
                         setLoginwindow(2);
                         setDropdown(false);
                     }}>Sign In</p>
-                    <p>Bookings</p>
                     <p onClick={toggleDarkmode} className={darkmode ? "darkmode-button" : ""}>Dark mode</p>
                     <p onClick={() => {
                         alert("On the way...");
