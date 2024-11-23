@@ -5,7 +5,7 @@ import Footer from "./Footer.jsx";
 import Propertydetail from "./Propertydetail.jsx";
 import Propertylist from "./Propertylist.jsx";
 import Categories from "./Categories.jsx";
-import properties from "./assets/property.json";
+import properties from "./server/property.json";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Reservation from "./Booking.jsx";
 

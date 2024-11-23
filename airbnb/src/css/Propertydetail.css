@@ -222,6 +222,7 @@
 .section-2 div div i {
     font-size: 30px;
     align-self: center;
+    width: 50px;
 }
 
 .section-2 div div div {
@@ -332,8 +333,7 @@
     background: linear-gradient(135deg,
             #ff9393 0%,
             #00ffff 50%,
-            #af04ff 100%
-        );
+            #af04ff 100%);
     -webkit-background-clip: text;
     background-clip: text;
 }
@@ -383,7 +383,7 @@
 .section-4 .review-section .left-reviews .review {
     display: flex;
     flex-direction: column;
-    padding-left: 50px;
+    padding: 20px;
 }
 
 .section-4 .review-section .right-reviews,

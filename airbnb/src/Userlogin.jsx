@@ -31,8 +31,8 @@ export default function Userlogin({ window }) {
         return isToggle ? (
             <div className={`login-form ${darkmode ? "dark" : ""}`}>
                 <form>
-                    <input type="email" placeholder="EMAIL" />
-                    <input type="password" placeholder="PASSWORD" />
+                    <input type="email" placeholder="email" />
+                    <input type="password" placeholder="password" />
                     <div>
                         <button type="submit">LOGIN</button>
                         <a onClick={() => setToggle(false)} style={{cursor:'pointer'}}>Create account</a>
@@ -42,13 +42,13 @@ export default function Userlogin({ window }) {
         ) : (
             <div className={`signup-form ${darkmode ? "dark" : ""}`}>
                 <form>
-                    <input type="email" placeholder="EMAIL" />
+                    <input type="email" placeholder="email" />
                     <div style={{display:'flex', flexDirection:'row', gap:'10px', justifyContent:'space-evenly'}}>
-                        <input type="text" placeholder="FIRST NAME" />
-                        <input type="text" placeholder="LAST NAME" />
+                        <input type="text" placeholder="first name" />
+                        <input type="text" placeholder="last name" />
                     </div>
-                    <input type="password" placeholder="CREATE PASSWORD" />
-                    <input type="password" placeholder="CONFIRM PASSWORD" />
+                    <input type="password" placeholder="create password" />
+                    <input type="password" placeholder="confirm password" />
                     <div>
                         <button type="submit">SIGN UP</button>
                         <a onClick={() => setToggle(true)} style={{cursor:'pointer'}}>Already have an account</a>

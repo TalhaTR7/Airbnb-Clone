@@ -12,9 +12,9 @@ export default function Reservation({ properties }) {
     const { darkmode } = useTheme();
 
     const location = useLocation(),
-    searchParams = new URLSearchParams(location.search),
-    fakeID = searchParams.get('fakeid'),
-    property = properties.find(p => p.fakeid === fakeID);
+        searchParams = new URLSearchParams(location.search),
+        fakeID = searchParams.get('fakeid'),
+        property = properties.find(p => p.fakeid === fakeID);
 
 
     const [guests, setGuests] = useState(1);
@@ -106,9 +106,8 @@ export default function Reservation({ properties }) {
         const increaseGuests = () => { setGuests(guests + 1); }
         const decreaseGuests = () => { guests > 1 ? setGuests(guests - 1) : null; }
 
-
-        return (
-            <section className={`left-section ${darkmode ? "dark" : ""}`}>
+        function RareSection() {
+            return (
                 <div className="rare-find">
                     <div>
                         <h1>Rare find</h1>
@@ -116,6 +115,11 @@ export default function Reservation({ properties }) {
                     </div>
                     <i className="fa-regular fa-gem" />
                 </div>
+            )
+        }
+
+        function VisitSection() {
+            return (
                 <section className="visit-info">
                     <h1>Your visit</h1>
                     <div>
@@ -152,40 +156,54 @@ export default function Reservation({ properties }) {
                         </div>
                     </div>
                 </section>
+            )
+        }
+
+        function PaymentSection() {
+            return (
                 <section className="payment-info">
-                    <div className="upper-part">
-                        <h1>Payment method</h1>
-                        <div className="banks">
-                            <i className="fa-brands fa-google-pay" />
-                            <i className="fa-brands fa-paypal" />
-                            <i className="fa-brands fa-cc-visa" />
-                            <i className="fa-brands fa-bitcoin" />
-                            <i className="fa-brands fa-amazon-pay" />
-                        </div>
+                <div className="upper-part">
+                    <h1>Payment method</h1>
+                    <div className="banks">
+                        <i className="fa-brands fa-google-pay" />
+                        <i className="fa-brands fa-paypal" />
+                        <i className="fa-brands fa-cc-visa" />
+                        <i className="fa-brands fa-bitcoin" />
+                        <i className="fa-brands fa-amazon-pay" />
                     </div>
-                    <div className="card-info">
+                </div>
+                <div className="card-info">
+                    <input
+                        type="text"
+                        className="card-number"
+                        placeholder="Card number"
+                        value={cardnumber}
+                        onChange={(e) => setcardnumber(e.target.value)} />
+                    <div className="card-details">
                         <input
                             type="text"
-                            className="card-number"
-                            placeholder="Card number"
-                            value={cardnumber}
-                            onChange={(e) => setcardnumber(e.target.value)} />
-                        <div className="card-details">
-                            <input
-                                type="text"
-                                className="exp-date"
-                                placeholder="Expiration date"
-                                value={expirydate}
-                                onChange={(e) => setexpirydate(e.target.value)} />
-                            <input
-                                type="text"
-                                className="cvv"
-                                placeholder="CVV"
-                                value={cvv}
-                                onChange={(e) => setcvv(e.target.value)} />
-                        </div>
+                            className="exp-date"
+                            placeholder="Expiration date"
+                            value={expirydate}
+                            onChange={(e) => setexpirydate(e.target.value)} />
+                        <input
+                            type="text"
+                            className="cvv"
+                            placeholder="CVV"
+                            value={cvv}
+                            onChange={(e) => setcvv(e.target.value)} />
                     </div>
-                </section>
+                </div>
+            </section>
+            )
+        }
+
+
+        return (
+            <section className={`left-section ${darkmode ? "dark" : ""}`}>
+                <RareSection />
+                <VisitSection />
+                <PaymentSection />
                 <section className="cancellation">
                     <h1>Cancellation policy</h1>
                     <p>Cancel 3 days before reservation for a partial refund. After that, this reservation is non-refundable.</p>
@@ -198,10 +216,10 @@ export default function Reservation({ properties }) {
                 </section>
                 <section className="checkout">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas luctus ultrices purus, a pretium dui dapibus ut. Duis pretium eu nibh accumsan dictum. Sed rhoncus malesuada blandit. Maecenas elementum neque vitae facilisis molestie.</p>
-                    <Link  to={
+                    <Link to={
                         handleCardValidation
-                        ? `/property?fakeid=${property.fakeid}`
-                        : `/booking?fakeid=${property.fakeid}`}>
+                            ? `/property?fakeid=${property.fakeid}`
+                            : `/booking?fakeid=${property.fakeid}`}>
                         <button>Confirm and pay</button>
                     </Link>
                 </section>

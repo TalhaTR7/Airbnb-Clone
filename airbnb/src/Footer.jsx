@@ -1,4 +1,3 @@
-import '@fortawesome/fontawesome-free/css/all.min.css';
 import './css/Footer.css';
 import { useTheme } from './Theme';
 
@@ -48,9 +47,9 @@ export default function Footer() {
                 <p>No Terms & Conditions</p>
                 <div className='socials'>
                     <h4 style={{margin:'0 20px'}}>English (US)</h4>
-                    <i className="fa-brands fa-square-facebook"></i>
-                    <i className="fa-brands fa-square-x-twitter"></i>
-                    <i className="fa-brands fa-square-instagram"></i>
+                    <i className="fa-brands fa-square-facebook" />
+                    <i className="fa-brands fa-square-x-twitter" />
+                    <i className="fa-brands fa-square-instagram" />
                 </div>
             </div>
         </div>

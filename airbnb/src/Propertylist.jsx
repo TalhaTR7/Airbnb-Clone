@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import allproperties from './assets/property.json';
+import allproperties from './server/property.json';
 import Card from './Card';
 import './css/Propertylist.css';
 import loading_img from './assets/loading.svg';

@@ -67,33 +67,47 @@ export default function Propertydetail({ properties }) {
             <section className={`section-2 ${darkmode ? "dark" : ""}`}>
                 <div>
                     <div>
-                        <i className="fa-solid fa-car"></i>
+                        <i className="fa-solid fa-car" />
                         <div>
                             <span>Easy Transport</span>
                             <p>Get rides easily in the area</p>
                         </div>
                     </div>
                     <div>
-                        <i className="fa-solid fa-tv"></i>
+                        <i className="fa-solid fa-warehouse" />
                         <div>
                             <span>Netflix and chill</span>
                             <p>TV available with Netflix and cable</p>
                         </div>
                     </div>
+                    <div>
+                        <i className="fa-brands fa-playstation" />
+                        <div>
+                            <span>Playstation with premium pass</span>
+                            <p>Never miss the action</p>
+                        </div>
+                    </div>
                 </div>
                 <div>
                     <div>
-                        <i className="fa-solid fa-wifi"></i>
+                        <i className="fa-solid fa-wifi" />
                         <div>
                             <span>WIFI available</span>
                             <p>Keep yourself in touch socially</p>
                         </div>
                     </div>
                     <div>
-                        <i className="fa-solid fa-building-columns"></i>
+                        <i className="fa-solid fa-building-columns" />
                         <div>
                             <span>Explore History</span>
                             <p>Historical site nearby </p>
+                        </div>
+                    </div>
+                    <div>
+                        <i className="fa-solid fa-shower" />
+                        <div>
+                            <span>Hot water always on</span>
+                            <p>Take a bath for god sake</p>
                         </div>
                     </div>
                 </div>
@@ -144,7 +158,7 @@ export default function Propertydetail({ properties }) {
                             <div className="user-info">
                                 <img src={darkmode ? customer_img_dark : customer_img} style={{ width: '50px' }} />
                                 <div>
-                                    <h1>John Snow</h1>
+                                    <h1>Jon Snow</h1>
                                     <p>3 months ago</p>
                                 </div>
                             </div>
@@ -210,3 +224,26 @@ export default function Propertydetail({ properties }) {
         </div>
     )
 }
+
+// this i have in PropertyDetail.jsx, how do i modify it
+// export default function Propertydetail({ properties }) {
+
+//     const { darkmode } = useTheme(),
+//         location = useLocation(),
+//         searchParams = new URLSearchParams(location.search),
+//         fakeID = searchParams.get('fakeid'),
+//         property = properties.find(p => p.fakeid === fakeID);
+
+
+//     const statusImages = {
+//         Trending: darkmode ? trending_status_dark : trending_status,
+//         Hot: darkmode ? hot_status_dark : hot_status,
+//         Favourite: darkmode ? favourite_status_dark : favourite_status,
+//     };
+
+//     const float = (number) => parseFloat(number).toFixed(1);
+
+//     useEffect(() => { window.scrollTo(0, 0) }, []);
+
+//     return ( /* html */ )
+// }
