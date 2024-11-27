@@ -53,7 +53,7 @@ header img {
 }
 
 .absolute .a:hover {
-    background-color: #ddd;
+    background-color: #eee;
     cursor: pointer;
 }
 
@@ -353,12 +353,22 @@ input:focus {
     color: #fff;
 }
 
-
-
-.left-section.dark button,
 .left-section.dark .visit-info div .right i {
+    color: #000;
+    background-color: #fff;
+}
+
+.left-section.dark .visit-info div .right i:hover {
+    background-color: #ccc;
+}
+
+.left-section.dark button {
     background: linear-gradient(to left, #00ccff, #9900ff);
 }
+
+
+
+
 
 
 

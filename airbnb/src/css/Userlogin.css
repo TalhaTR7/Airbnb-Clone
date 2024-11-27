@@ -110,20 +110,29 @@
 
 .login-form div,
 .signup-form div {
+    margin-top: 5px;
     display: flex;
     font-family: Arial;
     font-size: 18px;
     flex-direction: row;
     justify-items: flex-start;
-    align-items: baseline;
-    gap: 10px;
+    align-items: center;
+    gap: 20px;
     color: #333;
+}
+
+.login-form div a,
+.signup-form div a {
+    width: 60%;
+    text-align: left;
+    cursor: pointer;
 }
 
 .login-form.dark div,
 .signup-form.dark div {
     color: #fff;
 }
+
 
 .login-form div a:hover,
 .signup-form div a:hover {
@@ -145,7 +154,6 @@
 .login-form div button,
 .signup-form div button {
     flex: 1;
-    margin-top: 5px;
     max-width: 30%;
     padding: 7px;
     border: none;

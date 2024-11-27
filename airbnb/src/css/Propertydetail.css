@@ -1,10 +1,54 @@
+
+
+
+
+.button {
+    position: relative;
+    margin-left: 220px;
+    top: 580px;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    color: #000;
+    font-size: 24px;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+    padding: 25px;
+}
+
+.button.dark {
+    color: #fff;
+}
+
+.button:hover {
+    background-color: #eee;
+}
+
+.button.dark:hover {
+    background-color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .image-grid {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 5px;
     width: calc(100% - 600px);
-    margin: 50px auto 20px;
+    margin: 0px auto 20px;
 }
 
 .image-grid img {
@@ -119,10 +163,10 @@
     background: none;
     background-color: transparent;
     box-shadow:
-        inset -4px -4px 15px rgba(1, 196, 255, 0.519),
-        inset -4px 4px 20px rgba(255, 111, 0, 0.832),
-        inset 4px 4px 15px rgba(0, 98, 255, 0.614),
-        inset 4px -4px 10px rgba(234, 1, 255, 0.504),
+        inset -4px -4px 15px rgba(1, 5, 255, 0.432),
+        inset 4px -4px 20px rgba(255, 136, 0, 0.832),
+        inset 4px 4px 15px rgba(0, 217, 255, 0.614),
+        inset -4px 4px 10px rgba(183, 1, 255, 0.504),
         0px 5px 15px #050505;
 }
 

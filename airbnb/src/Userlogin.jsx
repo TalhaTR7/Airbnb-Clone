@@ -35,7 +35,7 @@ export default function Userlogin({ window }) {
                     <input type="password" placeholder="password" />
                     <div>
                         <button type="submit">LOGIN</button>
-                        <a onClick={() => setToggle(false)} style={{cursor:'pointer'}}>Create account</a>
+                        <a onClick={() => setToggle(false)}>Create account</a>
                     </div>
                 </form>
             </div>
@@ -51,7 +51,7 @@ export default function Userlogin({ window }) {
                     <input type="password" placeholder="confirm password" />
                     <div>
                         <button type="submit">SIGN UP</button>
-                        <a onClick={() => setToggle(true)} style={{cursor:'pointer'}}>Already have an account</a>
+                        <a onClick={() => setToggle(true)}>Already have an account</a>
                     </div>
                 </form>
             </div>

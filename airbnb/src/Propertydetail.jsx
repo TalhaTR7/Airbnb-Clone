@@ -20,7 +20,7 @@ export default function Propertydetail() {
         fakeID = searchParams.get('fakeid');
 
     const [property, setProperty] = useState(null);
-    
+
 
     const statusImages = {
         Trending: darkmode ? trending_status_dark : trending_status,
@@ -30,9 +30,9 @@ export default function Propertydetail() {
 
     const float = (number) => parseFloat(number).toFixed(1);
 
-    useEffect(() => { 
+    useEffect(() => {
         window.scrollTo(0, 0);
-        const fetchproperty = async() => {
+        const fetchproperty = async () => {
             const response = await fetch(`/api/property?fakeid=${fakeID}`);
             const data = await response.json();
             setProperty(data);
@@ -44,6 +44,9 @@ export default function Propertydetail() {
 
     return (
         <div>
+            <Link to={`/`} className={`button ${darkmode ? "dark" : ""}`}>
+                <i className="fa-solid fa-arrow-left" />
+            </Link>
             <div className="image-grid">
                 <img src={new URL('https://a0.muscache.com/im/pictures/hosting/Hosting-1201729819587933418/original/51d2b06a-b1c0-40a3-9df5-e598f5908786.jpeg?im_w=1200')} />
                 <img src={new URL('https://a0.muscache.com/im/pictures/hosting/Hosting-1201729819587933418/original/5cd0ea04-d88b-418f-90e4-53200b0e88f8.jpeg?im_w=1440')} />
@@ -228,7 +231,7 @@ export default function Propertydetail() {
                     <div>
                         <h2>Cancellation policy</h2>
                         <span>Cancel 3 days before reservation for a partial refund. After that, this reservation is non-refundable.</span>
-                        </div>
+                    </div>
                 </div>
             </section>
             <div className="gradient-box" />
