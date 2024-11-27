@@ -20,7 +20,11 @@
     width: 50px;
     height: auto;
     background-color: transparent;
-    margin: auto 200px;
+    margin: 0 200px;
+}
+
+.header a {
+    width: 0;
 }
 
 

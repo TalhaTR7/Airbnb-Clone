@@ -7,28 +7,44 @@ import { useTheme } from "./Theme";
 import { useLocation, Link } from 'react-router-dom';
 
 
-export default function Reservation({ properties }) {
+export default function Booking() {
 
     const { darkmode } = useTheme();
 
-    const location = useLocation(),
-        searchParams = new URLSearchParams(location.search),
-        fakeID = searchParams.get('fakeid'),
-        property = properties.find(p => p.fakeid === fakeID);
+    const location = useLocation();
+    const searchParams = new URLSearchParams(location.search);
+    const fakeID = searchParams.get('fakeid');
+
+    const [property, setProperty] = useState(null);
+
+
+    useEffect(() => { 
+        window.scrollTo(0, 0);
+        const fetchproperty = async() => {
+            const response = await fetch(`/api/booking?fakeid=${fakeID}`);
+            const data = await response.json();
+            setProperty(data);
+        };
+        fetchproperty();
+    }, [fakeID]);
+
+
 
 
     const [guests, setGuests] = useState(1);
-    const month = property.vacancy.split(' ')[0];
+    const month = property?.vacancy?.split(' ')[0] || "";
 
-    const checkinDate = parseInt(property.vacancy.split(' ')[1].split('-')[0], 10);
-    const checkoutDate = parseInt(property.vacancy.split(' ')[1].split('-')[1], 10);
+    const checkinDate = property?.vacancy
+        ? parseInt(property.vacancy.split(' ')[1].split('-')[0], 10)
+        : null;
+    const checkoutDate = property?.vacancy
+        ? parseInt(property.vacancy.split(' ')[1].split('-')[1], 10)
+        : null;
 
     const [checkin, setCheckin] = useState(checkinDate);
     const [checkout, setCheckout] = useState(checkoutDate);
 
     const nights = (checkout - checkin) + 1;
-
-    useEffect(() => { window.scrollTo(0, 0) }, []);
 
 
     const [cardnumber, setcardnumber] = useState("");
@@ -65,6 +81,7 @@ export default function Reservation({ properties }) {
     };*/
 
     const handleCardValidation = false;
+
 
 
 
@@ -218,8 +235,8 @@ export default function Reservation({ properties }) {
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas luctus ultrices purus, a pretium dui dapibus ut. Duis pretium eu nibh accumsan dictum. Sed rhoncus malesuada blandit. Maecenas elementum neque vitae facilisis molestie.</p>
                     <Link to={
                         handleCardValidation
-                            ? `/property?fakeid=${property.fakeid}`
-                            : `/booking?fakeid=${property.fakeid}`}>
+                            ? `/api/property?fakeid=${property.fakeid}`
+                            : `/api/booking?fakeid=${property.fakeid}`}>
                         <button>Confirm and pay</button>
                     </Link>
                 </section>
@@ -284,6 +301,11 @@ export default function Reservation({ properties }) {
 
 
 
+    if (!property) return <p>loading...</p>
+
+
+
+
 
     return (
         <div className={darkmode ? "dark" : ""}>
@@ -291,7 +313,7 @@ export default function Reservation({ properties }) {
                 <Link to={'/'}><img src={darkmode ? widelogo_dark : widelogo} /></Link>
             </header>
             <div className={`absolute ${darkmode ? "dark" : ""}`}>
-                <Link to={`/property?fakeid=${property.fakeid}`} className="a">
+                <Link to={`/api/property?fakeid=${property.fakeid}`} className="a">
                     <i className="fa-solid fa-arrow-left" />
                 </Link>
                 <h1>Confirm and pay</h1>

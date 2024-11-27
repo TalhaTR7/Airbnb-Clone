@@ -34,8 +34,10 @@ body.dark {
 }
 
 ::selection {
-    background-color: #00d19a;
-    color: #FFF;
+    /* background-color: #00d19a; */
+    /* color: #FFF; */
+    background-color: #00ccff;
+    color: #ffffff;
 }
 
 

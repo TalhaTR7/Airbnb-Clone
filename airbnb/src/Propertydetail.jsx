@@ -9,17 +9,18 @@ import favourite_status_dark from "./assets/dark/status-favourite-dark.png"
 import customer_img_dark from "./assets/dark/profile-dark.png"
 import host_img from "./assets/host-img.png"
 import { useLocation, Link } from 'react-router-dom'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { useTheme } from './Theme'
 
-export default function Propertydetail({ properties }) {
+export default function Propertydetail() {
 
     const { darkmode } = useTheme(),
         location = useLocation(),
         searchParams = new URLSearchParams(location.search),
-        fakeID = searchParams.get('fakeid'),
-        property = properties.find(p => p.fakeid === fakeID);
+        fakeID = searchParams.get('fakeid');
 
+    const [property, setProperty] = useState(null);
+    
 
     const statusImages = {
         Trending: darkmode ? trending_status_dark : trending_status,
@@ -29,7 +30,17 @@ export default function Propertydetail({ properties }) {
 
     const float = (number) => parseFloat(number).toFixed(1);
 
-    useEffect(() => { window.scrollTo(0, 0) }, []);
+    useEffect(() => { 
+        window.scrollTo(0, 0);
+        const fetchproperty = async() => {
+            const response = await fetch(`/api/property?fakeid=${fakeID}`);
+            const data = await response.json();
+            setProperty(data);
+        };
+        fetchproperty();
+    }, [fakeID]);
+
+    if (!property) return <p>Loading...</p>
 
     return (
         <div>
@@ -59,7 +70,7 @@ export default function Propertydetail({ properties }) {
                         </div>
                     </div>
                     <h1>${property.rent}<span>a night +GST</span></h1>
-                    <Link to={`/booking?fakeid=${property.fakeid}`}>
+                    <Link to={`/api/booking?fakeid=${property.fakeid}`}>
                         <button>Reserve</button>
                     </Link>
                 </div>

@@ -5,9 +5,8 @@ import Footer from "./Footer.jsx";
 import Propertydetail from "./Propertydetail.jsx";
 import Propertylist from "./Propertylist.jsx";
 import Categories from "./Categories.jsx";
-import properties from "./server/property.json";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Reservation from "./Booking.jsx";
+import Booking from "./Booking.jsx";
 
 export default function App() {
     const [selectedCategory, setSelectedCategory] = useState(null);
@@ -29,49 +28,49 @@ export default function App() {
                 <Route
                     path="/"
                     element={
-                        <body className={`${darkmode ? "dark" : ""}`}>
+                        <div className={`${darkmode ? "dark" : ""}`}>
                             <Header searchBarResult={handleCity} />
                             <Categories selectedCategory={handleSelectedCategory} activeCategory={selectedCategory} />
                             <Propertylist selectedCategory={null} searchBarResult="" />
                             <Footer />
-                        </body>
+                        </div>
                     }
                 />
                 <Route
                     path="/search"
                     element={
-                        <body className={`${darkmode ? "dark" : ""}`}>
+                        <div className={`${darkmode ? "dark" : ""}`}>
                             <Header searchBarResult={handleCity} />
                             <Categories selectedCategory={handleSelectedCategory} activeCategory={selectedCategory} />
                             <Propertylist selectedCategory={selectedCategory} searchBarResult={city} />
                             <Footer />
-                        </body>
+                        </div>
                     }
                 />
                 <Route
                     path="/category"
                     element={
-                        <body className={`${darkmode ? "dark" : ""}`}>
+                        <div className={`${darkmode ? "dark" : ""}`}>
                             <Header searchBarResult={handleCity} />
                             <Categories selectedCategory={handleSelectedCategory} activeCategory={selectedCategory} />
                             <Propertylist selectedCategory={selectedCategory} searchBarResult="" />
                             <Footer />
-                        </body>
+                        </div>
                     }
                 />
                 <Route
-                    path="/property"
+                    path="/api/property"
                     element={
-                        <body className={`${darkmode ? "dark" : ""}`}>
+                        <div className={`${darkmode ? "dark" : ""}`}>
                             <Header searchBarResult={handleCity} />
-                            <Propertydetail properties={properties} searchBarResult="" />
+                            <Propertydetail />
                             <Footer />
-                        </body>
+                        </div>
                     }
                 />
                 <Route
-                    path="/booking"
-                    element={<Reservation properties={properties} />}
+                    path="/api/booking"
+                    element={<Booking />}
                 />
             </Routes>
         </Router>

@@ -2,13 +2,13 @@
   "name": "airbnb",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "dev:server": "node server/server.js"
+    "dev:server": "node src/server/server.js"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.6.0",

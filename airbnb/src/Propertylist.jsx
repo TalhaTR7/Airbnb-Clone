@@ -11,7 +11,7 @@ export default function Propertylist({ selectedCategory, searchBarResult }) {
     const [quanta, setQuanta] = useState(0);
     const [loading, setLoading] = useState(false);
     const { darkmode } = useTheme();
-    
+
     const properties = selectedCategory
         ? allproperties.filter(property => property.tags.some(tag => tag.toLowerCase() === selectedCategory.toLowerCase()))
         : searchBarResult !== ""
@@ -19,7 +19,7 @@ export default function Propertylist({ selectedCategory, searchBarResult }) {
             : allproperties;
 
 
-    useEffect(() => { setQuanta(25) }, [searchBarResult, selectedCategory]);
+    useEffect(() => { setQuanta(25); }, [searchBarResult, selectedCategory]);
 
 
     const loadMore = () => {
@@ -35,7 +35,7 @@ export default function Propertylist({ selectedCategory, searchBarResult }) {
     return (
         <div className={`card-container ${darkmode ? "dark" : ""}`}>
             {properties.slice(0, quanta).map((property) => (
-                <Link to={`/property?fakeid=${property.fakeid}`} key={property.fakeid}>
+                <Link to={`/api/property?fakeid=${property.fakeid}`} key={property.fakeid}>
                     <Card property={property} />
                 </Link>
             ))}
