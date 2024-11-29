@@ -1,5 +1,5 @@
 const express = require('express');
-const properties = require('property.json');
+const properties = require('./property.json');
 
 const app = express();
 const PORT = 3000;

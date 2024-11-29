@@ -5,7 +5,6 @@ import widelogo_img from './assets/widelogo.png';
 import profile_img from './assets/profile.png';
 import widelogo_img_dark from './assets/dark/widelogo-dark.png';
 import profile_img_dark from './assets/dark/profile-dark.png';
-import Userlogin from './Userlogin';
 import { Link, useNavigate } from 'react-router-dom';
 import { useTheme } from './Theme';
 
@@ -77,14 +76,8 @@ export default function Header({ searchBarResult }) {
             <img src={!darkmode ? profile_img : profile_img_dark} onClick={handleDropdown} style={{ cursor: 'pointer' }} />
             {dropdown && (
                 <div className={`dropdown ${darkmode ? "dark" : ""}`} ref={dropdownRef}>
-                    <p onClick={() => {
-                        setLoginwindow(1);
-                        setDropdown(false);
-                    }}>LogIn</p>
-                    <p onClick={() => {
-                        setLoginwindow(2);
-                        setDropdown(false);
-                    }}>Sign In</p>
+                    <Link to={"/login"} style={{textDecoration:"none"}}><p>Login</p></Link>
+                    <Link to={"/signup"} style={{textDecoration:"none"}}><p>Sign up</p></Link>
                     <p onClick={toggleDarkmode} className={darkmode ? "darkmode-button" : ""}>Dark mode</p>
                     <p onClick={() => {
                         alert("On the way...");

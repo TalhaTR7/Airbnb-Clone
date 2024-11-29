@@ -7,6 +7,8 @@ import Propertylist from "./Propertylist.jsx";
 import Categories from "./Categories.jsx";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Booking from "./Booking.jsx";
+import Signup from "./Signup.jsx"
+import Login from "./Login.jsx"
 
 export default function App() {
     const [selectedCategory, setSelectedCategory] = useState(null);
@@ -35,6 +37,14 @@ export default function App() {
                             <Footer />
                         </div>
                     }
+                />
+                <Route
+                    path="/signup"
+                    element={<Signup />}
+                />
+                <Route
+                    path="/login"
+                    element={<Login />}
                 />
                 <Route
                     path="/search"

@@ -18,11 +18,23 @@
     src: url('./assets/fonts/Fakebnb.TTF');
 }
 
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+:root {
+    --large: 30px;
+    --medium: 18px;
+    --small: 15px;
+    --primary: #4b67d2;
+    --primary-hover: #2943ab;
+    --primary-dark: #00ccff;
+}
+
 
 body {
     background-color: #fff;
@@ -34,12 +46,13 @@ body.dark {
 }
 
 ::selection {
-    /* background-color: #00d19a; */
-    /* color: #FFF; */
-    background-color: #00ccff;
-    color: #ffffff;
+    background-color: #222;
+    color: #fff;
 }
 
-
+.dark ::selection {
+    background-color: #fff;
+    color: #000;
+}
 
 

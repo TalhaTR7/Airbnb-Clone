@@ -54,7 +54,7 @@ export default function Propertydetail() {
             </div>
             <section className={`section-1 ${darkmode ? "dark" : ""}`}>
                 <div className="left">
-                    <h1>{property.address}, {property.city}</h1>
+                    <h1 contentEditable="true">{property.address}, {property.city}</h1>
                     <span>{property.description}</span>
                     <div className="status-container">
                         <img src={statusImages[property.status]} style={{ width: '250px' }} />

@@ -1,12 +1,17 @@
 import { useEffect, useState } from 'react';
-import allproperties from './server/property.json';
+import data from './server/property.json';
 import Card from './Card';
 import './css/Propertylist.css';
 import loading_img from './assets/loading.svg';
 import { Link } from 'react-router-dom';
 import { useTheme } from './Theme';
 
+
+    
 export default function Propertylist({ selectedCategory, searchBarResult }) {
+
+    const [allproperties, setallproperties] = useState(data);
+
 
     const [quanta, setQuanta] = useState(0);
     const [loading, setLoading] = useState(false);
@@ -17,9 +22,19 @@ export default function Propertylist({ selectedCategory, searchBarResult }) {
         : searchBarResult !== ""
             ? allproperties.filter(property => property.city.toLowerCase() === searchBarResult.toLowerCase())
             : allproperties;
+    
 
-
-    useEffect(() => { setQuanta(25); }, [searchBarResult, selectedCategory]);
+    useEffect(() => { 
+        setQuanta(25);
+        setallproperties(() => {
+            const newArray = [...allproperties];
+            for (let i = newArray.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
+            }    
+            return newArray;
+        });
+    }, [searchBarResult, selectedCategory]);
 
 
     const loadMore = () => {
