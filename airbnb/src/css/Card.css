@@ -1,13 +1,13 @@
+
 .container {
   border: 1px #ddd solid;
   width: 300px;
-  height: 325px;
+  height: 350px;
   border-radius: 10px;
   background-color: #fff;
   transition: box-shadow 0s ease;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   transition: transform 0.25s ease;
   z-index: 998;
   color: #000;
@@ -18,10 +18,30 @@
   border-color: transparent;
 }
 
+
+.container .rating-span {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 20px;
+  background: #fff;
+  box-shadow: 0 0 15px #bbb;
+  border-radius: 50px;
+  font: 16px Fakebnb;
+  padding: 3px 12px;
+}
+
+.container.dark .rating-span {
+  background-color: #333;
+  box-shadow: none;
+  color: #fff;
+}
+
 .container .cover {
   background: url("./src/assets/card-bg.png");
   background-size: cover;
-  aspect-ratio: 16/9;
+  aspect-ratio: 16/10;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,70 +71,66 @@
   transform: scale(1.1);
 }
 
-.container .details,
-.container .details .upper {
-  display: flex;
-  flex-direction: column;
+.container .primary {
+  font-size: 18px;
+  font-family: Fakebnb;
+  font-weight: bold;
 }
 
-.container.dark .details,
-.container.dark .details upper {
+.container.dark .primary {
   color: #fff;
+  font-weight: normal;
+}
+
+.container .secondary {
+  font-size: 18px;
+  font-family: Fakebnb;
+  opacity: 75%;
+}
+
+.container.dark .secondary {
+  color: #fff;
+  opacity: 50%;
 }
 
 .container .details {
-  position: absolute;
-  margin-top: 170px;
-  width: 300px;
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 20px;
+  justify-content: space-between;
 }
 
-.container .details .upper h1 {
-  font-family: 'Fakebnb';
-  font-size: 16px;
+.container .details .upper div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
 }
 
-.container .details .upper h1 span {
-  font-size: 14px;
-  font-weight: normal;
-  opacity: 75%;
-}
 
-.container .details .upper h3 {
-  position: absolute;
-  margin-top: 25px;
-  font-size: 14px;
-  font-weight: normal;
-  opacity: 75%;
-  max-width: 250px;
-}
-
-.container .details .lower {
-  margin-top: 60px;
+.container .details .upper,
+.container .details .lower div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.container .details .lower div {
+.container .details .upper {
+  align-items: center;
+}
+
+.container .details .upper img {
+  width: 40px;
+}
+
+.container .details .lower {
   display: flex;
   flex-direction: column;
-  align-items: start;
-  justify-content: flex-start;
-  gap: 5px;
+  gap: 3px;
 }
 
-.container .details .lower h2 {
-  font-family: 'Fakebnb';
-  font-size: 16px;
-}
-
-.container .details .lower span {
-  align-self: center;
-}
-
-.container .details .lower h3 {
-  font-size: 14px;
-  font-weight: normal;
-  opacity: 75%;
+.container .details .lower div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }

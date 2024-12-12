@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { useTheme } from "./Theme";
 import Header from "./Header.jsx";
 import Footer from "./Footer.jsx";
@@ -9,6 +9,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Booking from "./Booking.jsx";
 import Signup from "./Signup.jsx"
 import Login from "./Login.jsx"
+
 
 export default function App() {
     const [selectedCategory, setSelectedCategory] = useState(null);
@@ -23,6 +24,8 @@ export default function App() {
         setCity(city);
         setSelectedCategory(null);
     };
+
+
 
     return (
         <Router>
@@ -69,7 +72,7 @@ export default function App() {
                     }
                 />
                 <Route
-                    path="/api/property"
+                    path="/property"
                     element={
                         <div className={`${darkmode ? "dark" : ""}`}>
                             <Header searchBarResult={handleCity} />
@@ -79,11 +82,10 @@ export default function App() {
                     }
                 />
                 <Route
-                    path="/api/booking"
+                    path="/booking"
                     element={<Booking />}
                 />
             </Routes>
         </Router>
     );
-
 }

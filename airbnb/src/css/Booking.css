@@ -4,19 +4,15 @@
 }
 
 header {
-    border-bottom: 2px #ddd solid;
+    border-bottom: 1px #aaa solid;
     z-index: 1000;
 }
+
 
 header img {
     width: 150px;
     margin: 30px 200px;
     background-color: transparent;
-}
-
-
-.dark header {
-    border-color: #111;
 }
 
 
@@ -47,7 +43,6 @@ header img {
     color: #333;
     display: flex;
     align-items: center;
-    text-decoration: none;
     justify-content: center;
     padding: 25px;
 }
@@ -490,8 +485,6 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: center;
-    transition: background-color 0.5s ease,
-                color 0.5s ease;
 }
 
 
@@ -527,20 +520,13 @@ footer .socials i {
     margin: 0 7px;
 }
 
+footer.dark {
+    border: none;
+    background-color: #171717;
+}
 
 footer.dark .socials i,
 footer.dark p,
 footer.dark h4 {
     color: #fff;
-}
-
-
-
-
-
-
-.error {
-    color: red;
-    font-size: 14px;
-    margin-top: 4px;
 }

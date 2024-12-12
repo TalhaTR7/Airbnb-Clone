@@ -25,6 +25,8 @@
 }
 
 .card-container.dark button {
+  background-color: #333;
+  border: none;
   color: #fff;
 }
 

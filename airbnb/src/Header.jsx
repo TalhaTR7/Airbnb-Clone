@@ -78,7 +78,10 @@ export default function Header({ searchBarResult }) {
                 <div className={`dropdown ${darkmode ? "dark" : ""}`} ref={dropdownRef}>
                     <Link to={"/login"} style={{textDecoration:"none"}}><p>Login</p></Link>
                     <Link to={"/signup"} style={{textDecoration:"none"}}><p>Sign up</p></Link>
-                    <p onClick={toggleDarkmode} className={darkmode ? "darkmode-button" : ""}>Dark mode</p>
+                    <p onClick={() => {
+                        toggleDarkmode();
+                        setDropdown(false);
+                    }} className={darkmode ? "darkmode-button" : ""}>Dark mode</p>
                     <p onClick={() => {
                         alert("On the way...");
                         setDropdown(false);

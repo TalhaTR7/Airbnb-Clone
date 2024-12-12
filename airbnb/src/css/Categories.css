@@ -7,7 +7,6 @@
     box-shadow: 0 5px 10px #ddd;
     position: fixed;
     z-index: 999;
-    transition: all 0.5s cubic-bezier(1, 0, 0, 1);
 }
 
 .category-container.dark {

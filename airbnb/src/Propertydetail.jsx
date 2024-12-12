@@ -1,4 +1,5 @@
 import "./css/Propertydetail.css"
+import allproperties from './assets/property.json'
 import trending_status from "./assets/status-trending.png"
 import hot_status from "./assets/status-hot.png"
 import favourite_status from "./assets/status-favourite.png"
@@ -8,8 +9,8 @@ import hot_status_dark from "./assets/dark/status-hot-dark.png"
 import favourite_status_dark from "./assets/dark/status-favourite-dark.png"
 import customer_img_dark from "./assets/dark/profile-dark.png"
 import host_img from "./assets/host-img.png"
+import { useEffect } from "react"
 import { useLocation, Link } from 'react-router-dom'
-import { useEffect, useState } from 'react'
 import { useTheme } from './Theme'
 
 export default function Propertydetail() {
@@ -19,7 +20,7 @@ export default function Propertydetail() {
         searchParams = new URLSearchParams(location.search),
         fakeID = searchParams.get('fakeid');
 
-    const [property, setProperty] = useState(null);
+    const property = allproperties.find(p => p.fakeid == fakeID);
 
 
     const statusImages = {
@@ -30,17 +31,12 @@ export default function Propertydetail() {
 
     const float = (number) => parseFloat(number).toFixed(1);
 
-    useEffect(() => {
-        window.scrollTo(0, 0);
-        const fetchproperty = async () => {
-            const response = await fetch(`/api/property?fakeid=${fakeID}`);
-            const data = await response.json();
-            setProperty(data);
-        };
-        fetchproperty();
-    }, [fakeID]);
+    useEffect(() => window.scroll(0, 0), [])
+
 
     if (!property) return <p>Loading...</p>
+
+
 
     return (
         <div>
@@ -54,7 +50,7 @@ export default function Propertydetail() {
             </div>
             <section className={`section-1 ${darkmode ? "dark" : ""}`}>
                 <div className="left">
-                    <h1 contentEditable="true">{property.address}, {property.city}</h1>
+                    <h1>{property.address}, {property.city}</h1>
                     <span>{property.description}</span>
                     <div className="status-container">
                         <img src={statusImages[property.status]} style={{ width: '250px' }} />
@@ -72,8 +68,8 @@ export default function Propertydetail() {
                             <p>{property.beds} beds {property.baths} baths</p>
                         </div>
                     </div>
-                    <h1>${property.rent}<span>a night +GST</span></h1>
-                    <Link to={`/api/booking?fakeid=${property.fakeid}`}>
+                    <h1>${property.rent}<span>/ night +GST</span></h1>
+                    <Link to={`/booking?fakeid=${property.fakeid}`}>
                         <button>Reserve</button>
                     </Link>
                 </div>
@@ -141,7 +137,7 @@ export default function Propertydetail() {
                 </div>
             </section>
             <section className={`section-4 ${darkmode ? "dark" : ""}`}>
-                <h1>{float(property.rating)}</h1>
+                <h1>{property.rating}</h1>
                 <span>Overall rating</span>
                 <p>One of the most loved homes on Fakebnb based on ratings, reviews, and reliability</p>
                 <div className="rating-section">
@@ -204,7 +200,7 @@ export default function Propertydetail() {
                             <div className="user-info">
                                 <img src={darkmode ? customer_img_dark : customer_img} style={{ width: '50px' }} />
                                 <div>
-                                    <h1>Grey Worm</h1>
+                                    <h1>Sandor Clegane</h1>
                                     <p>2 years ago</p>
                                 </div>
                             </div>
@@ -234,30 +230,6 @@ export default function Propertydetail() {
                     </div>
                 </div>
             </section>
-            <div className="gradient-box" />
         </div>
     )
 }
-
-// this i have in PropertyDetail.jsx, how do i modify it
-// export default function Propertydetail({ properties }) {
-
-//     const { darkmode } = useTheme(),
-//         location = useLocation(),
-//         searchParams = new URLSearchParams(location.search),
-//         fakeID = searchParams.get('fakeid'),
-//         property = properties.find(p => p.fakeid === fakeID);
-
-
-//     const statusImages = {
-//         Trending: darkmode ? trending_status_dark : trending_status,
-//         Hot: darkmode ? hot_status_dark : hot_status,
-//         Favourite: darkmode ? favourite_status_dark : favourite_status,
-//     };
-
-//     const float = (number) => parseFloat(number).toFixed(1);
-
-//     useEffect(() => { window.scrollTo(0, 0) }, []);
-
-//     return ( /* html */ )
-// }

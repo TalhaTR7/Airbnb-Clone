@@ -9,7 +9,7 @@
     position: sticky;
     top: 0;
     z-index: 1000;
-    transition: all 0.5s cubic-bezier(1, 0, 0, 1);
+    transition: padding 0.5s cubic-bezier(1, 0, 0, 1);
 }
 
 .header.dark {
@@ -40,10 +40,11 @@
     box-shadow: 0 3px 10px #ccc;
     padding: 15px;
     border-radius: 50px;
-    transition: all 0.5s cubic-bezier(1, 0, 0, 1);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    transition: width 0.5s cubic-bezier(1, 0, 0, 1),
+                padding 0.5s cubic-bezier(1, 0, 0, 1);
 }
 
 .header.dark .search-bar {
@@ -59,7 +60,6 @@
     width: 100%;
     outline: none;
     font-size: 20px;
-    transition: all 0.5s cubic-bezier(1, 0, 0, 1);
 }
 
 .header.scrolled .search-bar:has(input:focus) {

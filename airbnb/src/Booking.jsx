@@ -1,5 +1,6 @@
 
 import "./css/Booking.css";
+import allproperties from './assets/property.json'
 import widelogo from "./assets/widelogo.png";
 import widelogo_dark from "./assets/dark/widelogo-dark.png";
 import React, { useEffect, useState } from "react";
@@ -15,18 +16,10 @@ export default function Booking() {
     const searchParams = new URLSearchParams(location.search);
     const fakeID = searchParams.get('fakeid');
 
-    const [property, setProperty] = useState(null);
+    const property = allproperties.find(p => p.fakeid == fakeID);
 
 
-    useEffect(() => { 
-        window.scrollTo(0, 0);
-        const fetchproperty = async() => {
-            const response = await fetch(`/api/booking?fakeid=${fakeID}`);
-            const data = await response.json();
-            setProperty(data);
-        };
-        fetchproperty();
-    }, [fakeID]);
+    useEffect(() => window.scrollTo(0, 0), [fakeID]);
 
 
 
@@ -235,8 +228,8 @@ export default function Booking() {
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas luctus ultrices purus, a pretium dui dapibus ut. Duis pretium eu nibh accumsan dictum. Sed rhoncus malesuada blandit. Maecenas elementum neque vitae facilisis molestie.</p>
                     <Link to={
                         handleCardValidation
-                            ? `/api/property?fakeid=${property.fakeid}`
-                            : `/api/booking?fakeid=${property.fakeid}`}>
+                            ? `/property?fakeid=${property.fakeid}`
+                            : `/booking?fakeid=${property.fakeid}`}>
                         <button>Confirm and pay</button>
                     </Link>
                 </section>
@@ -309,11 +302,11 @@ export default function Booking() {
 
     return (
         <div className={darkmode ? "dark" : ""}>
-            <header>
+            <header className={darkmode ? "dark" : ""}>
                 <Link to={'/'}><img src={darkmode ? widelogo_dark : widelogo} /></Link>
             </header>
             <div className={`absolute ${darkmode ? "dark" : ""}`}>
-                <Link to={`/api/property?fakeid=${property.fakeid}`} className="a">
+                <Link to={`/property?fakeid=${property.fakeid}`} className="a">
                     <i className="fa-solid fa-arrow-left" />
                 </Link>
                 <h1>Confirm and pay</h1>

@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 
 export default function Categories({ selectedCategory, activeCategory }) {
 
-    const {darkmode} = useTheme();
+    const { darkmode } = useTheme();
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -35,10 +35,11 @@ export default function Categories({ selectedCategory, activeCategory }) {
     };
 
     const categories = [
-        "Farm", "Countryside", "Cabin", "Mountain", "Luxury", "River", "View",
-        "Barn", "Beach", "Mansion", "Urban", "Camping", "Tropical", "Lake",
-        "Pool", "Garden", "Desert", "Trending"
+        "Farm", "Countryside", "All", "Cabin", "Mountain", "Luxury", "River", "Trending",
+        "Barn", "Beach", "Mansion", "Hot", "Urban", "Camping", "Tropical", "Favourite", "Lake",
+        "Pool", "Garden", "Desert", "View"
     ];
+
 
     return (
         <div className={`category-container ${darkmode ? "dark" : ""}`}>

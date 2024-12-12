@@ -24,6 +24,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 :root {
@@ -38,11 +39,10 @@
 
 body {
     background-color: #fff;
-    transition: background-color 0.5s ease;
 }
 
 body.dark {
-    background-color: #222;
+    background-color: #111;
 }
 
 ::selection {
